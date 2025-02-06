@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/** Andrés Fernández Burón
+ *  Noviembre de 2021
+ *
+ *  Copyright 2021 (C)
+ * 
+ *  Aplicación Web Frontend
+ *  Mi sitio web
+ *  La política legal
+ *
+ *  Fichero CSS con los estilos de la página con la política legal de mi sitio web frontend.
+ */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+}
+
+body > header {
+  overflow: hidden;
+}
+
+body > header > button {
+  position: absolute;
+  top: 5px;
+  background-color: whitesmoke;
+  border-color: darkgreen;
+  border-width: 2px 2px 0 0;
+  border-style: outset;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+body > header > button:hover {
+  background-color: darkseagreen;
+}
+
+body > header > button:last-of-type {
+  right: 5px;
+  background-image: url("../img/botones/btn-mostrar-menu.png");
+}
+
+body > header > button:last-of-type:hover {
+  background-image: url("../img/botones/btn-mostrar-menu-pulsado.png");
+}
+
+@media screen and (max-width: 480px) {
+  body > header {
+    height: 50px;
+  }
+  body > header > button {
+    height: 35px;
+    width: 35px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  body > header {
+    height: 40px;
+  }
+  body > header > button {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (min-width: 981px) {
+  body > header {
+    height: 45px;
+  }
+  body > header > button {
+    height: 35px;
+    width: 35px;
+  }
+}
+body > nav {
+  display: none;
+}
+
+body > nav ul {
+  list-style: none;
+}
+
+body > nav ul ul {
+  display: none;
+}
+
+body > nav > ul > li a {
+  display: block;
+  padding: 1vh 0 1vh 7vw;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav > ul {
+  position: absolute;
+  right: 0;
+  border: 0 solid #006400;
+  border-width: 0 0 2px 4px;
+}
+
+nav > ul > li {
+  background-color: whitesmoke;
+  border-bottom: 2px solid #00ab00;
+}
+
+nav > ul > li > a {
+  color: #006400;
+}
+
+body > nav > ul > li:hover {
+  background-color: #006400;
+}
+
+body > nav > ul > li:hover > a {
+  color: whitesmoke;
+}
+
+body > nav > ul > li > ul {
+  margin: 0 0 0 1vw;
+  border-left: 1px solid #006400;
+}
+
+body > nav > ul > li > ul > li {
+  background-color: #8fbc8f;
+  border-top: 1px solid #006400;
+}
+
+body > nav > ul > li > ul > li > a {
+  color: whitesmoke;
+}
+
+body > nav > ul > li > ul > li:hover {
+  background-color: #55b559;
+}
+
+nav > ul li {
+  position: relative;
+}
+
+nav > ul > li button.boton-mostrar-submenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 6px;
+  font-size: 1em;
+  font-weight: bold;
+  border-width: 0 2px 2px 2px;
+  border-radius: 0 0 5px 5px;
+}
+
+body > nav > ul > li button.boton-mostrar-submenu {
+  color: #006400;
+  background-color: #8fbc8f;
+  border-color: #00ab00;
+}
+
+body > nav > ul > li:hover button.boton-mostrar-submenu {
+  background-color: whitesmoke;
+  border-color: #8fbc8f;
+}
+
+@media screen and (max-width: 480px) {
+  body > nav {
+    top: 55px;
+  }
+  nav > ul > li a {
+    padding: 1vh 4vw;
+  }
+  nav > ul {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  body > nav {
+    top: 44px;
+  }
+  nav > ul > li a {
+    padding: 1vh 2vw;
+  }
+  nav > ul {
+    min-width: 50%;
+  }
+}
+@media screen and (min-width: 981px) {
+  body > nav {
+    top: 49px;
+  }
+  nav > ul {
+    width: 20%;
+  }
+  body > nav > ul > li a {
+    padding: 1vh 2vw;
+  }
+}
+body {
+  width: 100%;
+  background-color: #133f3f;
+}
+
+header {
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00ab00;
+  border-bottom: 4px solid #006400;
+}
+
+header p {
+  padding: 2px 0 0 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  color: whitesmoke;
+  text-shadow: 2px 2px 0 black;
+}
+
+body > nav {
+  z-index: 8;
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+main > section > article > p {
+  margin: 4vh 2vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #00ab00;
+  border-top: 4px solid #006400;
+}
+
+footer p,
+footer ul,
+footer a {
+  padding: 2px 4px;
+  font-family: "Courier New", Courier, monospace;
+  color: whitesmoke;
+  text-shadow: 2px 1px 0 #133f3f;
+}
+
+footer > div a {
+  text-decoration: none;
+}
+
+footer > div a:hover {
+  text-decoration: underline;
+}
+
+.mini, .medio, .grande {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mini {
+    display: inherit !important;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  .medio {
+    display: inherit !important;
+  }
+}
+@media screen and (min-width: 981px) {
+  .grande {
+    display: inherit !important;
+  }
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("../img/codigo.png");
+  background-size: cover;
+  background-size: auto;
+  background-position: center;
+}
+
+main {
+  position: absolute;
+  left: 2vw;
+  width: 96vw;
+  z-index: 5;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer div > * {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    top: 60px;
+    height: 88vh;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  main {
+    top: 55px;
+    height: 85vh;
+  }
+}
+@media screen and (min-width: 981px) {
+  main {
+    top: 55px;
+    height: 85vh;
+  }
+}
+@media screen and (max-width: 980px) {
+  footer div > * {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 981px) {
+  .grande {
+    display: inline-block !important;
+  }
+  footer div > * {
+    width: 30%;
+  }
+}
+main {
+  overflow-y: auto;
+  border: 2px outset darkgoldenrod;
+}
+
+main > section > article {
+  padding: 4vh 2vw;
+  color: #0d0d5c;
+  background-color: #b0c4de;
+}
+
+main > section > article:last-of-type {
+  padding-bottom: 20vh;
+}
+
+h2, h3 {
+  font-size: 2rem;
+}
