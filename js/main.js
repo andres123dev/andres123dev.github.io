@@ -8,31 +8,40 @@
  *
  */
 "use strict";
-function addListenerBtnMenu() {
-    var mainMenuPanel;
+var mainMenuPanel;
+var menuSwitchButton;
+var closerElements;
+export function addListenerBtnMenu() {
+    closerElements = document.querySelectorAll('figure, main, footer');
     mainMenuPanel = document.querySelector('nav');
     if (mainMenuPanel)
         mainMenuPanel.style.display = 'none';
-    var menuSwitchButton;
     menuSwitchButton = document.querySelector('header button');
     if (mainMenuPanel && menuSwitchButton) {
-        menuSwitchButton.addEventListener('click', function (evt) {
-            console.log('PULSADO');
+        menuSwitchButton.addEventListener('click', function () {
             mainMenuPanel.style.display = (mainMenuPanel.style.display == 'none') ? 'block' : 'none';
+            for (let i = 0; i < closerElements.length; i++) {
+                closerElements[i].addEventListener('click', function () {
+                    mainMenuPanel.style.display = 'none';
+                });
+            }
         });
     }
 }
-function addListenerBtnSubmenu() {
+export function addListenerBtnSubmenu() {
     const menuSupanelSwitchButtons = document.querySelectorAll('.boton-mostrar-submenu');
     if (menuSupanelSwitchButtons) {
         for (let i = 0; i < menuSupanelSwitchButtons.length; i++) {
             var submenuPanel = menuSupanelSwitchButtons[i].nextElementSibling;
             if (submenuPanel)
                 submenuPanel.style.display = 'none';
-            menuSupanelSwitchButtons[i].addEventListener('click', function () {
-                console.log('PULSADO');
-                submenuPanel.style.display = (submenuPanel.style.display == 'none') ? 'block' : 'none';
-            });
+            var btn = menuSupanelSwitchButtons[i];
+            if (btn) {
+                btn.addEventListener('click', function () {
+                    submenuPanel.style.display = (submenuPanel.style.display == 'none') ? 'block' : 'none';
+                    btn.style.backgroundColor = (btn.style.backgroundColor == 'whitesmoke') ? 'lightseagreen' : 'whitesmoke';
+                });
+            }
         }
     }
 }

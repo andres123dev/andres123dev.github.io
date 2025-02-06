@@ -23,11 +23,15 @@ body > header {
   overflow: hidden;
 }
 
+body > header p {
+  padding: 4px 0 0 4px;
+}
+
 body > header > button {
   position: absolute;
   top: 5px;
   background-color: whitesmoke;
-  border-color: darkgreen;
+  border-color: #006400;
   border-width: 2px 2px 0 0;
   border-style: outset;
   border-radius: 4px;
@@ -38,7 +42,7 @@ body > header > button {
 }
 
 body > header > button:hover {
-  background-color: darkseagreen;
+  background-color: #8fbc8f;
 }
 
 body > header > button:last-of-type {
@@ -214,10 +218,10 @@ header {
 }
 
 header p {
-  padding: 2px 0 0 10px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   color: whitesmoke;
+  letter-spacing: 1px;
   text-shadow: 2px 2px 0 black;
 }
 
@@ -266,17 +270,24 @@ footer > div a:hover {
 
 @media screen and (max-width: 480px) {
   .mini {
-    display: inherit !important;
+    display: inline-block !important;
+  }
+  header p,
+  figure p {
+    font-weight: bold;
+  }
+  footer > div:last-of-type {
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
   .medio {
-    display: inherit !important;
+    display: inline-block !important;
   }
 }
 @media screen and (min-width: 981px) {
   .grande {
-    display: inherit !important;
+    display: inline-block !important;
   }
 }
 body {
@@ -311,7 +322,7 @@ footer div > * {
 @media screen and (max-width: 480px) {
   main {
     top: 60px;
-    height: 88vh;
+    height: 85vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
