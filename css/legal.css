@@ -215,7 +215,7 @@ header {
 
 header p {
   padding: 2px 0 0 10px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   color: whitesmoke;
   text-shadow: 2px 2px 0 black;

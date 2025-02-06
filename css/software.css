@@ -215,7 +215,7 @@ header {
 
 header p {
   padding: 2px 0 0 10px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   color: whitesmoke;
   text-shadow: 2px 2px 0 black;
@@ -307,7 +307,7 @@ body > figure:nth-of-type(2) > figcaption {
 }
 
 body > figure:nth-of-type(2) > figcaption > p {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   color: #ff9717;
 }
@@ -433,6 +433,10 @@ footer > div > figure > figcaption {
     background-image: url("../img/anim-footer/ordenador-3.png"), url("../img/anim-footer/codigo-8.png");
   }
 }
+footer {
+  min-height: 55vh;
+}
+
 footer > div {
   font-weight: bold;
 }
@@ -921,11 +925,11 @@ main > section > div {
 main > section > article {
   width: 90%;
   z-index: 6;
-  margin: 45vh auto !important;
+  margin: 45vh auto;
 }
 
 h1, h2, h3 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 1px;
   text-align: center;
 }
