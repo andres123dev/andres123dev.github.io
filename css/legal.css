@@ -24,7 +24,7 @@ body > header {
 }
 
 body > header p {
-  padding: 4px 0 0 4px;
+  padding: 4px 0 0 8px;
 }
 
 body > header > button {
@@ -208,7 +208,7 @@ body {
 }
 
 header {
-  z-index: 7;
+  z-index: 8;
   position: fixed;
   top: 0;
   left: 0;
@@ -275,9 +275,10 @@ footer > div a:hover {
   header p,
   figure p {
     font-weight: bold;
+    font-family: Consolas !important;
   }
   footer > div:last-of-type {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -303,7 +304,7 @@ body {
 main {
   position: absolute;
   left: 2vw;
-  width: 96vw;
+  width: 95vw;
   z-index: 5;
 }
 
@@ -322,7 +323,7 @@ footer div > * {
 @media screen and (max-width: 480px) {
   main {
     top: 60px;
-    height: 85vh;
+    height: 80vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -368,3 +369,4 @@ main > section > article:last-of-type {
 h2, h3 {
   font-size: 2rem;
 }
+

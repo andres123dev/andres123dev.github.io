@@ -24,7 +24,7 @@ body > header {
 }
 
 body > header p {
-  padding: 4px 0 0 4px;
+  padding: 4px 0 0 8px;
 }
 
 body > header > button {
@@ -208,7 +208,7 @@ body {
 }
 
 header {
-  z-index: 7;
+  z-index: 8;
   position: fixed;
   top: 0;
   left: 0;
@@ -275,9 +275,10 @@ footer > div a:hover {
   header p,
   figure p {
     font-weight: bold;
+    font-family: Consolas !important;
   }
   footer > div:last-of-type {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -354,7 +355,7 @@ main > section > article {
 }
 
 footer {
-  z-index: 5;
+  z-index: 4;
   position: relative;
   top: 150vh;
   min-height: 45vh;
@@ -379,7 +380,7 @@ footer {
   }
 }
 footer > div > figure {
-  height: 30vh;
+  height: 35vh;
   width: 100%;
   margin: 0 auto;
   animation: pc-enciende 2.5s 0s cubic-bezier(1, 0, 0, 1) forwards, pc-escribe-codigo 8s 2.5s infinite ease-in-out;
@@ -446,7 +447,7 @@ footer > div > figure > figcaption {
   }
 }
 footer {
-  min-height: 45vh;
+  min-height: 60vh;
 }
 
 footer > div {
@@ -565,3 +566,4 @@ main > section > article {
 main > section > article:not(:last-of-type) {
   margin-bottom: 30vh;
 }
+

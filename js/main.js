@@ -11,7 +11,7 @@
 var mainMenuPanel;
 var menuSwitchButton;
 var closerElements;
-export function addListenerBtnMenu() {
+function addListenerBtnMenu() {
     closerElements = document.querySelectorAll('figure, main, footer');
     mainMenuPanel = document.querySelector('nav');
     if (mainMenuPanel)
@@ -28,7 +28,7 @@ export function addListenerBtnMenu() {
         });
     }
 }
-export function addListenerBtnSubmenu() {
+function addListenerBtnSubmenu() {
     const menuSupanelSwitchButtons = document.querySelectorAll('.boton-mostrar-submenu');
     if (menuSupanelSwitchButtons) {
         for (let i = 0; i < menuSupanelSwitchButtons.length; i++) {
