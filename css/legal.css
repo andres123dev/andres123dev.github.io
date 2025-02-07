@@ -24,12 +24,12 @@ body > header {
 }
 
 body > header p {
-  padding: 4px 0 0 8px;
+  padding: 2px 0 0 10px;
 }
 
 body > header > button {
   position: absolute;
-  top: 5px;
+  top: 2px;
   background-color: whitesmoke;
   border-color: #006400;
   border-width: 2px 2px 0 0;
@@ -45,22 +45,25 @@ body > header > button:hover {
   background-color: #8fbc8f;
 }
 
-body > header > button:last-of-type {
-  right: 5px;
+body > header > button {
+  right: 4px;
   background-image: url("../img/botones/btn-mostrar-menu.png");
 }
 
-body > header > button:last-of-type:hover {
+body > header > button:hover {
   background-image: url("../img/botones/btn-mostrar-menu-pulsado.png");
 }
 
 @media screen and (max-width: 480px) {
   body > header {
-    height: 50px;
+    height: 45px;
   }
   body > header > button {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
+  }
+  body > nav {
+    top: 49px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -68,8 +71,11 @@ body > header > button:last-of-type:hover {
     height: 40px;
   }
   body > header > button {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
+  }
+  body > nav {
+    top: 44px;
   }
 }
 @media screen and (min-width: 981px) {
@@ -77,129 +83,136 @@ body > header > button:last-of-type:hover {
     height: 45px;
   }
   body > header > button {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
+  }
+  body > nav {
+    top: 49px;
   }
 }
-body > nav {
-  display: none;
-}
-
 body > nav ul {
   list-style: none;
-}
-
-body > nav ul ul {
-  display: none;
+  border-radius: 0 0 0 4px;
 }
 
 body > nav > ul > li a {
   display: block;
-  padding: 1vh 0 1vh 7vw;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 1vh 4vw;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-nav > ul {
+body > nav > ul {
   position: absolute;
   right: 0;
-  border: 0 solid #006400;
-  border-width: 0 0 2px 4px;
+  border: 0 outset #55b559;
+  border-width: 0 0 2px 2px;
 }
 
-nav > ul > li {
-  background-color: whitesmoke;
-  border-bottom: 2px solid #00ab00;
-}
-
-nav > ul > li > a {
-  color: #006400;
-}
-
-body > nav > ul > li:hover {
+body > nav > ul > li {
   background-color: #006400;
+  border: 2px outset #55b559;
 }
 
-body > nav > ul > li:hover > a {
+body > nav > ul > li > a {
   color: whitesmoke;
 }
 
-body > nav > ul > li > ul {
-  margin: 0 0 0 1vw;
-  border-left: 1px solid #006400;
+body > nav > ul > li:hover {
+  background-color: #00ab00;
+}
+
+body > nav > ul > li:hover > a {
+  text-shadow: 1px 1px 0 black;
 }
 
 body > nav > ul > li > ul > li {
-  background-color: #8fbc8f;
-  border-top: 1px solid #006400;
+  background-color: #55b559;
+  border: 1px outset #006400;
 }
 
 body > nav > ul > li > ul > li > a {
   color: whitesmoke;
+  text-shadow: 1px 1px 0 black;
 }
 
 body > nav > ul > li > ul > li:hover {
-  background-color: #55b559;
+  background-color: #b0c4de;
 }
 
-nav > ul li {
+body > nav > ul > li > ul > li > ul {
+  padding-left: 20px;
+}
+
+body > nav > ul > li > ul > li > ul > li {
+  background-color: #8fbc8f;
+  border: 1px outset #00ab00;
+}
+
+body > nav > ul > li > ul > li > ul > li > a {
+  color: whitesmoke;
+}
+
+body > nav > ul > li > ul > li > ul > li:hover {
+  background-color: whitesmoke;
+}
+
+body > nav > ul > li > ul > li > ul > li:hover > a {
+  color: #006400;
+}
+
+body > nav > ul li {
   position: relative;
 }
 
-nav > ul > li button.boton-mostrar-submenu {
+body > nav > ul > li button.boton-mostrar-submenu {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 4px 6px;
-  font-size: 1em;
-  font-weight: bold;
-  border-width: 0 2px 2px 2px;
-  border-radius: 0 0 5px 5px;
 }
 
 body > nav > ul > li button.boton-mostrar-submenu {
+  padding: 4px 14px;
+  font-size: 1em;
+  font-weight: bold;
+  border-width: 0 2px 2px 2px;
+  border-radius: 0 0 0 7px;
+  border-color: #8fbc8f;
+}
+
+body > nav > ul > li > button {
   color: #006400;
+  background-color: whitesmoke;
+}
+
+body > nav > ul > li:hover > button {
   background-color: #8fbc8f;
   border-color: #00ab00;
 }
 
-body > nav > ul > li:hover button.boton-mostrar-submenu {
-  background-color: whitesmoke;
-  border-color: #8fbc8f;
+body > nav > ul > li > ul > li > button {
+  color: whitesmoke;
+  background-color: #006400;
+}
+
+body > nav > ul > li > ul > li:hover > button {
+  background-color: #00ab00;
 }
 
 @media screen and (max-width: 480px) {
-  body > nav {
-    top: 55px;
-  }
-  nav > ul > li a {
-    padding: 1vh 4vw;
-  }
-  nav > ul {
-    width: 80%;
+  body > nav > ul {
+    min-width: 80vw;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  body > nav {
-    top: 44px;
-  }
-  nav > ul > li a {
-    padding: 1vh 2vw;
-  }
-  nav > ul {
-    min-width: 50%;
+  body > nav > ul {
+    min-width: 50vw;
   }
 }
 @media screen and (min-width: 981px) {
-  body > nav {
-    top: 49px;
-  }
-  nav > ul {
-    width: 20%;
-  }
-  body > nav > ul > li a {
-    padding: 1vh 2vw;
+  body > nav > ul {
+    min-width: 30vw;
   }
 }
 body {
@@ -221,7 +234,6 @@ header p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   color: whitesmoke;
-  letter-spacing: 1px;
   text-shadow: 2px 2px 0 black;
 }
 
@@ -241,7 +253,17 @@ main > section > article > p {
   font-size: 1.4rem;
 }
 
+main a {
+  color: #0a43ee;
+}
+
+main a:hover {
+  color: #0d0d5c;
+  text-decoration: none;
+}
+
 footer {
+  z-index: 5;
   width: 100%;
   background-color: #00ab00;
   border-top: 4px solid #006400;
@@ -250,7 +272,7 @@ footer {
 footer p,
 footer ul,
 footer a {
-  padding: 2px 4px;
+  padding: 4px;
   font-family: "Courier New", Courier, monospace;
   color: whitesmoke;
   text-shadow: 2px 1px 0 #133f3f;
@@ -262,6 +284,7 @@ footer > div a {
 
 footer > div a:hover {
   text-decoration: underline;
+  color: #ff9717;
 }
 
 .mini, .medio, .grande {
@@ -273,9 +296,10 @@ footer > div a:hover {
     display: inline-block !important;
   }
   header p,
-  figure p {
+  figure p,
+  h1, h2, h3 {
     font-weight: bold;
-    font-family: Consolas !important;
+    font-family: Consolas, "Courier New", Courier, monospace !important;
   }
   footer > div:last-of-type {
     font-size: 0.8rem;
@@ -304,7 +328,7 @@ body {
 main {
   position: absolute;
   left: 2vw;
-  width: 95vw;
+  width: 94vw;
   z-index: 5;
 }
 
@@ -329,13 +353,14 @@ footer div > * {
 @media screen and (min-width: 481px) and (max-width: 980px) {
   main {
     top: 55px;
-    height: 85vh;
+    height: 80vh;
   }
 }
 @media screen and (min-width: 981px) {
   main {
+    top: 49px;
     top: 55px;
-    height: 85vh;
+    height: 80vh;
   }
 }
 @media screen and (max-width: 980px) {
@@ -370,3 +395,7 @@ h2, h3 {
   font-size: 2rem;
 }
 
+main p,
+main a {
+  font-size: 1rem !important;
+}
