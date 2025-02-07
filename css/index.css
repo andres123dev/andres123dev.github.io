@@ -357,7 +357,7 @@ body > figure > img {
 
 main {
   position: relative;
-  top: 100vh;
+  top: 95vh;
   left: 0;
 }
 
@@ -599,7 +599,7 @@ body > figure:nth-of-type(2) {
 
 body > figure:last-of-type {
   z-index: 5;
-  border-bottom: 8px solid #b0c4de;
+  border-bottom: 20px solid #b0c4de;
 }
 
 body > figure > img {
@@ -617,14 +617,16 @@ main > div {
 
 main > section {
   margin-bottom: 47.5vh;
-  background-color: #b0c4de;
-  border: 0 solid #006400;
-  border-width: 10px 0 10px 0;
+  border-bottom: 0 solid #00ab00;
 }
 
 main > section > article {
-  padding-top: 2vh;
+  padding-top: 1vh;
   background-color: whitesmoke;
+}
+
+main > section > article p {
+  padding-top: 2vh;
 }
 
 main > section > article:not(:last-of-type) {
@@ -632,9 +634,9 @@ main > section > article:not(:last-of-type) {
 }
 
 main > section > article:first-of-type {
-  border-bottom: 8px solid #8fbc8f;
+  border-bottom: 8px solid #00ab00;
 }
 
 main > section > article:last-of-type {
-  border-top: 8px solid #8fbc8f;
+  border-top: 8px solid #55b559;
 }
