@@ -254,11 +254,10 @@ main > section > article > p {
 }
 
 main a {
-  color: #0d0d5c;
+  color: #0a43ee;
 }
 
 main a:hover {
-  color: #0a43ee;
   text-decoration: none;
 }
 
@@ -266,7 +265,7 @@ footer {
   z-index: 5;
   width: 100%;
   background-color: #00ab00;
-  border-top: 4px solid #006400;
+  border-top: 10px solid #006400;
 }
 
 footer p,
@@ -299,10 +298,10 @@ footer > div a:hover {
   figure p,
   h1, h2, h3 {
     font-weight: bold;
-    font-family: Consolas, "Courier New", Courier, monospace !important;
+    font-family: "Courier New", Courier, monospace !important;
   }
   footer > div:last-of-type {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -348,6 +347,10 @@ footer div > * {
   main {
     top: 60px;
     height: 80vh;
+  }
+  footer p,
+  footer a {
+    font-size: 0.8remb;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -399,3 +402,4 @@ main p,
 main a {
   font-size: 1rem !important;
 }
+
