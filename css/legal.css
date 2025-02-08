@@ -254,11 +254,11 @@ main > section > article > p {
 }
 
 main a {
-  color: #0a43ee;
+  color: #0d0d5c;
 }
 
 main a:hover {
-  color: #0d0d5c;
+  color: #0a43ee;
   text-decoration: none;
 }
 
@@ -353,7 +353,7 @@ footer div > * {
 @media screen and (min-width: 481px) and (max-width: 980px) {
   main {
     top: 55px;
-    height: 80vh;
+    height: 75vh;
   }
 }
 @media screen and (min-width: 981px) {

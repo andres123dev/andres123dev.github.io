@@ -254,11 +254,11 @@ main > section > article > p {
 }
 
 main a {
-  color: #0a43ee;
+  color: #0d0d5c;
 }
 
 main a:hover {
-  color: #0d0d5c;
+  color: #0a43ee;
   text-decoration: none;
 }
 
@@ -357,7 +357,7 @@ body > figure > img {
 
 main {
   position: relative;
-  top: 95vh;
+  top: 100vh;
   left: 0;
 }
 
@@ -377,7 +377,7 @@ main > section > article {
 
 footer {
   position: relative;
-  top: 190vh;
+  top: 125vh;
   min-height: 47.5vh;
 }
 
@@ -965,38 +965,34 @@ body > figure:nth-of-type(3) > figcaption > div:nth-of-type(19) {
   }
 }
 body > figure:first-of-type {
-  z-index: 2;
+  z-index: 3;
   background-image: url("../img/agujero.png");
   background-size: auto;
   background-position: center;
 }
 
 body > figure:nth-of-type(2) {
-  z-index: 4;
+  z-index: 5;
 }
 
 body > figure:nth-of-type(3) {
   z-index: 6;
 }
 
-body > figure:nth-of-type(2) > figcaption {
-  top: 20vh;
-}
-
 body > figure:last-of-type {
-  z-index: 5;
+  z-index: 4;
+  border-bottom: 10px solid #b0c4de;
 }
 
 main > section {
   padding-bottom: 20vh;
   margin-bottom: 60vh;
-  background-color: whitesmoke;
-  border: 8px solid #00ab00;
+  border: 8px solid #b0c4de;
   border-width: 8px 0 8px 0;
 }
 
 main > section > div {
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
@@ -1005,6 +1001,7 @@ main > section > div {
   background-image: url("../img/codigo.png");
   background-size: auto;
   background-position: center;
+  background-color: whitesmoke;
 }
 
 main > section > article {
@@ -1022,13 +1019,13 @@ h1, h2, h3 {
 }
 
 main h2 {
-  z-index: 4;
+  z-index: 3;
   position: relative;
   top: 15vh;
   padding: 2vh 1vw;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #133f3f;
-  text-shadow: 2px 1px 0 #ff9717;
+  text-shadow: 1px 1px 0 whitesmoke;
   background-color: #8fbc8f;
   border: 8px solid #133f3f;
   border-width: 8px 0 8px 0;
@@ -1038,7 +1035,7 @@ main h3 {
   padding: 1vh 1vw;
   font-size: 2rem;
   color: whitesmoke;
-  text-shadow: 3px 2px 0 black;
+  text-shadow: 2px 2px 0 black;
   background-color: #0a43ee;
-  border-bottom: 4px solid #133f3f;
+  border-bottom: 2px solid #133f3f;
 }

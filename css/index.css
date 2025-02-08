@@ -254,11 +254,11 @@ main > section > article > p {
 }
 
 main a {
-  color: #0a43ee;
+  color: #0d0d5c;
 }
 
 main a:hover {
-  color: #0d0d5c;
+  color: #0a43ee;
   text-decoration: none;
 }
 
@@ -357,7 +357,7 @@ body > figure > img {
 
 main {
   position: relative;
-  top: 95vh;
+  top: 100vh;
   left: 0;
 }
 
@@ -377,7 +377,7 @@ main > section > article {
 
 footer {
   position: relative;
-  top: 190vh;
+  top: 125vh;
   min-height: 47.5vh;
 }
 
@@ -594,12 +594,11 @@ body > figure:first-of-type {
 }
 
 body > figure:nth-of-type(2) {
-  z-index: 4;
+  z-index: 5;
 }
 
 body > figure:last-of-type {
-  z-index: 5;
-  border-bottom: 20px solid #b0c4de;
+  z-index: 4;
 }
 
 body > figure > img {
@@ -617,26 +616,25 @@ main > div {
 
 main > section {
   margin-bottom: 47.5vh;
-  border-bottom: 0 solid #00ab00;
 }
 
 main > section > article {
-  padding-top: 1vh;
+  padding: 2vh 1vw 4vh 1vw;
   background-color: whitesmoke;
-}
-
-main > section > article p {
-  padding-top: 2vh;
+  border: 8px solid #b0c4de;
+  border-width: 8px 0 8px 0;
 }
 
 main > section > article:not(:last-of-type) {
   margin-bottom: 47.5vh;
 }
 
-main > section > article:first-of-type {
-  border-bottom: 8px solid #00ab00;
+main > section > article p {
+  padding-top: 2vh;
 }
 
-main > section > article:last-of-type {
-  border-top: 8px solid #55b559;
+@media screen and (min-width: 981px) {
+  figure img {
+    max-height: 90%;
+  }
 }
