@@ -30,8 +30,8 @@ body > header p {
 body > header > button {
   position: absolute;
   top: 2px;
-  background-color: whitesmoke;
-  border-color: #006400;
+  background-color: #f5f5f5;
+  border-color: #0c680c;
   border-width: 2px 2px 0 0;
   border-style: outset;
   border-radius: 4px;
@@ -42,7 +42,7 @@ body > header > button {
 }
 
 body > header > button:hover {
-  background-color: #8fbc8f;
+  background-color: #75a075;
 }
 
 body > header > button {
@@ -106,21 +106,21 @@ body > nav > ul > li a {
 body > nav > ul {
   position: absolute;
   right: 0;
-  border: 0 outset #55b559;
+  border: 0 outset #67ce6a;
   border-width: 0 0 2px 2px;
 }
 
 body > nav > ul > li {
-  background-color: #006400;
-  border: 2px outset #55b559;
+  background-color: #0c680c;
+  border: 2px outset #67ce6a;
 }
 
 body > nav > ul > li > a {
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 body > nav > ul > li:hover {
-  background-color: #00ab00;
+  background-color: #1ebe1e;
 }
 
 body > nav > ul > li:hover > a {
@@ -128,12 +128,12 @@ body > nav > ul > li:hover > a {
 }
 
 body > nav > ul > li > ul > li {
-  background-color: #55b559;
-  border: 1px outset #006400;
+  background-color: #67ce6a;
+  border: 1px outset #0c680c;
 }
 
 body > nav > ul > li > ul > li > a {
-  color: whitesmoke;
+  color: #f5f5f5;
   text-shadow: 1px 1px 0 black;
 }
 
@@ -146,20 +146,20 @@ body > nav > ul > li > ul > li > ul {
 }
 
 body > nav > ul > li > ul > li > ul > li {
-  background-color: #8fbc8f;
-  border: 1px outset #00ab00;
+  background-color: #75a075;
+  border: 1px outset #1ebe1e;
 }
 
 body > nav > ul > li > ul > li > ul > li > a {
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover > a {
-  color: #006400;
+  color: #0c680c;
 }
 
 body > nav > ul li {
@@ -178,26 +178,26 @@ body > nav > ul > li button.boton-mostrar-submenu {
   font-weight: bold;
   border-width: 0 2px 2px 2px;
   border-radius: 0 0 0 7px;
-  border-color: #8fbc8f;
+  border-color: #75a075;
 }
 
 body > nav > ul > li > button {
-  color: #006400;
-  background-color: whitesmoke;
+  color: #0c680c;
+  background-color: #f5f5f5;
 }
 
 body > nav > ul > li:hover > button {
-  background-color: #8fbc8f;
-  border-color: #00ab00;
+  background-color: #75a075;
+  border-color: #1ebe1e;
 }
 
 body > nav > ul > li > ul > li > button {
-  color: whitesmoke;
-  background-color: #006400;
+  color: #f5f5f5;
+  background-color: #0c680c;
 }
 
 body > nav > ul > li > ul > li:hover > button {
-  background-color: #00ab00;
+  background-color: #1ebe1e;
 }
 
 @media screen and (max-width: 480px) {
@@ -226,14 +226,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #00ab00;
-  border-bottom: 4px solid #006400;
+  background-color: #1ebe1e;
+  border-bottom: 4px solid #0c680c;
 }
 
 header p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
-  color: whitesmoke;
+  color: #f5f5f5;
   text-shadow: 2px 2px 0 black;
 }
 
@@ -264,8 +264,8 @@ main a:hover {
 footer {
   z-index: 5;
   width: 100%;
-  background-color: #00ab00;
-  border-top: 10px solid #006400;
+  background-color: #1ebe1e;
+  border-top: 10px solid #0c680c;
 }
 
 footer p,
@@ -273,7 +273,7 @@ footer ul,
 footer a {
   padding: 4px;
   font-family: "Courier New", Courier, monospace;
-  color: whitesmoke;
+  color: #f5f5f5;
   text-shadow: 2px 1px 0 #133f3f;
 }
 
@@ -283,7 +283,7 @@ footer > div a {
 
 footer > div a:hover {
   text-decoration: underline;
-  color: #ff9717;
+  color: #ffae17;
 }
 
 .mini, .medio, .grande {
@@ -315,12 +315,16 @@ footer > div a:hover {
   }
 }
 body > figure {
+  bottom: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
 }
 
 body > figure:first-of-type,
 body > figure:nth-of-type(2),
-body > figure:nth-of-type(3) {
+body > figure:nth-of-type(3),
+body > figure:nth-of-type(4) {
   position: fixed;
 }
 
@@ -329,20 +333,22 @@ body > figure:last-of-type {
 }
 
 body > figure:first-of-type {
-  background-repeat: no-repeat;
   background-size: auto;
 }
 
 body > figure:nth-of-type(2) > figcaption {
   position: absolute;
-  top: 15vh;
+  top: 10vh;
   width: 100%;
 }
 
 body > figure:nth-of-type(2) > figcaption > p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
-  color: #ff9717;
+  color: #0a43ee;
+  background-color: #ffae17;
+  border: 0 solid #b0c4de;
+  border-width: 8px 0 8px 0;
 }
 
 body > figure > img {
@@ -366,7 +372,6 @@ main > section {
 }
 
 main > section > article {
-  z-index: 6;
   position: relative;
   top: 0;
   left: 0;
@@ -375,38 +380,26 @@ main > section > article {
 
 footer {
   position: relative;
-  top: 125vh;
-  min-height: 47.5vh;
+  top: 190vh;
+  margin-top: 95vh;
 }
 
 @media screen and (max-width: 480px) {
-  body > figure {
-    bottom: 0;
-    height: 100%;
-  }
   body > figure:nth-of-type(2) > figcaption > p {
     font-size: 3rem;
-    text-shadow: 2px 2px 0 black;
+    text-shadow: 1px 1px 0 #0d0d5c;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
-  body > figure {
-    bottom: 0;
-    height: 100%;
-  }
   body > figure:nth-of-type(2) > figcaption > p {
     font-size: 5rem;
-    text-shadow: 3px 3px 0 black;
+    text-shadow: 2px 2px 0 #0d0d5c;
   }
 }
 @media screen and (min-width: 981px) {
-  body > figure {
-    bottom: 0;
-    height: 100%;
-  }
   body > figure:nth-of-type(2) > figcaption > p {
     font-size: 7rem;
-    text-shadow: 4px 4px 0 black;
+    text-shadow: 3px 3px 0 #0d0d5c;
   }
 }
 footer > div > figure {
@@ -552,12 +545,12 @@ footer > div:last-of-type {
   footer > div:first-of-type > ul ul {
     padding-left: 4vw;
   }
-  footer div:first-of-type > ul:nth-of-type(2) {
+  footer div:first-of-type > ul {
     overflow: hidden;
   }
-  footer div:first-of-type > ul:nth-of-type(2) > li {
+  footer div:first-of-type > ul > li {
     float: left;
-    width: 33.3333333333vw;
+    width: 30vw;
   }
   footer > div:nth-of-type(2) {
     overflow: hidden;
@@ -584,10 +577,11 @@ main > section > article {
 }
 
 footer {
-  border-top-width: 10bpx;
+  margin-bottom: 30vh;
+  border-top-width: 10px;
 }
 
-body > figure:nth-of-type(3) > figcaption {
+body > figure:nth-of-type(4) > figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -595,20 +589,20 @@ body > figure:nth-of-type(3) > figcaption {
   width: 100%;
 }
 
-body > figure:nth-of-type(3) > figcaption > div {
-  z-index: 5 !important;
+body > figure:nth-of-type(4) > figcaption > div {
+  z-index: 6;
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(1),
-body > figure:nth-of-type(3) > figcaption > div:last-of-type {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(1),
+body > figure:nth-of-type(4) > figcaption > div:last-of-type {
   bottom: 0;
-  z-index: 6 !important;
+  z-index: 7 !important;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(1) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(1) {
   left: -10vw;
   left: 0;
   background-image: url("../img/anim-aplicaciones/comebolas-derecha-abierto.png");
@@ -619,158 +613,158 @@ body > figure:nth-of-type(3) > figcaption > div:last-of-type {
   background-image: url("../img/anim-aplicaciones/fantasma-0.png");
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(2),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(3),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(4),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(5),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(6),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(7),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(8),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(9),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(10),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(11),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(12),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(13),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(14),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(15),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(16),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(17),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(18),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(19),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(20),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(21) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(2),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(3),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(4),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(5),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(6),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(7),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(8),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(9),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(10),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(11),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(12),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(13),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(14),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(15),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(16),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(17),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(18),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(19),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(20),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(21) {
   background-image: url("../img/anim-aplicaciones/bola.png");
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(2),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(3),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(4),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(5),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(6),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(7),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(8),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(9),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(10),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(11) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(2),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(3),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(4),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(5),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(6),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(7),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(8),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(9),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(10),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(11) {
   top: 10vh;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(12),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(13),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(14),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(15),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(16),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(17),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(18),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(19),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(20),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(21) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(12),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(13),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(14),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(15),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(16),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(17),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(18),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(19),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(20),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(21) {
   bottom: 0;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(2),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(12) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(2),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(12) {
   left: 0;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(3),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(13) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(3),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(13) {
   left: 10vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(4),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(14) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(4),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(14) {
   left: 20vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(5),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(15) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(5),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(15) {
   left: 30vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(6),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(16) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(6),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(16) {
   left: 40vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(7),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(17) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(7),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(17) {
   left: 50vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(8),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(18) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(8),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(18) {
   left: 60vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(9),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(19) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(9),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(19) {
   left: 70vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(10),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(20) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(10),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(20) {
   left: 80vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(11),
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(21) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(11),
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(21) {
   left: 90vw;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:first-of-type:hover {
+body > figure:nth-of-type(4) > figcaption > div:first-of-type:hover {
   background-image: url("../img/anim-aplicaciones/comebolas-2.png");
 }
 
-body > figure:nth-of-type(3) > figcaption > div:last-of-type:hover {
+body > figure:nth-of-type(4) > figcaption > div:last-of-type:hover {
   background-image: url("../img/anim-aplicaciones/fantasma-1.png");
 }
 
 @media screen and (max-width: 480px) {
-  body > figure:nth-of-type(3) > figcaption > div {
+  body > figure:nth-of-type(4) > figcaption > div {
     height: 10vh;
     width: 10vh;
   }
-  body > figure:nth-of-type(3) > figcaption > div:first-of-type,
-  body > figure:nth-of-type(3) > figcaption > div:last-of-type {
+  body > figure:nth-of-type(4) > figcaption > div:first-of-type,
+  body > figure:nth-of-type(4) > figcaption > div:last-of-type {
     background-size: 80%;
   }
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(2),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(3),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(4),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(5),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(6),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(7),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(8),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(9),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(10),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(11),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(12),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(13),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(14),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(15),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(16),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(17),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(18),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(19),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(20),
-  body > figure:nth-of-type(3) > figcaption > div:nth-of-type(21) {
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(2),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(3),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(4),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(5),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(6),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(7),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(8),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(9),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(10),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(11),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(12),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(13),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(14),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(15),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(16),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(17),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(18),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(19),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(20),
+  body > figure:nth-of-type(4) > figcaption > div:nth-of-type(21) {
     background-size: 70%;
   }
 }
 @media screen and (min-width: 481px) {
-  body > figure:nth-of-type(3) > figcaption > div {
+  body > figure:nth-of-type(4) > figcaption > div {
     height: 10vh;
     width: 10vw;
     background-size: contain;
   }
 }
-body > figure:nth-of-type(3) > figcaption > div:first-of-type {
+body > figure:nth-of-type(4) > figcaption > div:first-of-type {
   left: -20vw;
   animation: comebolas-come-derecha 0.65s 0s infinite cubic-bezier(1, 0, 0, 1), comebolas-va 7s 0s ease-out, comebolas-da-la-vuelta 5s 7s ease-out, comebolas-come-derecha 0.6s 12s infinite cubic-bezier(1, 0, 0, 1), comebolas-vuelve 10s 12s ease-out, comebolas-come-izquierda 0.6s 22s infinite cubic-bezier(1, 0, 0, 1), comebolas-vuelve-a-volver 9s 22s ease-out, comebolas-come-derecha 0.7s 31s infinite cubic-bezier(1, 0, 0, 1), comebolas-continua 8.5s 31s infinite ease-in-out forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:last-of-type {
+body > figure:nth-of-type(4) > figcaption > div:last-of-type {
   right: -20vw;
   animation: fantasma-desaparece 1s forwards, fantasma-va 9.5s 4s infinite forwards ease-out, fantasma-flota 0.5s 7s infinite cubic-bezier(1, 0, 0, 1);
 }
@@ -874,83 +868,83 @@ body > figure:nth-of-type(3) > figcaption > div:last-of-type {
     right: 100vw;
   }
 }
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(2) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(2) {
   animation: bola-desaparece 0.1s 12.9s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(3) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(3) {
   animation: bola-desaparece 0.1s 13.3s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(4) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(4) {
   animation: bola-desaparece 0.1s 13.8s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(5) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(5) {
   animation: bola-desaparece 0.1s 14.3s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(6) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(6) {
   animation: bola-desaparece 0.1s 14.9s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(7) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(7) {
   animation: bola-desaparece 0.1s 15.4s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(8) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(8) {
   animation: bola-desaparece 0.1s 16s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(9) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(9) {
   animation: bola-desaparece 0.1s 16.6s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(10) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(10) {
   animation: bola-desaparece 0.1s 17.3s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(11) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(11) {
   animation: bola-desaparece 0.1s 18s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(12) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(12) {
   animation: bola-desaparece 0.1s 1s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(13) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(13) {
   animation: bola-desaparece 0.1s 1.6s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(14) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(14) {
   animation: bola-desaparece 0.1s 2.2s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(15) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(15) {
   animation: bola-desaparece 0.1s 2.9s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(16) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(16) {
   animation: bola-desaparece 0.1s 3.6s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(17) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(17) {
   animation: bola-desaparece 0.1s 4.5s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(18) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(18) {
   animation: bola-desaparece 0.1s 5.7s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(21) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(21) {
   animation: bola-desaparece 0.2s 23.2s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(20) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(20) {
   animation: bola-desaparece 0.2s 23.6s forwards;
 }
 
-body > figure:nth-of-type(3) > figcaption > div:nth-of-type(19) {
+body > figure:nth-of-type(4) > figcaption > div:nth-of-type(19) {
   animation: bola-desaparece 0.2s 24s forwards;
 }
 
@@ -966,36 +960,47 @@ body > figure:nth-of-type(3) > figcaption > div:nth-of-type(19) {
   }
 }
 body > figure:first-of-type {
-  z-index: 3;
+  z-index: 2;
   background-image: url("../img/agujero.png");
   background-size: auto;
   background-position: center;
 }
 
 body > figure:nth-of-type(2) {
-  z-index: 5;
+  z-index: 3;
 }
 
 body > figure:nth-of-type(3) {
+  z-index: 5;
+}
+
+body > figure:nth-of-type(4) {
   z-index: 6;
 }
 
 body > figure:last-of-type {
   z-index: 4;
-  background-image: url("../img/fondos/parallax_2.jpg");
-  background-size: cover;
-  background-position: bottom;
+  background-image: url("../img/fondos/lenguajes.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 main > section {
-  padding-bottom: 20vh;
-  margin-bottom: 60vh;
-  border: 8px solid #b0c4de;
+  border: 0 solid #133f3f;
   border-width: 8px 0 8px 0;
 }
 
+main > section:not(:last-of-type) {
+  margin-bottom: 95vh;
+}
+
 main > section > div {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -1003,17 +1008,19 @@ main > section > div {
   width: 100%;
   background-image: url("../img/codigo.png");
   background-size: auto;
-  background-position: center;
-  background-color: whitesmoke;
+  background-position: top;
+  background-color: #f5f5f5;
+  border: 0 solid #133f3f;
+  border-width: 8px 0 8px 0;
 }
 
 main > section > article {
+  z-index: 6;
   width: 90%;
-  margin: 30vh auto;
-  padding-bottom: 5vh;
+  margin: 0 auto 95vh auto;
   background-color: #b0c4de;
-  border: 4px solid #133f3f;
-  border-radius: 8px;
+  border: 2px outset #0c680c;
+  border-radius: 4px;
 }
 
 h1, h2, h3 {
@@ -1022,24 +1029,46 @@ h1, h2, h3 {
 }
 
 main h2 {
-  z-index: 3;
+  z-index: 4;
   position: relative;
-  top: 15vh;
-  padding: 2vh 1vw;
-  font-size: 3rem;
-  color: #133f3f;
-  text-shadow: 1px 1px 0 whitesmoke;
-  background-color: #8fbc8f;
-  border: 8px solid #133f3f;
+  margin: 47.5vh 0;
+  padding: 2vh 1vw 4vh 1vw;
+  color: #f5f5f5;
+  text-shadow: 2px 1px 0 #0d0d5c;
+  background-color: #438f8f;
+  border: 0 solid #133f3f;
   border-width: 8px 0 8px 0;
 }
 
 main h3 {
-  padding: 1vh 1vw;
-  font-size: 2rem;
-  color: whitesmoke;
-  text-shadow: 2px 2px 0 black;
-  background-color: #0a43ee;
-  border-bottom: 2px solid #133f3f;
+  padding: 1vh 1vw 0 1vw;
+  color: #ffae17;
+  text-shadow: 1px 1px 0 black;
+  background-color: #67ce6a;
+  border-bottom: 2px solid #1ebe1e;
 }
 
+@media screen and (max-width: 480px) {
+  body section h2 {
+    font-size: 2rem;
+  }
+  body article h3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  body section h2 {
+    font-size: 4rem;
+  }
+  body article h3 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 981px) {
+  body section h2 {
+    font-size: 5rem;
+  }
+  body article h3 {
+    font-size: 4rem;
+  }
+}

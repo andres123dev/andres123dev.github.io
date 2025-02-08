@@ -30,8 +30,8 @@ body > header p {
 body > header > button {
   position: absolute;
   top: 2px;
-  background-color: whitesmoke;
-  border-color: #006400;
+  background-color: #f5f5f5;
+  border-color: #0c680c;
   border-width: 2px 2px 0 0;
   border-style: outset;
   border-radius: 4px;
@@ -42,7 +42,7 @@ body > header > button {
 }
 
 body > header > button:hover {
-  background-color: #8fbc8f;
+  background-color: #75a075;
 }
 
 body > header > button {
@@ -106,21 +106,21 @@ body > nav > ul > li a {
 body > nav > ul {
   position: absolute;
   right: 0;
-  border: 0 outset #55b559;
+  border: 0 outset #67ce6a;
   border-width: 0 0 2px 2px;
 }
 
 body > nav > ul > li {
-  background-color: #006400;
-  border: 2px outset #55b559;
+  background-color: #0c680c;
+  border: 2px outset #67ce6a;
 }
 
 body > nav > ul > li > a {
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 body > nav > ul > li:hover {
-  background-color: #00ab00;
+  background-color: #1ebe1e;
 }
 
 body > nav > ul > li:hover > a {
@@ -128,12 +128,12 @@ body > nav > ul > li:hover > a {
 }
 
 body > nav > ul > li > ul > li {
-  background-color: #55b559;
-  border: 1px outset #006400;
+  background-color: #67ce6a;
+  border: 1px outset #0c680c;
 }
 
 body > nav > ul > li > ul > li > a {
-  color: whitesmoke;
+  color: #f5f5f5;
   text-shadow: 1px 1px 0 black;
 }
 
@@ -146,20 +146,20 @@ body > nav > ul > li > ul > li > ul {
 }
 
 body > nav > ul > li > ul > li > ul > li {
-  background-color: #8fbc8f;
-  border: 1px outset #00ab00;
+  background-color: #75a075;
+  border: 1px outset #1ebe1e;
 }
 
 body > nav > ul > li > ul > li > ul > li > a {
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover > a {
-  color: #006400;
+  color: #0c680c;
 }
 
 body > nav > ul li {
@@ -178,26 +178,26 @@ body > nav > ul > li button.boton-mostrar-submenu {
   font-weight: bold;
   border-width: 0 2px 2px 2px;
   border-radius: 0 0 0 7px;
-  border-color: #8fbc8f;
+  border-color: #75a075;
 }
 
 body > nav > ul > li > button {
-  color: #006400;
-  background-color: whitesmoke;
+  color: #0c680c;
+  background-color: #f5f5f5;
 }
 
 body > nav > ul > li:hover > button {
-  background-color: #8fbc8f;
-  border-color: #00ab00;
+  background-color: #75a075;
+  border-color: #1ebe1e;
 }
 
 body > nav > ul > li > ul > li > button {
-  color: whitesmoke;
-  background-color: #006400;
+  color: #f5f5f5;
+  background-color: #0c680c;
 }
 
 body > nav > ul > li > ul > li:hover > button {
-  background-color: #00ab00;
+  background-color: #1ebe1e;
 }
 
 @media screen and (max-width: 480px) {
@@ -226,14 +226,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #00ab00;
-  border-bottom: 4px solid #006400;
+  background-color: #1ebe1e;
+  border-bottom: 4px solid #0c680c;
 }
 
 header p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
-  color: whitesmoke;
+  color: #f5f5f5;
   text-shadow: 2px 2px 0 black;
 }
 
@@ -264,8 +264,8 @@ main a:hover {
 footer {
   z-index: 5;
   width: 100%;
-  background-color: #00ab00;
-  border-top: 10px solid #006400;
+  background-color: #1ebe1e;
+  border-top: 10px solid #0c680c;
 }
 
 footer p,
@@ -273,7 +273,7 @@ footer ul,
 footer a {
   padding: 4px;
   font-family: "Courier New", Courier, monospace;
-  color: whitesmoke;
+  color: #f5f5f5;
   text-shadow: 2px 1px 0 #133f3f;
 }
 
@@ -283,7 +283,7 @@ footer > div a {
 
 footer > div a:hover {
   text-decoration: underline;
-  color: #ff9717;
+  color: #ffae17;
 }
 
 .mini, .medio, .grande {
@@ -346,11 +346,11 @@ footer div > * {
 @media screen and (max-width: 480px) {
   main {
     top: 60px;
-    height: 80vh;
+    height: 79vh;
   }
   footer p,
   footer a {
-    font-size: 0.8remb;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -402,4 +402,3 @@ main p,
 main a {
   font-size: 1rem !important;
 }
-
