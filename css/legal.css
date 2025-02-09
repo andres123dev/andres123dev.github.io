@@ -19,21 +19,19 @@ body, html {
   width: 100%;
 }
 
-body > header {
-  overflow: hidden;
-}
-
 body > header p {
   padding: 2px 0 0 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  color: #f5f5f5;
+  text-shadow: 2px 2px 0 black;
 }
 
 body > header > button {
   position: absolute;
   top: 2px;
   background-color: #f5f5f5;
-  border-color: #0c680c;
-  border-width: 2px 2px 0 0;
-  border-style: outset;
+  border: 2px outset #2e8b57;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,6 +41,7 @@ body > header > button {
 
 body > header > button:hover {
   background-color: #75a075;
+  border-style: inset;
 }
 
 body > header > button {
@@ -95,9 +94,13 @@ body > nav ul {
   border-radius: 0 0 0 4px;
 }
 
+body > nav ul ul {
+  padding-left: 25px;
+}
+
 body > nav > ul > li a {
   display: block;
-  padding: 1vh 4vw;
+  padding: 2vh 4vw 1vh 2vw;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -106,30 +109,36 @@ body > nav > ul > li a {
 body > nav > ul {
   position: absolute;
   right: 0;
-  border: 0 outset #67ce6a;
+  border: 0 outset #0c680c;
   border-width: 0 0 2px 2px;
 }
 
 body > nav > ul > li {
-  background-color: #0c680c;
-  border: 2px outset #67ce6a;
+  background-color: #f5f5f5;
+  border-top: 2px outset #0c680c;
 }
 
 body > nav > ul > li > a {
-  color: #f5f5f5;
+  color: #0d0d5c;
 }
 
 body > nav > ul > li:hover {
-  background-color: #1ebe1e;
+  background-color: #2e8b57;
 }
 
 body > nav > ul > li:hover > a {
+  color: #f5f5f5;
   text-shadow: 1px 1px 0 black;
+}
+
+body > nav > ul > li > ul {
+  border: 0 outset #2e8b57;
+  border-width: 0 0 2px 2px;
 }
 
 body > nav > ul > li > ul > li {
   background-color: #67ce6a;
-  border: 1px outset #0c680c;
+  border-top: 2px outset #2e8b57;
 }
 
 body > nav > ul > li > ul > li > a {
@@ -138,28 +147,25 @@ body > nav > ul > li > ul > li > a {
 }
 
 body > nav > ul > li > ul > li:hover {
-  background-color: #b0c4de;
-}
-
-body > nav > ul > li > ul > li > ul {
-  padding-left: 20px;
+  background-color: #75a075;
 }
 
 body > nav > ul > li > ul > li > ul > li {
-  background-color: #75a075;
-  border: 1px outset #1ebe1e;
+  background-color: #b0c4de;
+  border: 1px outset #133f3f;
 }
 
 body > nav > ul > li > ul > li > ul > li > a {
-  color: #f5f5f5;
+  color: #0d0d5c;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover {
-  background-color: #f5f5f5;
+  background-color: #2e5de9;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover > a {
-  color: #0c680c;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 black;
 }
 
 body > nav > ul li {
@@ -178,26 +184,27 @@ body > nav > ul > li button.boton-mostrar-submenu {
   font-weight: bold;
   border-width: 0 2px 2px 2px;
   border-radius: 0 0 0 7px;
-  border-color: #75a075;
-}
-
-body > nav > ul > li > button {
-  color: #0c680c;
-  background-color: #f5f5f5;
-}
-
-body > nav > ul > li:hover > button {
-  background-color: #75a075;
   border-color: #1ebe1e;
 }
 
-body > nav > ul > li > ul > li > button {
+body > nav > ul > li > button {
   color: #f5f5f5;
   background-color: #0c680c;
 }
 
-body > nav > ul > li > ul > li:hover > button {
+body > nav > ul > li:hover > button {
+  color: #0c680c;
   background-color: #1ebe1e;
+}
+
+body > nav > ul > li > ul > li > button {
+  color: #0c680c;
+  background-color: #f5f5f5;
+}
+
+body > nav > ul > li > ul > li:hover > button {
+  color: #0c680c;
+  background-color: #ffae17;
 }
 
 @media screen and (max-width: 480px) {
@@ -207,7 +214,7 @@ body > nav > ul > li > ul > li:hover > button {
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
   body > nav > ul {
-    min-width: 50vw;
+    min-width: 60vw;
   }
 }
 @media screen and (min-width: 981px) {
@@ -230,31 +237,20 @@ header {
   border-bottom: 4px solid #0c680c;
 }
 
-header p {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 2rem;
-  color: #f5f5f5;
-  text-shadow: 2px 2px 0 black;
-}
-
 body > nav {
   z-index: 8;
   position: fixed;
   width: 100%;
 }
 
-main {
-  width: 100%;
-}
-
 main > section > article > p {
-  margin: 4vh 2vw;
+  margin: 2vh 2vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.4rem;
 }
 
 main a {
-  color: #0a43ee;
+  color: #2e5de9;
 }
 
 main a:hover {
@@ -265,7 +261,7 @@ footer {
   z-index: 5;
   width: 100%;
   background-color: #1ebe1e;
-  border-top: 10px solid #0c680c;
+  border-top: 0 solid #0c680c;
 }
 
 footer p,
@@ -294,15 +290,6 @@ footer > div a:hover {
   .mini {
     display: inline-block !important;
   }
-  header p,
-  figure p,
-  h1, h2, h3 {
-    font-weight: bold;
-    font-family: "Courier New", Courier, monospace !important;
-  }
-  footer > div:last-of-type {
-    font-size: 0.7rem;
-  }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
   .medio {
@@ -314,20 +301,38 @@ footer > div a:hover {
     display: inline-block !important;
   }
 }
+@media screen and (max-width: 480px) {
+  header p,
+  nav a,
+  body > figure > figcaption > p,
+  h1, h2, h3 {
+    font-family: "Courier New", Courier, monospace;
+  }
+  footer > div:last-of-type {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 481px) {
+  header p,
+  body > figure > figcaption > p,
+  h1, h2, h3 {
+    letter-spacing: 1px;
+  }
+}
 body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-image: url("../img/codigo.png");
+  background-image: url("../img/fondos/codigo.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-size: auto;
   background-position: center;
 }
 
 main {
   position: absolute;
   left: 2vw;
-  width: 94vw;
+  right: 2vw;
   z-index: 5;
 }
 
@@ -335,6 +340,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
+  border-top-width: 4px;
 }
 
 footer div > * {
@@ -346,24 +352,19 @@ footer div > * {
 @media screen and (max-width: 480px) {
   main {
     top: 60px;
-    height: 79vh;
-  }
-  footer p,
-  footer a {
-    font-size: 0.8rem;
+    bottom: 45px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
   main {
     top: 55px;
-    height: 75vh;
+    bottom: 45px;
   }
 }
 @media screen and (min-width: 981px) {
   main {
-    top: 49px;
-    top: 55px;
-    height: 80vh;
+    top: 60px;
+    bottom: 45px;
   }
 }
 @media screen and (max-width: 980px) {
@@ -381,24 +382,41 @@ footer div > * {
 }
 main {
   overflow-y: auto;
-  border: 2px outset darkgoldenrod;
-}
-
-main > section > article {
-  padding: 4vh 2vw;
   color: #0d0d5c;
   background-color: #b0c4de;
-}
-
-main > section > article:last-of-type {
-  padding-bottom: 20vh;
-}
-
-h2, h3 {
-  font-size: 2rem;
+  border: 2px outset darkgoldenrod;
 }
 
 main p,
 main a {
   font-size: 1rem !important;
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  main > section > article {
+    padding: 0 1vh 2vh 1vw;
+  }
+  main > section > article:last-of-type {
+    padding-bottom: 10vh;
+  }
+}
+@media screen and (min-width: 481px) {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  main > section > article {
+    padding: 4vh 2vw;
+  }
+  main > section > article:last-of-type {
+    padding-bottom: 20vh;
+  }
 }

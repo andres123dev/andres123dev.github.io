@@ -8,6 +8,12 @@
  *
  */
 "use strict";
+function isIosDevice() {
+    if (/^(iPhone|iPod|iPad)/.test(navigator.userAgent)) {
+        return true;
+    }
+    return false;
+}
 function isAppleDevice() {
     if (/^(iPhone|iPod|iPad|Mac OS)/.test(navigator.userAgent)) {
         return true;
@@ -48,6 +54,7 @@ function addListenerBtnSubmenu() {
             if (menuSubPanelSwitchButtons[i]) {
                 menuSubPanelSwitchButtons[i].addEventListener('click', function (evt) {
                     if (submenuPanels[i]) {
+                        menuSubPanelSwitchButtons[i].innerText = (submenuPanels[i].style.display == 'none') ? '^' : 'v';
                         submenuPanels[i].style.display = (submenuPanels[i].style.display == 'none') ? 'block' : 'none';
                     }
                 });
@@ -69,14 +76,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     document.oncopy = function () {
-        alert('TeCodeo.com\nCopyright 2020-2021\nTodos los derechos reservados');
+        alert('Andres Fernandez Buron\nCopyright 2020\nTodos los derechos reservados');
         return false;
     };
     document.oncut = function () {
-        alert('TeCodeo.com\nCopyright 2020-2021\nTodos los derechos reservados');
+        alert('Andres Fernandez Buron\nCopyright 2020\nTodos los derechos reservados');
         return false;
     };
     window.onload = function () { document.onselectstart = function () { return false; }; };
     document.oncontextmenu = function () { return false; };
     window.onload = function () { document.onmousedown = function () { return false; }; };
+
 });
