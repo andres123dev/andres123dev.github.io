@@ -184,7 +184,7 @@ body > nav > ul > li button.boton-mostrar-submenu {
   font-weight: bold;
   border-width: 0 2px 2px 2px;
   border-radius: 0 0 0 7px;
-  border-color: #1ebe1e;
+  border-color: #0c680c;
 }
 
 body > nav > ul > li > button {
@@ -193,7 +193,6 @@ body > nav > ul > li > button {
 }
 
 body > nav > ul > li:hover > button {
-  color: #0c680c;
   background-color: #1ebe1e;
 }
 
@@ -203,7 +202,6 @@ body > nav > ul > li > ul > li > button {
 }
 
 body > nav > ul > li > ul > li:hover > button {
-  color: #0c680c;
   background-color: #ffae17;
 }
 
@@ -363,7 +361,6 @@ figure > div {
 
 main {
   position: relative;
-  top: 100vh;
   left: 0;
 }
 
@@ -386,8 +383,11 @@ footer {
 
 @media screen and (max-width: 480px) {
   body > figure > figcaption > p {
-    padding: 3vh 0;
-    font-size: 5rem;
+    padding: 2vh 0;
+    font-size: 4rem;
+  }
+  body > main {
+    top: 90vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -395,11 +395,17 @@ footer {
     padding: 1vh 0;
     font-size: 5rem;
   }
+  body > main {
+    top: 100vh;
+  }
 }
 @media screen and (min-width: 981px) {
   body > figure > figcaption > p {
     padding: 1vh 0 0 0;
     font-size: 6rem;
+  }
+  body > main {
+    top: 100vh;
   }
 }
 footer > div > figure {
@@ -568,10 +574,6 @@ footer > div:last-of-type {
     clear: both;
   }
 }
-header {
-  border-bottom-width: 4px;
-}
-
 main {
   width: 100%;
 }
@@ -580,20 +582,14 @@ main > section > article {
   color: #0d0d5c;
 }
 
+main > section > article p {
+  margin-top: 4vh;
+}
+
 footer {
   border-top-width: 10px;
 }
 
-@media screen and (max-width: 480px) {
-  footer {
-    border-top-width: 4px;
-  }
-}
-@media screen and (min-width: 481px) {
-  footer {
-    border-top-width: 10px;
-  }
-}
 body > figure:first-of-type {
   z-index: 2;
   background-image: url("../img/fondos/codigo.png");
@@ -634,17 +630,13 @@ main > section > article:not(:last-of-type) {
   margin-bottom: 47.5vh;
 }
 
-main > section > article p {
-  margin-top: 4vh;
-}
-
 @media screen and (max-width: 480px) {
   body > figure:first-of-type {
     background-size: cover;
     background-position: bottom;
   }
   body > figure:nth-of-type(2) > figcaption > p {
-    top: 20vh;
+    top: 15vh;
   }
   body > figure:nth-of-type(3) {
     background-size: 100%;
@@ -673,7 +665,8 @@ main > section > article p {
     top: 15vh;
   }
   body > figure:nth-of-type(3) {
-    background-size: 50%;
+    background-size: 40%;
     background-position: left bottom;
   }
 }
+

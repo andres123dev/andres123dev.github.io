@@ -184,7 +184,7 @@ body > nav > ul > li button.boton-mostrar-submenu {
   font-weight: bold;
   border-width: 0 2px 2px 2px;
   border-radius: 0 0 0 7px;
-  border-color: #1ebe1e;
+  border-color: #0c680c;
 }
 
 body > nav > ul > li > button {
@@ -193,7 +193,6 @@ body > nav > ul > li > button {
 }
 
 body > nav > ul > li:hover > button {
-  color: #0c680c;
   background-color: #1ebe1e;
 }
 
@@ -203,7 +202,6 @@ body > nav > ul > li > ul > li > button {
 }
 
 body > nav > ul > li > ul > li:hover > button {
-  color: #0c680c;
   background-color: #ffae17;
 }
 
