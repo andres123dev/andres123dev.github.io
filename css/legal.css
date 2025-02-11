@@ -396,6 +396,7 @@ footer > div > p {
   footer > div > * {
     min-width: 45%;
     font-size: 0.7rem;
+    text-shadow: none;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -431,10 +432,13 @@ main {
 
 @media screen and (max-width: 480px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  main > section {
+    padding: 1vh 1vw;
   }
   main > section > article {
     padding: 0 1vh 2vh 1vw;
