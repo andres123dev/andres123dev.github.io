@@ -89,12 +89,17 @@ body > header > button:hover {
     top: 49px;
   }
 }
+body > nav {
+  display: none;
+}
+
 body > nav ul {
   list-style: none;
   border-radius: 0 0 0 4px;
 }
 
 body > nav ul ul {
+  display: none;
   padding-left: 25px;
 }
 
@@ -241,43 +246,68 @@ body > nav {
   width: 100%;
 }
 
-main > section > article > p {
-  margin: 2vh 2vw;
+main > section > article p,
+main > section > article ul,
+main > section > article p a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.4rem;
 }
 
-main a {
+main > section > article p {
+  margin: 1vh 2vw;
+  color: #133f3f;
+}
+
+main article p b {
+  color: #2e8b57;
+  text-shadow: 1px 1px 0 #133f3f;
+}
+
+main article p a {
   color: #2e5de9;
 }
 
-main a:hover {
+main article p a:hover {
   text-decoration: none;
+  color: #ffae17;
+  text-shadow: 1px 1px 0 #133f3f;
+}
+
+main > section > article ul {
+  padding-left: 40px;
+  list-style: circle;
+}
+
+main > section > article ul > li {
+  padding-bottom: 10px;
 }
 
 footer {
-  z-index: 5;
   width: 100%;
-  background-color: #1ebe1e;
-  border-top: 0 solid #0c680c;
+  border-top: 0 solid #f5f5f5;
 }
 
-footer p,
-footer ul,
-footer a {
-  padding: 4px;
+footer > div p,
+footer > div ul,
+footer > div a {
+  padding: 1vh 1vw;
   font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   color: #f5f5f5;
-  text-shadow: 2px 1px 0 #133f3f;
+  text-shadow: 1px 1px 0 #133f3f;
 }
 
 footer > div a {
+  padding: 2vh 1vw;
   text-decoration: none;
 }
 
 footer > div a:hover {
   text-decoration: underline;
+}
+
+footer > div ul a:hover {
   color: #ffae17;
+  text-decoration: none;
 }
 
 .mini, .medio, .grande {
@@ -301,19 +331,23 @@ footer > div a:hover {
 }
 @media screen and (max-width: 480px) {
   header p,
-  nav a,
   body > figure > figcaption > p,
   h1, h2, h3 {
     font-family: "Courier New", Courier, monospace;
   }
-  footer > div:last-of-type {
+  footer > div * {
+    font-family: "Courier New", Courier, monospace;
+  }
+  footer > div:nth-of-type(3) {
     font-size: 0.7rem;
+    text-shadow: none;
   }
 }
 @media screen and (min-width: 481px) {
   header p,
   body > figure > figcaption > p,
   h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     letter-spacing: 1px;
   }
 }
@@ -337,10 +371,10 @@ body > figure:last-of-type {
 body > figure > figcaption > p {
   position: absolute;
   width: 100%;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", Arial, Helvetica, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
-  color: #133f3f;
-  text-shadow: 1px 1px 0 #f5f5f5;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 #133f3f;
   background-color: #ffae17;
   border: 0 solid #438f8f;
   border-width: 8px 0 8px 0;
@@ -379,19 +413,39 @@ main > section > article {
 footer {
   position: relative;
   top: 100vh;
+  height: 91vh;
+  border-top-width: 10px;
+}
+
+footer > div:not(:last-of-type) {
+  position: relative;
+}
+
+footer > div:last-of-type {
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-width: 10px;
+  border-top: 0 solid transparent;
+  background-color: #2e8b57;
 }
 
 @media screen and (max-width: 480px) {
   body > figure > figcaption > p {
+    top: 15vh;
     padding: 2vh 0;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   body > main {
-    top: 90vh;
+    top: 87vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
   body > figure > figcaption > p {
+    top: 15vh;
     padding: 1vh 0;
     font-size: 5rem;
   }
@@ -401,6 +455,7 @@ footer {
 }
 @media screen and (min-width: 981px) {
   body > figure > figcaption > p {
+    top: 15vh;
     padding: 1vh 0 0 0;
     font-size: 6rem;
   }
@@ -408,14 +463,14 @@ footer {
     top: 100vh;
   }
 }
-footer > div > figure {
+footer > div:nth-of-type(2) > figure {
   height: 35vh;
   width: 100%;
   margin: 0 auto;
   animation: pc-enciende 2.5s 0s cubic-bezier(1, 0, 0, 1) forwards, pc-escribe-codigo 8s 2.5s infinite ease-in-out;
 }
 
-footer > div > figure > figcaption {
+footer > div:nth-of-type(2) > figure > figcaption {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -475,10 +530,6 @@ footer > div > figure > figcaption {
     background-image: url("../img/anim-footer/ordenador-3.png"), url("../img/anim-footer/codigo-8.png");
   }
 }
-footer {
-  min-height: 60vh;
-}
-
 footer > div {
   font-weight: bold;
 }
@@ -487,12 +538,16 @@ footer > div:first-of-type {
   padding: 1vh 0 0 4vw;
 }
 
+footer > div:first-of-type ul {
+  width: 100%;
+}
+
 footer > div:first-of-type > ul {
-  list-style: disc;
+  list-style: square;
 }
 
 footer > div:first-of-type > ul > li > ul {
-  list-style: square;
+  list-style: disc;
 }
 
 footer > div:first-of-type > ul > li > ul > li > ul {
@@ -510,13 +565,18 @@ body > footer > div:nth-of-type(2) > figure {
   background-position: center;
 }
 
-footer > div:last-of-type {
+footer > div:nth-of-type(3) {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding-bottom: 1vh;
   text-align: center;
+}
+
+footer > div:nth-of-type(3) > * {
+  display: inline-block;
+  min-width: 25%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -528,16 +588,16 @@ footer > div:last-of-type {
     width: 50%;
   }
   footer > div:first-of-type ul {
-    padding: 0 0 4vh 1vw;
+    margin: 0 0 4vh 1vw;
   }
   footer > div:first-of-type ul ul {
-    padding-left: 4vw;
+    margin-left: 5vw;
   }
   footer > div:nth-of-type(2) {
     float: right;
     width: 45%;
   }
-  footer > div:last-of-type {
+  footer > div:nth-of-type(3) {
     clear: both;
   }
 }
@@ -545,14 +605,12 @@ footer > div:last-of-type {
   footer {
     overflow: hidden;
   }
-  footer > div:first-of-type > ul {
+  footer div:first-of-type > ul {
+    overflow: hidden;
     padding: 1vh 1vw 4vh 1vw;
   }
   footer > div:first-of-type > ul ul {
     padding-left: 4vw;
-  }
-  footer div:first-of-type > ul {
-    overflow: hidden;
   }
   footer div:first-of-type > ul > li {
     float: left;
@@ -570,7 +628,7 @@ footer > div:last-of-type {
     float: right;
     width: 50%;
   }
-  footer > div:last-of-type {
+  footer > div:nth-of-type(3) {
     clear: both;
   }
 }
@@ -578,30 +636,47 @@ main {
   width: 100%;
 }
 
-main > section > article {
-  color: #0d0d5c;
+@media screen and (max-width: 480px) {
+  main > section > article p {
+    margin-top: 2vh;
+  }
 }
-
-main > section > article p {
-  margin-top: 4vh;
+@media screen and (min-width: 481px) {
+  main > section > article p {
+    margin-top: 4vh;
+  }
 }
-
-footer {
-  border-top-width: 10px;
+@media screen and (max-width: 480px) {
+  footer {
+    font-size: 1.4rem;
+  }
 }
-
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  footer > div:not(:nth-of-type(2)) {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 981px) {
+  footer {
+    font-size: 1.2rem;
+  }
+}
 body > figure:first-of-type {
   z-index: 2;
   background-image: url("../img/fondos/codigo.png");
   background-repeat: no-repeat;
 }
 
-body > figure:nth-of-type(2),
-body > figure:nth-of-type(3) {
+body > figure:nth-of-type(2) {
   z-index: 3;
 }
 
+body > figure:nth-of-type(2) > figcaption > p {
+  top: 20vh;
+}
+
 body > figure:nth-of-type(3) {
+  z-index: 5;
   background-image: url("../img/siluetas/perfil.png");
   background-repeat: no-repeat;
 }
@@ -618,7 +693,7 @@ main > section {
 }
 
 main > section > article {
-  z-index: 4;
+  z-index: 6;
   min-height: 95vh;
   padding: 4vh 1vw;
   background-color: #f5f5f5;
@@ -630,13 +705,20 @@ main > section > article:not(:last-of-type) {
   margin-bottom: 47.5vh;
 }
 
+main > section > article p,
+main > section > article ul,
+main > section > article p a {
+  font-size: 1.4rem;
+}
+
+footer > div:not(:last-of-type) {
+  z-index: 5;
+}
+
 @media screen and (max-width: 480px) {
   body > figure:first-of-type {
     background-size: cover;
     background-position: bottom;
-  }
-  body > figure:nth-of-type(2) > figcaption > p {
-    top: 15vh;
   }
   body > figure:nth-of-type(3) {
     background-size: 100%;
@@ -648,11 +730,8 @@ main > section > article:not(:last-of-type) {
     background-size: auto;
     background-position: bottom;
   }
-  body > figure:nth-of-type(2) > figcaption > p {
-    top: 15vh;
-  }
   body > figure:nth-of-type(3) {
-    background-size: 80%;
+    background-size: 70%;
     background-position: left bottom;
   }
 }
@@ -661,12 +740,8 @@ main > section > article:not(:last-of-type) {
     background-size: cover;
     background-position: top;
   }
-  body > figure:nth-of-type(2) > figcaption > p {
-    top: 15vh;
-  }
   body > figure:nth-of-type(3) {
     background-size: 40%;
     background-position: left bottom;
   }
 }
-

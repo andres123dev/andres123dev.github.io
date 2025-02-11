@@ -17,20 +17,20 @@
     <meta name="revisit-after" content="30 days">
     <meta name="google" content="translate">
     <meta name="HandheldFriendly" content="true">
-    <link rel="shortcut icon" sizes="150x150" href="img/logo.png">
     <meta name="application-name" content="andres123dev">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="green">
+    <link rel="shortcut icon" sizes="196x196" href="img/logo.png">
     <meta name="apple-mobile-web-app-title" content="andres123dev">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="green-translucent">
-    <link name="apple-touch-icon" href="img/logo.png">
-    <link name="apple-touch-icon-precomposed" href="img/logo.png" sizes="150x150">
+    <link name="apple-touch-icon" href="img/iconos/logo.png">
+    <link name="apple-touch-icon-precomposed" href="img/iconos/logo.png" sizes="114x114">
     <meta name="format-detection" content="telephone=no">
     <link rel="prefetch" href="img/botones/btn-mostrar-menu.png">
     <link rel="prefetch" href="img/botones/btn-mostrar-menu-pulsado.png">
-    <link rel="prefetch" href="img/codigo.png">
-    <link rel="prefetch" href="img/perfil.png">
+    <link rel="prefetch" href="img/fondos/codigo.png">
+    <link rel="prefetch" href="img/siluetas/perfil.png">
     <link rel="prefetch" href="img/ordenador-footer.png">
     <link rel="prefetch" href="img/anim-footer/prompt-0.png">
     <link rel="prefetch" href="img/anim-footer/prompt-1.png">
@@ -85,7 +85,6 @@
             </li>
         </ul>
     </nav>
-
     <figure></figure>
     <figure>
         <figcaption>
@@ -93,44 +92,34 @@
         </figcaption>
     </figure>
     <figure></figure>
-    
     <figure>
         <div></div>
-        <!--
-        <div></div>
-            <img src="img/siluetas/perfil.png" alt="Silueta de un programador de perfil" srcset="">
-            <img src="img/hoja-datos.png" alt="Una hoja con datos" srcset="">
-            <img src="img/pantalla-escritorio.png" alt="Un escritorio con una pantalla" srcset="">
-            <img src="img/fondo_parallax_4.jpg" alt="Un programador de pie" srcset="">
-            <img src="img/pantalla-datos.png" alt="Una pantalla con datos" srcset="">
-            <img src="img/movil.png" alt="Un programador de perfil" srcset="">
-        -->
     </figure>
-    
     <main>
-        
         <section>
             <article>
-                <p>Hola, muy buenas. Soy Andrés Fernández Burón.</p>
-                <p>Bienvenido a la página principal de mi sitio web frontend.</p>
-                <p>Todo el código fuente ha sido escrito por mí utilizando los lenguajes HTML 5, CSS 3 y vanilla JavaScript.</p>
-                <p>Además he utilizado TypeScript y el preprocesador SASS.</p>
+                <p><b>Hola, muy buenas</b>, soy Andrés Fernández Burón.</p>
+                <p><b>Bienvenido a la página principal</b> de mi sitio web frontend.</p>
+                <p>Todo <b>el código fuente ha sido escrito por mí desde cero utilizando</b> los lenguajes <b>HTML 5</b>, <b>CSS 3</b> y <b>vanilla JavaScript</b>.</p>
+                <p>Además he utilizado <b>TypeScript</b> y el preprocesador <b>SASS</b>.</p>
                 <noscript>
-                    <p>Para poder utilizar los botones y las aplicaciones, tienes que tener habilitado JavaScript en tu navegador.</p>
+                    <p>Para poder utilizar los botones y las aplicaciones, tienes que tener habilitado JavaScript en tu navegador web.</p>
                 </noscript>
+                <p>Recientemente<b> he publicado algunos proyectos propios</b> en mi cuenta de GitHub (<a href="https://github.com/andres123dev/" target="_blank">andres123dev</a>), que están disponibles cómo repositorio público.</p>
             </article>
             <article>
-                <p>En la sección de <a href="software.html">Software</a>, puedes ver un resumen de las aplicaciones cuyo repositorio he publicado en mi cuenta de GitHub <a href="https://github.com/andres123dev/" target="_blank">andres123dev</a>.</p>
-                <p>Cómo puedes ver, hay algunas aplicaciones escritas con <a href="software.html#python3">Python 3</a>.</p>
-                <p>Y también hay algunas aplicaciones web, tanto <a href="software.html#frontend">front-end</a> cómo <a href="software.html#fullstack">full-stack</a>.</p>
+                <p><b>En la sección de Software puedes ver</b> un <a href="software.html">resumen de las aplicaciones</a> que he publicado.</p>
+                <p>Cómo puedes ver, <b>hay algunas aplicaciones escritas con Python 3</b>, enfocadas en el <a href="software.html#python3">análisis de respuestas HTTP</a>.</p>
+                <p><b>Además hay algunas aplicaciones web</b>.</p>
+                <p>Dos <a href="software.html#frontend">pizarras front-end </a> para pintar.
+                    <br> Una escrita con <b>vanilla JavaScript</b> y otra con <b>jQuery</b>.
+                    <br> Además de este sitio web.</p>
+                <p>También una pequeña aplicación web full-stack, que consiste en <a href="software.html#fullstack">un CRUD (Create-Read-Update-Delete)</a> conectado a una base de datos de MariaDB.</p>
+                <p>En el frontend utilizo <b>Bootstrap 5</b> y realizo las peticiones de forma asíncrona con <b>jQuery</b> y <b>AJAX</b>.
+                    <br> El back-end lo he escrito con el lenguaje <b>PHP</b>.</p>
             </article>
         </section>
-        
-        <!--
-            <div></div>
-        -->
         <div></div>
-        
     </main>
     <footer>
         <div class="medio grande">
@@ -162,7 +151,7 @@
             <figure> <figcaption></figcaption> </figure>
             <div>
                 <p> Andrés Fernández Burón </p>
-                <p> Copyright 2020 &copy; </p>
+                <p> Copyright 2020-<span id="anio"></span> &copy; </p>
                 <p> All rights reserved </p>
             </div>
         </div>
@@ -171,6 +160,7 @@
             <a href="aviso-legal.html#condiciones-de-uso" target="_blank">Condiciones <span class="grande">de Uso</span> </a>
             <a href="aviso-legal.html#politica-de-privacidad" target="_blank"> <span class="grande">Política de</span> Privacidad</a>
         </div>
+        <div></div>
     </footer>
 </body>
 </html>

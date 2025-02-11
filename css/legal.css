@@ -89,12 +89,17 @@ body > header > button:hover {
     top: 49px;
   }
 }
+body > nav {
+  display: none;
+}
+
 body > nav ul {
   list-style: none;
   border-radius: 0 0 0 4px;
 }
 
 body > nav ul ul {
+  display: none;
   padding-left: 25px;
 }
 
@@ -241,43 +246,68 @@ body > nav {
   width: 100%;
 }
 
-main > section > article > p {
-  margin: 2vh 2vw;
+main > section > article p,
+main > section > article ul,
+main > section > article p a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.4rem;
 }
 
-main a {
+main > section > article p {
+  margin: 1vh 2vw;
+  color: #133f3f;
+}
+
+main article p b {
+  color: #2e8b57;
+  text-shadow: 1px 1px 0 #133f3f;
+}
+
+main article p a {
   color: #2e5de9;
 }
 
-main a:hover {
+main article p a:hover {
   text-decoration: none;
+  color: #ffae17;
+  text-shadow: 1px 1px 0 #133f3f;
+}
+
+main > section > article ul {
+  padding-left: 40px;
+  list-style: circle;
+}
+
+main > section > article ul > li {
+  padding-bottom: 10px;
 }
 
 footer {
-  z-index: 5;
   width: 100%;
-  background-color: #1ebe1e;
-  border-top: 0 solid #0c680c;
+  border-top: 0 solid #f5f5f5;
 }
 
-footer p,
-footer ul,
-footer a {
-  padding: 4px;
+footer > div p,
+footer > div ul,
+footer > div a {
+  padding: 1vh 1vw;
   font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   color: #f5f5f5;
-  text-shadow: 2px 1px 0 #133f3f;
+  text-shadow: 1px 1px 0 #133f3f;
 }
 
 footer > div a {
+  padding: 2vh 1vw;
   text-decoration: none;
 }
 
 footer > div a:hover {
   text-decoration: underline;
+}
+
+footer > div ul a:hover {
   color: #ffae17;
+  text-decoration: none;
 }
 
 .mini, .medio, .grande {
@@ -301,19 +331,23 @@ footer > div a:hover {
 }
 @media screen and (max-width: 480px) {
   header p,
-  nav a,
   body > figure > figcaption > p,
   h1, h2, h3 {
     font-family: "Courier New", Courier, monospace;
   }
-  footer > div:last-of-type {
+  footer > div * {
+    font-family: "Courier New", Courier, monospace;
+  }
+  footer > div:nth-of-type(3) {
     font-size: 0.7rem;
+    text-shadow: none;
   }
 }
 @media screen and (min-width: 481px) {
   header p,
   body > figure > figcaption > p,
   h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     letter-spacing: 1px;
   }
 }
@@ -334,14 +368,21 @@ main {
   z-index: 5;
 }
 
+main > section > article {
+  color: #133f3f;
+}
+
 footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-top-width: 4px;
+  width: 100%;
+  text-align: center;
+  background-color: #1ebe1e;
+  border-top: 4px solid #0c680c;
 }
 
-footer div > * {
+footer > div > p {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
@@ -352,42 +393,40 @@ footer div > * {
     top: 60px;
     bottom: 45px;
   }
+  footer > div > * {
+    min-width: 45%;
+    font-size: 0.7rem;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
+  .medio {
+    display: inline-block !important;
+  }
   main {
     top: 55px;
     bottom: 45px;
   }
-}
-@media screen and (min-width: 981px) {
-  main {
-    top: 60px;
-    bottom: 45px;
-  }
-}
-@media screen and (max-width: 980px) {
-  footer div > * {
-    width: 45%;
+  footer > div > * {
+    min-width: 30%;
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 981px) {
   .grande {
     display: inline-block !important;
   }
-  footer div > * {
-    width: 30%;
+  main {
+    top: 60px;
+    bottom: 45px;
+  }
+  footer > div > * {
+    min-width: 30%;
   }
 }
 main {
   overflow-y: auto;
-  color: #0d0d5c;
   background-color: #b0c4de;
   border: 2px outset darkgoldenrod;
-}
-
-main p,
-main a {
-  font-size: 1rem !important;
 }
 
 @media screen and (max-width: 480px) {

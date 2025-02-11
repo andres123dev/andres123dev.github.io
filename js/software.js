@@ -1,5 +1,5 @@
 /** Andrés Fernández Burón
- *  Noviembre de 2020
+ *  Noviembre de 2021
  *
  *
  *  Aplicación web: Mi sitio web
@@ -16,18 +16,6 @@ function setCopyright() {
     if (spanAnio) {
         spanAnio.innerText = getStrYear().toString();
     }
-}
-function isIosDevice() {
-    if (/^(iPhone|iPod|iPad)/.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
-}
-function isAppleDevice() {
-    if (/^(iPhone|iPod|iPad|Mac OS)/.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
 }
 var mainMenuPanel;
 var menuSwitchButton;
@@ -75,19 +63,32 @@ function addListenerBtnSubmenu() {
         }
     }
 }
-document.addEventListener('DOMContentLoaded', function () {
-    initMenuButtons();
-    setCopyright();
-    if (isAppleDevice()) {
-        let message = `Aún hace falta ajustar el diseño responsivo del sitio 
-        para que se vea correctamente en los dispositivos de Apple.`;
-        let paragraph = document.createElement('p');
-        paragraph.innerText = message;
-        let container = document.querySelector('main > section > article:first-of-type');
-        if (container) {
-            container.appendChild(paragraph);
+var readMoreButtons;
+var readMorePanels;
+function initArticleButtons() {
+    readMoreButtons = document.querySelectorAll('main article button');
+    readMorePanels = Array();
+    if (readMoreButtons) {
+        for (let i = 0; i < readMoreButtons.length; i++) {
+            readMorePanels[i] = readMoreButtons[i].nextElementSibling;
+            if (readMoreButtons[i].nextElementSibling) {
+                readMorePanels[i].style.display = 'none';
+            }
+            if (readMoreButtons[i]) {
+                readMoreButtons[i].addEventListener('click', function (evt) {
+                    if (readMorePanels[i]) {
+                        readMoreButtons[i].innerText = (readMorePanels[i].style.display == 'none') ? 'Leer menos ...' : 'Leer más ...';
+                        readMorePanels[i].style.display = (readMorePanels[i].style.display == 'none') ? 'block' : 'none';
+                    }
+                });
+            }
         }
     }
+}
+document.addEventListener('DOMContentLoaded', function () {
+    initMenuButtons();
+    initArticleButtons();
+    setCopyright();
     document.oncopy = function () {
         alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados');
         return false;

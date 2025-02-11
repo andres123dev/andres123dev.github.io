@@ -17,18 +17,6 @@ function setCopyright() {
         spanAnio.innerText = getStrYear().toString();
     }
 }
-function isIosDevice() {
-    if (/^(iPhone|iPod|iPad)/.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
-}
-function isAppleDevice() {
-    if (/^(iPhone|iPod|iPad|Mac OS)/.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
-}
 var mainMenuPanel;
 var menuSwitchButton;
 var closerElements;
@@ -78,16 +66,6 @@ function addListenerBtnSubmenu() {
 document.addEventListener('DOMContentLoaded', function () {
     initMenuButtons();
     setCopyright();
-    if (isAppleDevice()) {
-        let message = `Aún hace falta ajustar el diseño responsivo del sitio 
-        para que se vea correctamente en los dispositivos de Apple.`;
-        let paragraph = document.createElement('p');
-        paragraph.innerText = message;
-        let container = document.querySelector('main > section > article:first-of-type');
-        if (container) {
-            container.appendChild(paragraph);
-        }
-    }
     document.oncopy = function () {
         alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados');
         return false;
