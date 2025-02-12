@@ -21,10 +21,11 @@ body, html {
 
 body > header p {
   padding: 2px 0 0 10px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   color: #f5f5f5;
   text-shadow: 2px 2px 0 black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 body > header > button {
@@ -39,6 +40,7 @@ body > header > button {
   cursor: pointer;
 }
 
+body > header > button.pulsado,
 body > header > button:hover {
   background-color: #75a075;
   border-style: inset;
@@ -49,6 +51,7 @@ body > header > button {
   background-image: url("../img/botones/btn-mostrar-menu.png");
 }
 
+body > header > button.pulsado,
 body > header > button:hover {
   background-image: url("../img/botones/btn-mostrar-menu-pulsado.png");
 }
@@ -103,12 +106,17 @@ body > nav ul ul {
   padding-left: 25px;
 }
 
+body > nav > ul li:hover > ul,
+body > nav > ul li.pulsado > ul {
+  display: inherit;
+}
+
 body > nav > ul > li a {
   display: block;
   padding: 2vh 4vw 1vh 2vw;
+  text-decoration: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
-  text-decoration: none;
 }
 
 body > nav > ul {
@@ -124,26 +132,24 @@ body > nav > ul > li {
 }
 
 body > nav > ul > li > a {
-  color: #0d0d5c;
+  color: #133f3f;
 }
 
-body > nav > ul > li:hover {
+body > nav > ul > li:hover,
+body > nav > ul > li.pulsado {
   background-color: #2e8b57;
 }
 
-body > nav > ul > li:hover > a {
+body > nav > ul > li:hover > a,
+body > nav > ul > li.pulsado > a {
   color: #f5f5f5;
   text-shadow: 1px 1px 0 black;
 }
 
-body > nav > ul > li > ul {
-  border: 0 outset #2e8b57;
-  border-width: 0 0 2px 2px;
-}
-
 body > nav > ul > li > ul > li {
   background-color: #67ce6a;
-  border-top: 2px outset #2e8b57;
+  border: 2px outset #0c680c;
+  border-width: 2px 0 0 2px;
 }
 
 body > nav > ul > li > ul > li > a {
@@ -151,7 +157,8 @@ body > nav > ul > li > ul > li > a {
   text-shadow: 1px 1px 0 black;
 }
 
-body > nav > ul > li > ul > li:hover {
+body > nav > ul > li > ul > li:hover,
+body > nav > ul > li > ul > li.pulsado {
   background-color: #75a075;
 }
 
@@ -164,11 +171,13 @@ body > nav > ul > li > ul > li > ul > li > a {
   color: #0d0d5c;
 }
 
-body > nav > ul > li > ul > li > ul > li:hover {
+body > nav > ul > li > ul > li > ul > li:hover,
+body > nav > ul > li > ul > li > ul > li.pulsado {
   background-color: #2e5de9;
 }
 
-body > nav > ul > li > ul > li > ul > li:hover > a {
+body > nav > ul > li > ul > li > ul > li:hover > a,
+body > nav > ul > li > ul > li > ul > li.pulsado > a {
   color: #f5f5f5;
   text-shadow: 1px 1px 0 black;
 }
@@ -181,15 +190,17 @@ body > nav > ul > li button.boton-mostrar-submenu {
   position: absolute;
   top: 0;
   right: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
 body > nav > ul > li button.boton-mostrar-submenu {
   padding: 4px 14px;
-  font-size: 1em;
-  font-weight: bold;
   border-width: 0 2px 2px 2px;
   border-radius: 0 0 0 7px;
   border-color: #0c680c;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
 body > nav > ul > li > button {
@@ -197,7 +208,8 @@ body > nav > ul > li > button {
   background-color: #0c680c;
 }
 
-body > nav > ul > li:hover > button {
+body > nav > ul > li:hover > button,
+body > nav > ul > li > button.pulsado {
   background-color: #1ebe1e;
 }
 
@@ -206,7 +218,8 @@ body > nav > ul > li > ul > li > button {
   background-color: #f5f5f5;
 }
 
-body > nav > ul > li > ul > li:hover > button {
+body > nav > ul > li > ul > li:hover > button,
+body > nav > ul > li > ul > li > button.pulsado {
   background-color: #ffae17;
 }
 
@@ -246,15 +259,10 @@ body > nav {
   width: 100%;
 }
 
-main > section > article p,
-main > section > article ul,
-main > section > article p a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 main > section > article p {
   margin: 1vh 2vw;
   color: #133f3f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main article p b {
@@ -264,6 +272,7 @@ main article p b {
 
 main article p a {
   color: #2e5de9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main article p a:hover {
@@ -275,6 +284,7 @@ main article p a:hover {
 main > section > article ul {
   padding-left: 40px;
   list-style: circle;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main > section > article ul > li {
@@ -290,10 +300,9 @@ footer > div p,
 footer > div ul,
 footer > div a {
   padding: 1vh 1vw;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
   color: #f5f5f5;
   text-shadow: 1px 1px 0 #133f3f;
+  font-family: "Courier New", Courier, monospace;
 }
 
 footer > div a {
@@ -334,7 +343,11 @@ footer > div ul a:hover {
   body > figure > figcaption > p,
   h1, h2, h3 {
     font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
   }
+  nav a,
+  main p,
+  main ul,
   footer > div * {
     font-family: "Courier New", Courier, monospace;
   }
