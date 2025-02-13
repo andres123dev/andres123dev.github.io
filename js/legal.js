@@ -8,7 +8,7 @@
  *
  *  Fichero con el script JS Principal de mi sitio web.
  *
- */
+ */ 
 "use strict";
 var mainMenuPanel;
 var menuSwitchButton;
@@ -93,15 +93,12 @@ function addListenerBtnSubmenu() {
 function getStrYear() {
     return (new Date()).getFullYear();
 }
-function setCopyright() {
+document.addEventListener('DOMContentLoaded', function () {
+    initMenuButtons();
     let spanAnio = document.getElementById('anio');
     if (spanAnio) {
         spanAnio.innerText = getStrYear().toString();
     }
-}
-document.addEventListener('DOMContentLoaded', function () {
-    initMenuButtons();
-    setCopyright();
     document.oncopy = function () { alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados'); return false; };
     document.oncut = function () { alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados'); return false; };
     window.onload = function () { document.onselectstart = function () { return false; }; };

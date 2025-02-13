@@ -8,7 +8,7 @@
  *
  *  Fichero con el script JS de la página Principal de mi sitio web.
  *
- */
+ */ 
 "use strict";
 var mainMenuPanel;
 var menuSwitchButton;
@@ -70,6 +70,7 @@ function addListenerBtnSubmenu() {
                                     let btn = submenuPanels[j].previousElementSibling;
                                     if (btn && btn.classList.contains('pulsado')) {
                                         btn.classList.remove('pulsado');
+                                        btn.innerHTML = 'v';
                                     }
                                     let cont = btn.parentElement;
                                     if (cont && cont.classList.contains('pulsado')) {
@@ -93,12 +94,6 @@ function addListenerBtnSubmenu() {
 function getStrYear() {
     return (new Date()).getFullYear();
 }
-function setCopyright() {
-    let spanAnio = document.getElementById('anio');
-    if (spanAnio) {
-        spanAnio.innerText = getStrYear().toString();
-    }
-}
 function isIosDevice() {
     if (/^(iPhone|iPod|iPad)/.test(navigator.userAgent)) {
         return true;
@@ -113,20 +108,19 @@ function isAppleDevice() {
 }
 document.addEventListener('DOMContentLoaded', function () {
     initMenuButtons();
-    setCopyright();
+    let spanAnio = document.getElementById('anio');
+    if (spanAnio) {
+        spanAnio.innerText = getStrYear().toString();
+    }
     document.oncopy = function () { alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados'); return false; };
     document.oncut = function () { alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados'); return false; };
     window.onload = function () { document.onselectstart = function () { return false; }; };
     document.oncontextmenu = function () { return false; };
     window.onload = function () { document.onmousedown = function () { return false; }; };
-    if (isAppleDevice()) {
-        let message = `Aún hace falta ajustar el diseño responsivo del sitio 
-        para que se vea correctamente en los dispositivos de Apple.`;
-        let paragraph = document.createElement('p');
-        paragraph.innerText = message;
-        let container = document.querySelector('main > section > article:first-of-type');
-        if (container) {
-            container.appendChild(paragraph);
+    if (!isAppleDevice()) {
+        let back = document.querySelector('body > figure:last-of-type');
+        if (back) {
+            back.style.backgroundAttachment = 'fixed';
         }
     }
 });

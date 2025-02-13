@@ -10,6 +10,60 @@
  *
  *  Fichero CSS con los estilos de la página con la política legal de mi sitio web frontend.
  */
+@font-face {
+  font-family: Teko;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../assets/fonts/Teko/Teko-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Bebas_Neue;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: Kanit;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/Kanit/Kanit-Regular.ttf");
+}
+@font-face {
+  font-family: Kanit-Bold;
+  font-family: "Kanit", serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../assets/fonts/Kanit/Kanit-Bold.ttf");
+}
+@font-face {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/Merriweather/Merriweather-Regular.ttf");
+}
+/** Andrés Fernández Burón
+ *  Noviembre de 2021
+ *
+ *  Copyright 2021 (C)
+ * 
+ *  Aplicación Web Frontend
+ *  Mi sitio web
+ *  La política legal
+ *
+ *  Fichero CSS con los estilos de la página con la política legal de mi sitio web frontend.
+ */
+/** Andrés Fernández Burón
+ *  Noviembre de 2021
+ *
+ *  Copyright 2021 (C)
+ * 
+ *  Aplicación Web Frontend
+ *  Mi sitio web
+ *  La política legal
+ *
+ *  Fichero CSS con los estilos de la página con la política legal de mi sitio web frontend.
+ */
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -19,13 +73,23 @@ body, html {
   width: 100%;
 }
 
+/** Andrés Fernández Burón
+ *  Noviembre de 2021
+ *
+ *  Copyright 2021 (C)
+ * 
+ *  Aplicación Web Frontend
+ *  Mi sitio web
+ *  La política legal
+ *
+ *  Fichero CSS con los estilos de la página con la política legal de mi sitio web frontend.
+ */
 body > header p {
   padding: 2px 0 0 10px;
   font-size: 2rem;
   color: #f5f5f5;
-  text-shadow: 2px 2px 0 black;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #0d0d5c;
+  font-family: Teko;
 }
 
 body > header > button {
@@ -47,7 +111,7 @@ body > header > button:hover {
 }
 
 body > header > button {
-  right: 4px;
+  right: 8px;
   background-image: url("../img/botones/btn-mostrar-menu.png");
 }
 
@@ -92,13 +156,24 @@ body > header > button:hover {
     top: 49px;
   }
 }
+/** Andrés Fernández Burón
+ *  Noviembre de 2021
+ *
+ *  Copyright 2021 (C)
+ * 
+ *  Aplicación Web Frontend
+ *  Mi sitio web
+ *  La política legal
+ *
+ *  Fichero CSS con los estilos de la página con la política legal de mi sitio web frontend.
+ */
 body > nav {
   display: none;
 }
 
 body > nav ul {
   list-style: none;
-  border-radius: 0 0 0 4px;
+  border-radius: 0 0 4px 0;
 }
 
 body > nav ul ul {
@@ -113,10 +188,10 @@ body > nav > ul li.pulsado > ul {
 
 body > nav > ul > li a {
   display: block;
-  padding: 2vh 4vw 1vh 2vw;
+  padding: 1vh 2vw;
   text-decoration: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: Kanit-Bold;
 }
 
 body > nav > ul {
@@ -132,22 +207,23 @@ body > nav > ul > li {
 }
 
 body > nav > ul > li > a {
-  color: #133f3f;
+  color: #1ebe1e;
+  text-shadow: 1px 1px 0 black;
 }
 
 body > nav > ul > li:hover,
 body > nav > ul > li.pulsado {
   background-color: #2e8b57;
+  border-style: inset;
 }
 
 body > nav > ul > li:hover > a,
 body > nav > ul > li.pulsado > a {
   color: #f5f5f5;
-  text-shadow: 1px 1px 0 black;
 }
 
 body > nav > ul > li > ul > li {
-  background-color: #67ce6a;
+  background-color: #75a075;
   border: 2px outset #0c680c;
   border-width: 2px 0 0 2px;
 }
@@ -159,27 +235,24 @@ body > nav > ul > li > ul > li > a {
 
 body > nav > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li.pulsado {
-  background-color: #75a075;
+  background-color: #1ebe1e;
+  border-style: inset;
 }
 
 body > nav > ul > li > ul > li > ul > li {
-  background-color: #b0c4de;
+  background-color: #67ce6a;
   border: 1px outset #133f3f;
 }
 
 body > nav > ul > li > ul > li > ul > li > a {
-  color: #0d0d5c;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 black;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li > ul > li.pulsado {
   background-color: #2e5de9;
-}
-
-body > nav > ul > li > ul > li > ul > li:hover > a,
-body > nav > ul > li > ul > li > ul > li.pulsado > a {
-  color: #f5f5f5;
-  text-shadow: 1px 1px 0 black;
+  border-style: inset;
 }
 
 body > nav > ul li {
@@ -190,17 +263,20 @@ body > nav > ul > li button.boton-mostrar-submenu {
   position: absolute;
   top: 0;
   right: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  font-family: Kanit-Bold;
 }
 
 body > nav > ul > li button.boton-mostrar-submenu {
   padding: 4px 14px;
   border-width: 0 2px 2px 2px;
-  border-radius: 0 0 0 7px;
   border-color: #0c680c;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  border-radius: 0 0 0 7px;
+  font-family: Kanit-Bold;
+}
+
+body > nav > ul > li:hover button.boton-mostrar-submenu,
+button.boton-mostrar-submenu.pulsado {
+  border-style: inset;
 }
 
 body > nav > ul > li > button {
@@ -220,6 +296,7 @@ body > nav > ul > li > ul > li > button {
 
 body > nav > ul > li > ul > li:hover > button,
 body > nav > ul > li > ul > li > button.pulsado {
+  color: #f5f5f5;
   background-color: #ffae17;
 }
 
@@ -254,25 +331,30 @@ header {
 }
 
 body > nav {
-  z-index: 8;
+  z-index: 9;
   position: fixed;
   width: 100%;
 }
 
+h1, h2, h3 {
+  font-family: Teko;
+}
+
 main > section > article p {
   margin: 1vh 2vw;
-  color: #133f3f;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #0d0d5c;
+  font-family: Merriweather;
 }
 
 main article p b {
-  color: #2e8b57;
-  text-shadow: 1px 1px 0 #133f3f;
+  color: #1ebe1e;
+  text-shadow: 1px 1px 0 #0d0d5c;
 }
 
 main article p a {
-  color: #2e5de9;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1ebe1e;
+  text-shadow: 1px 1px 0 #133f3f;
+  font-family: Merriweather;
 }
 
 main article p a:hover {
@@ -284,7 +366,7 @@ main article p a:hover {
 main > section > article ul {
   padding-left: 40px;
   list-style: circle;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Merriweather;
 }
 
 main > section > article ul > li {
@@ -293,7 +375,7 @@ main > section > article ul > li {
 
 footer {
   width: 100%;
-  border-top: 0 solid #f5f5f5;
+  border-top: 0 solid #67ce6a;
 }
 
 footer > div p,
@@ -301,8 +383,8 @@ footer > div ul,
 footer > div a {
   padding: 1vh 1vw;
   color: #f5f5f5;
-  text-shadow: 1px 1px 0 #133f3f;
-  font-family: "Courier New", Courier, monospace;
+  text-shadow: 1px 1px 0 black;
+  font-family: Kanit;
 }
 
 footer > div a {
@@ -310,7 +392,8 @@ footer > div a {
   text-decoration: none;
 }
 
-footer > div a:hover {
+footer > div a:hover,
+footer > div a:hover > span {
   text-decoration: underline;
 }
 
@@ -339,31 +422,22 @@ footer > div ul a:hover {
   }
 }
 @media screen and (max-width: 480px) {
-  header p,
-  body > figure > figcaption > p,
-  h1, h2, h3 {
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-  }
-  nav a,
-  main p,
-  main ul,
-  footer > div * {
-    font-family: "Courier New", Courier, monospace;
-  }
   footer > div:nth-of-type(3) {
     font-size: 0.7rem;
     text-shadow: none;
   }
 }
-@media screen and (min-width: 481px) {
-  header p,
-  body > figure > figcaption > p,
-  h1, h2, h3 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    letter-spacing: 1px;
-  }
-}
+/** Andrés Fernández Burón
+ *  Noviembre de 2021
+ *
+ *  Copyright 2021 (C)
+ * 
+ *  Aplicación Web Frontend
+ *  Mi sitio web
+ *  La política legal
+ *
+ *  Fichero CSS con los estilos de la página con la política legal de mi sitio web frontend.
+ */
 body {
   height: 100vh;
   width: 100vw;
@@ -474,3 +548,5 @@ main {
     padding-bottom: 20vh;
   }
 }
+
+/*# sourceMappingURL=legal.css.map */
