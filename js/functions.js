@@ -4,25 +4,14 @@
  *  Copyright 2020
  *  Todos los derechos reservados
  *
- *  Aplicación web: Mi sitio web frontend
+ *  Aplicación web: Mi sitio web
+ *
  *  Fichero con las funciones JS comunes a mi sitio web.
  *
  */
 "use strict";
 export function getStrYear() {
     return (new Date()).getFullYear();
-}
-export function isIosDevice() {
-    if (/^(iPhone|iPod|iPad)/.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
-}
-export function isAppleDevice() {
-    if (/^(iPhone|iPod|iPad|Mac OS)/.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
 }
 export function setCopyright() {
     let spanAnio = document.getElementById('anio');

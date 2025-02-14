@@ -32,12 +32,6 @@
   font-style: normal;
   src: url("../assets/fonts/Overpass/Overpass-VariableFont_wght.ttf");
 }
-@font-face {
-  font-family: Merriweather;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../assets/fonts/Merriweather/Merriweather-Regular.ttf");
-}
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -159,22 +153,17 @@ body > nav > ul {
 }
 
 body > nav > ul > li {
-  background-color: #c3d4eb;
+  background-color: #67ce6a;
 }
 
 body > nav > ul > li > a {
-  color: #0c680c;
-  text-shadow: 1px 1px 0 #4657f7;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 #133f3f;
 }
 
 body > nav > ul > li:hover,
 body > nav > ul > li.pulsado {
   background-color: #2e8b57 !important;
-}
-
-body > nav > ul > li:hover > a,
-body > nav > ul > li.pulsado > a {
-  color: #f5f5f5 !important;
 }
 
 body > nav > ul > li > ul {
@@ -204,12 +193,12 @@ body > nav > ul > li > ul > li > ul {
 }
 
 body > nav > ul > li > ul > li > ul > li {
-  background-color: #67ce6a;
+  background-color: #c3d4eb;
 }
 
 body > nav > ul > li > ul > li > ul > li > a {
-  color: #f5f5f5;
-  text-shadow: 1px 1px 0 #133f3f;
+  color: #ffae17;
+  text-shadow: 1px 1px 0 black;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover,
@@ -265,6 +254,9 @@ body > nav > ul > li > ul > li > button.pulsado {
 @media screen and (max-width: 480px) {
   body > nav > ul {
     min-width: 90vw;
+  }
+  body > nav > ul > li:nth-of-type(2) > ul > li:last-of-type > ul > li:last-of-type > a {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -351,7 +343,7 @@ footer > div a {
 }
 
 footer > div a {
-  padding: 2vh 1vw;
+  padding: 2vh 1vw 1vh 1vw;
   text-decoration: none;
 }
 
@@ -385,10 +377,6 @@ footer > div ul a:hover {
   }
 }
 @media screen and (max-width: 480px) {
-  main > section > article p {
-    text-align: center;
-    text-justify: auto;
-  }
   footer > div:nth-of-type(3) {
     font-size: 0.8rem;
   }

@@ -4,7 +4,8 @@
  *  Copyright 2020
  *  Todos los derechos reservados
  *
- *  Aplicación web: Mi sitio web frontend
+ *  Aplicación web: Mi sitio web
+ *
  *  Fichero con las funciones JS para manejar el menú de mi sitio web.
  *
  */

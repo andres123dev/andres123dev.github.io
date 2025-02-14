@@ -4,16 +4,17 @@
  *  Copyright 2020
  *  Todos los derechos reservados
  *
- *  Aplicación web: Mi sitio web frontend
+ *  Aplicación web: Mi sitio web
+ *
  *  Fichero con el script JS de la página Software de mi sitio web.
  *
  */
 "use strict";
 import { initMenuButtons } from './menu.js';
 import { setCopyright, setLayout } from './functions.js';
+import { isAppleDevice } from './compatibility.js';
 var readMoreButtons;
 var readMorePanels;
-// 
 function switchReadMore(btn, panel) {
     if (btn.classList.contains('pulsado')) {
         btn.classList.remove('pulsado');
@@ -31,7 +32,7 @@ function initArticleButtons() {
     readMorePanels = Array();
     if (readMoreButtons) {
         for (let i = 0; i < readMoreButtons.length; i++) {
-            readMorePanels[i] = readMoreButtons[i].nextElementSibling;
+            readMorePanels[i] = readMoreButtons[i].previousElementSibling;
             readMorePanels[i].style.display = 'none';
             readMoreButtons[i].addEventListener('click', function () {
                 switchReadMore(this, readMorePanels[i]);

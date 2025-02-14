@@ -32,12 +32,6 @@
   font-style: normal;
   src: url("../assets/fonts/Overpass/Overpass-VariableFont_wght.ttf");
 }
-@font-face {
-  font-family: Merriweather;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../assets/fonts/Merriweather/Merriweather-Regular.ttf");
-}
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -159,22 +153,17 @@ body > nav > ul {
 }
 
 body > nav > ul > li {
-  background-color: #c3d4eb;
+  background-color: #67ce6a;
 }
 
 body > nav > ul > li > a {
-  color: #0c680c;
-  text-shadow: 1px 1px 0 #4657f7;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 #133f3f;
 }
 
 body > nav > ul > li:hover,
 body > nav > ul > li.pulsado {
   background-color: #2e8b57 !important;
-}
-
-body > nav > ul > li:hover > a,
-body > nav > ul > li.pulsado > a {
-  color: #f5f5f5 !important;
 }
 
 body > nav > ul > li > ul {
@@ -204,12 +193,12 @@ body > nav > ul > li > ul > li > ul {
 }
 
 body > nav > ul > li > ul > li > ul > li {
-  background-color: #67ce6a;
+  background-color: #c3d4eb;
 }
 
 body > nav > ul > li > ul > li > ul > li > a {
-  color: #f5f5f5;
-  text-shadow: 1px 1px 0 #133f3f;
+  color: #ffae17;
+  text-shadow: 1px 1px 0 black;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover,
@@ -265,6 +254,9 @@ body > nav > ul > li > ul > li > button.pulsado {
 @media screen and (max-width: 480px) {
   body > nav > ul {
     min-width: 90vw;
+  }
+  body > nav > ul > li:nth-of-type(2) > ul > li:last-of-type > ul > li:last-of-type > a {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -351,7 +343,7 @@ footer > div a {
 }
 
 footer > div a {
-  padding: 2vh 1vw;
+  padding: 2vh 1vw 1vh 1vw;
   text-decoration: none;
 }
 
@@ -385,10 +377,6 @@ footer > div ul a:hover {
   }
 }
 @media screen and (max-width: 480px) {
-  main > section > article p {
-    text-align: center;
-    text-justify: auto;
-  }
   footer > div:nth-of-type(3) {
     font-size: 0.8rem;
   }
@@ -417,10 +405,13 @@ body > figure > figcaption > p {
   font-weight: bold;
   color: #f5f5f5;
   text-shadow: 3px 2px 0 #133f3f;
+  font-family: Bebas_Neue;
+}
+
+body > figure:last-of-type > figcaption > p {
   background-color: #ffae17;
   border: 0 solid #438f8f;
   border-width: 5px 0 5px 0;
-  font-family: Bebas_Neue;
 }
 
 body > figure > div {
@@ -431,8 +422,8 @@ body > figure > div {
   background-image: url("../img/fondos/codigo.png");
   background-size: auto;
   background-position: left;
-  background-color: #f5f5f5;
-  border-bottom: 8px solid #67ce6a;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 4px solid #67ce6a;
 }
 
 footer {
@@ -459,35 +450,53 @@ footer > div:last-of-type {
 }
 
 @media screen and (max-width: 480px) {
+  body > figure > div {
+    height: 23.75vh;
+  }
   body > figure > figcaption > p {
-    top: 12vh;
-    font-size: 5rem;
+    top: 10vh;
+  }
+  body > figure:nth-of-type(2) > figcaption > p {
+    font-size: 4rem;
+  }
+  body > figure:last-of-type > figcaption > p {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
+  body > figure > div {
+    height: 31.6666666667vh;
+  }
   body > figure > figcaption > p {
     top: 15vh;
+  }
+  body > figure:nth-of-type(2) > figcaption > p {
+    font-size: 8rem;
+  }
+  body > figure:last-of-type > figcaption > p {
     font-size: 6rem;
   }
 }
 @media screen and (min-width: 981px) {
+  body > figure > div {
+    height: 47.5vh;
+  }
   body > figure > figcaption > p {
     top: 16vh;
+  }
+  body > figure:nth-of-type(2) > figcaption > p {
+    font-size: 12rem;
+  }
+  body > figure:last-of-type > figcaption > p {
     font-size: 7rem;
   }
 }
 @media screen and (max-width: 480px) {
-  body > figure > div {
-    height: 31.6666666667vh;
-  }
   body > main {
     top: 88vh;
   }
 }
 @media screen and (min-width: 481px) {
-  body > figure > div {
-    height: 47.5vh;
-  }
   body > main {
     top: 100vh;
   }
@@ -604,6 +613,14 @@ footer > div:nth-of-type(3) > * {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 481px) {
+  footer > div:first-of-type ul {
+    margin: 4px 0 0 4px;
+  }
+  footer > div:first-of-type ul ul {
+    margin-left: 8px;
+  }
+}
 @media screen and (max-width: 480px) {
   footer {
     font-size: 1.3rem;
@@ -616,12 +633,6 @@ footer > div:nth-of-type(3) > * {
   footer > div:first-of-type {
     float: left;
     width: 50%;
-  }
-  footer > div:first-of-type ul {
-    margin: 4px 0 0 4px;
-  }
-  footer > div:first-of-type ul ul {
-    margin: 4px 0 0 10px;
   }
   footer > div:nth-of-type(2) {
     float: right;
@@ -638,10 +649,6 @@ footer > div:nth-of-type(3) > * {
   }
   footer div:first-of-type > ul {
     overflow: hidden;
-    padding: 1vh 1vw 4vh 1vw;
-  }
-  footer > div:first-of-type > ul ul {
-    padding-left: 4vw;
   }
   footer div:first-of-type > ul > li {
     float: left;

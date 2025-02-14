@@ -4,7 +4,8 @@
  *  Copyright 2020
  *  Todos los derechos reservados
  *
- *  Aplicación web: Mi sitio web frontend
+ *  Aplicación web: Mi sitio web
+ *
  *  Fichero con el script JS Principal de mi sitio web.
  *
  */
