@@ -4,110 +4,28 @@
  *  Copyright 2020
  *  Todos los derechos reservados
  *
- *  Aplicación web: Mi sitio web
- *
+ *  Aplicación web: Mi sitio web frontend
  *  Fichero con el script JS de la página Software de mi sitio web.
  *
- */ 
+ */
 "use strict";
-var mainMenuPanel;
-var menuSwitchButton;
-var closerElements;
-function initMenuButtons() {
-    addListenerBtnMenu();
-    addListenerBtnSubmenu();
-}
-function addListenerBtnMenu() {
-    mainMenuPanel = document.querySelector('nav');
-    menuSwitchButton = document.querySelector('header button');
-    if (mainMenuPanel && menuSwitchButton) {
-        mainMenuPanel.style.display = 'none';
-        menuSwitchButton.addEventListener('click', function () {
-            if (this.classList.contains('pulsado')) {
-                mainMenuPanel.style.display = 'none';
-                this.classList.remove('pulsado');
-            }
-            else {
-                mainMenuPanel.style.display = 'block';
-                this.classList.add('pulsado');
-            }
-            closerElements = document.querySelectorAll('figure, main, footer');
-            for (let i = 0; i < closerElements.length; i++) {
-                closerElements[i].addEventListener('click', function () {
-                    mainMenuPanel.style.display = 'none';
-                    if (menuSwitchButton.classList.contains('pulsado')) {
-                        menuSwitchButton.classList.remove('pulsado');
-                    }
-                });
-            }
-        });
-    }
-}
-var menuSubPanelSwitchButtons;
-var submenuPanels;
-function addListenerBtnSubmenu() {
-    menuSubPanelSwitchButtons = document.querySelectorAll('.boton-mostrar-submenu');
-    submenuPanels = Array();
-    if (menuSubPanelSwitchButtons) {
-        for (let i = 0; i < menuSubPanelSwitchButtons.length; i++) {
-            submenuPanels[i] = menuSubPanelSwitchButtons[i].nextElementSibling;
-            if (menuSubPanelSwitchButtons[i]) {
-                submenuPanels[i].style.display = 'none';
-                menuSubPanelSwitchButtons[i].addEventListener('click', function () {
-                    if (submenuPanels[i]) {
-                        if (this.classList.contains('pulsado')) {
-                            this.innerText = 'v';
-                            this.classList.remove('pulsado');
-                            if (this.parentElement) {
-                                this.parentElement.classList.remove('pulsado');
-                            }
-                            submenuPanels[i].style.display = 'none';
-                        }
-                        else {
-                            for (let j = 1; j < submenuPanels.length; j++) {
-                                if (j != i && submenuPanels[j].style.display != 'none') {
-                                    submenuPanels[j].style.display = 'none';
-                                    let btn = submenuPanels[j].previousElementSibling;
-                                    if (btn && btn.classList.contains('pulsado')) {
-                                        btn.classList.remove('pulsado');
-                                        btn.innerHTML = 'v';
-                                    }
-                                    let cont = btn.parentElement;
-                                    if (cont && cont.classList.contains('pulsado')) {
-                                        cont.classList.remove('pulsado');
-                                    }
-                                }
-                            }
-                            this.innerText = '^';
-                            this.classList.add('pulsado');
-                            if (this.parentElement) {
-                                this.parentElement.classList.add('pulsado');
-                            }
-                            submenuPanels[i].style.display = 'block';
-                        }
-                    }
-                });
-            }
-        }
-    }
-}
-function getStrYear() {
-    return (new Date()).getFullYear();
-}
-function isIosDevice() {
-    if (/^(iPhone|iPod|iPad)/.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
-}
-function isAppleDevice() {
-    if (/^(iPhone|iPod|iPad|Mac OS)/.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
-}
+import { initMenuButtons } from './menu.js';
+import { setCopyright, setLayout } from './functions.js';
 var readMoreButtons;
 var readMorePanels;
+// 
+function switchReadMore(btn, panel) {
+    if (btn.classList.contains('pulsado')) {
+        btn.classList.remove('pulsado');
+        btn.innerHTML = 'Leer más ...';
+        panel.style.display = 'none';
+    }
+    else {
+        btn.classList.add('pulsado');
+        btn.innerHTML = 'Leer menos ...';
+        panel.style.display = 'block';
+    }
+}
 function initArticleButtons() {
     readMoreButtons = document.querySelectorAll('main article button');
     readMorePanels = Array();
@@ -116,16 +34,7 @@ function initArticleButtons() {
             readMorePanels[i] = readMoreButtons[i].nextElementSibling;
             readMorePanels[i].style.display = 'none';
             readMoreButtons[i].addEventListener('click', function () {
-                if (this.classList.contains('pulsado')) {
-                    this.classList.remove('pulsado');
-                    this.innerHTML = 'Leer más ...';
-                    readMorePanels[i].style.display = 'none';
-                }
-                else {
-                    this.classList.add('pulsado');
-                    this.innerHTML = 'Leer menos ...';
-                    readMorePanels[i].style.display = 'block';
-                }
+                switchReadMore(this, readMorePanels[i]);
             });
         }
     }
@@ -133,15 +42,8 @@ function initArticleButtons() {
 document.addEventListener('DOMContentLoaded', function () {
     initMenuButtons();
     initArticleButtons();
-    let spanAnio = document.getElementById('anio');
-    if (spanAnio) {
-        spanAnio.innerText = getStrYear().toString();
-    }
-    document.oncopy = function () { alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados'); return false; };
-    document.oncut = function () { alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados'); return false; };
-    window.onload = function () { document.onselectstart = function () { return false; }; };
-    document.oncontextmenu = function () { return false; };
-    window.onload = function () { document.onmousedown = function () { return false; }; };
+    setCopyright();
+    setLayout();
     if (!isAppleDevice()) {
         let back = document.querySelector('body > figure:last-of-type');
         if (back) {
