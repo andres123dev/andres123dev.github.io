@@ -353,7 +353,7 @@ body > nav > ul > li > ul > li > ul > li.pulsado {
 
 body > nav > ul > li > ul > li > ul > li:hover > a,
 body > nav > ul > li > ul > li > ul > li.pulsado > a {
-  color: #ffae17 !important;
+  color: #f5f5f5 !important;
 }
 
 body > nav > ul li {
