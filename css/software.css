@@ -343,12 +343,17 @@ body > nav > ul > li > ul > li > ul > li {
 
 body > nav > ul > li > ul > li > ul > li > a {
   color: #4657f7;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 1px 0 #133f3f;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li > ul > li.pulsado {
   background-color: #4657f7 !important;
+}
+
+body > nav > ul > li > ul > li > ul > li:hover > a,
+body > nav > ul > li > ul > li > ul > li.pulsado > a {
+  color: #ffae17 !important;
 }
 
 body > nav > ul li {
@@ -461,7 +466,6 @@ main article p a:hover {
 main > section > article ul {
   padding-left: 40px;
   list-style: circle;
-  color: #0d0d5c;
   font-family: Overpass;
 }
 
@@ -536,6 +540,7 @@ body > figure:nth-of-type(3) {
 
 body > figure:last-of-type {
   position: absolute;
+  top: 5vh;
 }
 
 body > figure > figcaption > p {
@@ -596,7 +601,7 @@ footer > div:last-of-type {
   }
   body > figure:nth-of-type(2) > figcaption > p,
   body > figure:last-of-type > figcaption > p {
-    top: 10vh;
+    top: 5vh;
   }
   body > main {
     top: 100vh;
@@ -622,10 +627,10 @@ footer > div:last-of-type {
 }
 @media screen and (max-width: 480px) {
   body > figure:nth-of-type(2) > figcaption > p {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   body > figure:last-of-type > figcaption > p {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -641,7 +646,7 @@ footer > div:last-of-type {
     font-size: 12rem;
   }
   body > figure:last-of-type > figcaption > p {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 footer > div:nth-of-type(2) > figure {
@@ -1267,7 +1272,7 @@ body > figure:last-of-type {
 
 body > main {
   margin-bottom: 47.5vh;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 body > main > section:not(:last-of-type) {
@@ -1305,12 +1310,8 @@ body > main > section > article:not(:last-of-type) {
   margin-bottom: 47.5vh;
 }
 
-body > main > section > article > p > b {
-  color: #1ebe1e !important;
-}
-
-body > main > section > article > div b {
-  color: #4657f7 !important;
+body > main > section > article > p {
+  color: #0d0d5c;
 }
 
 h1, h2, h3 {
@@ -1381,7 +1382,7 @@ footer > div:nth-of-type(2) > div {
     padding: 31.6666666667vh 0;
   }
   body main section h2 {
-    padding: 3vh 1vw 2vh 1vw;
+    padding: 2vh 1vw 2vh 1vw;
   }
   main > section > div {
     background-size: auto;
@@ -1391,7 +1392,7 @@ footer > div:nth-of-type(2) > div {
     width: 90%;
   }
   body article h3 {
-    padding: 2vh 1vw 1vh 1vw;
+    padding: 1vh 1vw 0 1vw;
   }
 }
 @media screen and (min-width: 981px) {
@@ -1399,7 +1400,7 @@ footer > div:nth-of-type(2) > div {
     padding: 31.6666666667vh 0;
   }
   body main section h2 {
-    padding: 2vh 1vw 0 1vw;
+    padding: 1vh 1vw 0 1vw;
   }
   main > section > div {
     background-size: contain;
@@ -1425,22 +1426,22 @@ footer > div:nth-of-type(2) > div {
     background-position: left;
   }
   body section h2 {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
   }
   body section#frontend h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
   body section#fullstack h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   body article h3 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   body article#my-paint-board-vanilla h3 {
     font-size: 2rem;
   }
   body article#gestion-de-concesionarios h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   main > section > article p,
   main > section > article ul,
@@ -1466,8 +1467,11 @@ footer > div:nth-of-type(2) > div {
   body article h3 {
     font-size: 3rem;
   }
+  body section#frontend h2 {
+    font-size: 2.6rem;
+  }
   body section#fullstack h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   main > section > article p,
   main > section > article ul,

@@ -343,12 +343,17 @@ body > nav > ul > li > ul > li > ul > li {
 
 body > nav > ul > li > ul > li > ul > li > a {
   color: #4657f7;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 1px 0 #133f3f;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li > ul > li.pulsado {
   background-color: #4657f7 !important;
+}
+
+body > nav > ul > li > ul > li > ul > li:hover > a,
+body > nav > ul > li > ul > li > ul > li.pulsado > a {
+  color: #ffae17 !important;
 }
 
 body > nav > ul li {
@@ -461,7 +466,6 @@ main article p a:hover {
 main > section > article ul {
   padding-left: 40px;
   list-style: circle;
-  color: #0d0d5c;
   font-family: Overpass;
 }
 
@@ -536,6 +540,7 @@ body > figure:nth-of-type(3) {
 
 body > figure:last-of-type {
   position: absolute;
+  top: 5vh;
 }
 
 body > figure > figcaption > p {
@@ -596,7 +601,7 @@ footer > div:last-of-type {
   }
   body > figure:nth-of-type(2) > figcaption > p,
   body > figure:last-of-type > figcaption > p {
-    top: 10vh;
+    top: 5vh;
   }
   body > main {
     top: 100vh;
@@ -622,10 +627,10 @@ footer > div:last-of-type {
 }
 @media screen and (max-width: 480px) {
   body > figure:nth-of-type(2) > figcaption > p {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   body > figure:last-of-type > figcaption > p {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -641,7 +646,7 @@ footer > div:last-of-type {
     font-size: 12rem;
   }
   body > figure:last-of-type > figcaption > p {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 footer > div:nth-of-type(2) > figure {
@@ -928,12 +933,6 @@ footer > div:nth-of-type(2) > div {
   body > figure:nth-of-type(3) {
     background-size: 100%;
     background-position: left bottom;
-  }
-  footer {
-    height: 76vh !important;
-  }
-  footer > div:nth-of-type(2) > div > p:first-of-type {
-    font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
