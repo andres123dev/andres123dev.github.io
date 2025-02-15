@@ -11,12 +11,15 @@
  */
 "use strict";
 import { initMenuButtons } from './menu.js';
-import { setCopyright, setLayout } from './functions.js';
-import { isAppleDevice } from './compatibility.js';
+import { fixMainForIos, setCopyright, setLayout } from './functions.js';
+import { isIosDevice, isAppleDevice } from './compatibility.js';
 document.addEventListener('DOMContentLoaded', function () {
     initMenuButtons();
     setCopyright();
     setLayout();
+    if (isIosDevice()) {
+        fixMainForIos();
+    }
     if (!isAppleDevice()) {
         let back = document.querySelector('body > figure:last-of-type');
         if (back) {

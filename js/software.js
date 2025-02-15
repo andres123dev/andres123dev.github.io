@@ -15,6 +15,7 @@ import { setCopyright, setLayout } from './functions.js';
 import { isAppleDevice } from './compatibility.js';
 var readMoreButtons;
 var readMorePanels;
+// 
 function switchReadMore(btn, panel) {
     if (btn.classList.contains('pulsado')) {
         btn.classList.remove('pulsado');

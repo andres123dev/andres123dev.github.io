@@ -32,3 +32,9 @@ export function setLayout() {
     document.oncontextmenu = function () { return false; };
     window.onload = function () { document.onmousedown = function () { return false; }; };
 }
+export function fixMainForIos() {
+    let main = document.querySelector('body > main');
+    if (main) {
+        main.style.top = '88vh';
+    }
+}

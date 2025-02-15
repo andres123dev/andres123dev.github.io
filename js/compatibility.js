@@ -6,7 +6,7 @@
  *
  *  Aplicación web: Mi sitio web
  *
- *  Fichero con las funciones JS para gestionar la compatibilidad de mi sitio web con MAC e IOS.
+ *  Fichero con las funciones JS para gestionarl la compatibilidad de mi sitio web con MAC e IOS.
  *
  */
 "use strict";
