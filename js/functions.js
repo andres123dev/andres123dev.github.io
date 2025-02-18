@@ -18,8 +18,6 @@ export function setCopyright() {
     if (spanAnio) {
         spanAnio.innerText = getStrYear().toString();
     }
-}
-export function setLayout() {
     document.oncopy = function () {
         alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados');
         return false;
@@ -28,13 +26,27 @@ export function setLayout() {
         alert('Andres Fernandez Buron\nCopyright 2020-' + getStrYear() + '\nTodos los derechos reservados');
         return false;
     };
+}
+export function setLayout() {
     window.onload = function () { document.onselectstart = function () { return false; }; };
     document.oncontextmenu = function () { return false; };
     window.onload = function () { document.onmousedown = function () { return false; }; };
 }
-export function fixMainForIos() {
+export function fixMain(mainStart) {
+    let figures = document.querySelectorAll('body > figure');
+    if (figures) {
+        for (let i = 0; i < figures.length; i++) {
+            figures[i].style.height = mainStart;
+        }
+    }
     let main = document.querySelector('body > main');
     if (main) {
-        main.style.top = '88vh';
+        main.style.top = mainStart;
     }
+}
+export function fixMainForAndroid() {
+    fixMain('97vh');
+}
+export function fixMainForIos() {
+    fixMain('95vh');
 }

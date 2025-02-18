@@ -11,11 +11,10 @@
  */
 "use strict";
 import { initMenuButtons } from './menu.js';
-import { setCopyright, setLayout } from './functions.js';
-import { isAppleDevice } from './compatibility.js';
+import { fixMainForAndroid, fixMainForIos, setCopyright, setLayout } from './functions.js';
+import { isAndroidDevice, isIosDevice, isAppleDevice } from './compatibility.js';
 var readMoreButtons;
 var readMorePanels;
-// 
 function switchReadMore(btn, panel) {
     if (btn.classList.contains('pulsado')) {
         btn.classList.remove('pulsado');
@@ -23,9 +22,17 @@ function switchReadMore(btn, panel) {
         panel.style.display = 'none';
     }
     else {
+        hideAllReadMorePanels();
         btn.classList.add('pulsado');
         btn.innerHTML = 'Leer menos ...';
         panel.style.display = 'block';
+    }
+}
+function hideAllReadMorePanels() {
+    for (let i = 0; i < readMoreButtons.length; i++) {
+        if (readMorePanels[i].style.display == 'block') {
+            switchReadMore(readMoreButtons[i], readMorePanels[i]);
+        }
     }
 }
 function initArticleButtons() {
@@ -44,12 +51,20 @@ function initArticleButtons() {
 document.addEventListener('DOMContentLoaded', function () {
     initMenuButtons();
     initArticleButtons();
-    setCopyright();
-    setLayout();
-    if (!isAppleDevice()) {
+    if (isAppleDevice()) {
+        if (isIosDevice()) {
+            fixMainForIos();
+        }
+    }
+    else {
+        if (isAndroidDevice()) {
+            fixMainForAndroid();
+        }
         let back = document.querySelector('body > figure:last-of-type');
         if (back) {
             back.style.backgroundAttachment = 'fixed';
         }
     }
+    setCopyright();
+    setLayout();
 });

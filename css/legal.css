@@ -1,3 +1,12 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+}
+
 @font-face {
   font-family: Teko;
   font-optical-sizing: auto;
@@ -177,13 +186,79 @@
   font-style: normal;
   src: url("../assets/fonts/Bruno_Ace_SC/BrunoAceSC-Regular.ttf");
 }
-*, *::after, *::before {
-  margin: 0;
-  padding: 0;
+body > header {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-body, html {
+body > nav {
+  z-index: 8;
+  position: fixed;
   width: 100%;
+}
+
+body > footer {
+  width: 100%;
+}
+
+.mini, .medio, .grande {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .mini {
+    display: inline-block !important;
+  }
+  body > header {
+    height: 45px;
+  }
+  body > header > button {
+    height: 40px;
+    width: 40px;
+  }
+  body > nav {
+    top: 49px;
+  }
+  body > footer > div:nth-of-type(3) {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 980px) {
+  .medio {
+    display: inline-block !important;
+  }
+  body > header {
+    height: 40px;
+  }
+  body > header > button {
+    height: 35px;
+    width: 35px;
+  }
+  body > nav {
+    top: 44px;
+  }
+}
+@media (min-width: 981px) {
+  .grande {
+    display: inline-block !important;
+  }
+  body > header {
+    height: 45px;
+  }
+  body > header > button {
+    height: 40px;
+    width: 40px;
+  }
+  body > nav {
+    top: 49px;
+  }
+}
+body > header {
+  background-color: #1ebe1e;
+  border-bottom: 4px solid #0c680c;
 }
 
 body > header p {
@@ -206,58 +281,20 @@ body > header > button {
   cursor: pointer;
 }
 
-body > header > button.pulsado,
-body > header > button:hover {
-  background-color: #75a075;
+body > header > button.pulsado {
+  background-color: #75a075 !important;
   border-style: inset !important;
 }
 
-body > header > button {
+body > header > button:last-of-type {
   right: 8px;
   background-image: url("../img/botones/btn-mostrar-menu.png");
 }
 
-body > header > button.pulsado,
-body > header > button:hover {
+body > header > button.pulsado {
   background-image: url("../img/botones/btn-mostrar-menu-pulsado.png") !important;
 }
 
-@media screen and (max-width: 480px) {
-  body > header {
-    height: 45px;
-  }
-  body > header > button {
-    height: 40px;
-    width: 40px;
-  }
-  body > nav {
-    top: 49px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 980px) {
-  body > header {
-    height: 40px;
-  }
-  body > header > button {
-    height: 35px;
-    width: 35px;
-  }
-  body > nav {
-    top: 44px;
-  }
-}
-@media screen and (min-width: 981px) {
-  body > header {
-    height: 45px;
-  }
-  body > header > button {
-    height: 40px;
-    width: 40px;
-  }
-  body > nav {
-    top: 49px;
-  }
-}
 body > nav {
   display: none;
 }
@@ -338,22 +375,17 @@ body > nav > ul > li > ul > li > ul {
 }
 
 body > nav > ul > li > ul > li > ul > li {
-  background-color: #c3d4eb;
+  background-color: #4657f7;
 }
 
 body > nav > ul > li > ul > li > ul > li > a {
-  color: #4657f7;
+  color: #f5f5f5;
   text-shadow: 1px 1px 0 #133f3f;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li > ul > li.pulsado {
-  background-color: #4657f7 !important;
-}
-
-body > nav > ul > li > ul > li > ul > li:hover > a,
-body > nav > ul > li > ul > li > ul > li.pulsado > a {
-  color: #f5f5f5 !important;
+  background-color: #ffae17 !important;
 }
 
 body > nav > ul li {
@@ -401,7 +433,7 @@ body > nav > ul > li > ul > li > button.pulsado {
   background-color: #ffae17;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   body > nav > ul {
     min-width: 90vw;
   }
@@ -409,122 +441,76 @@ body > nav > ul > li > ul > li > button.pulsado {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 980px) {
+@media (min-width: 481px) and (max-width: 980px) {
   body > nav > ul {
     min-width: 70vw;
   }
 }
-@media screen and (min-width: 981px) {
+@media (min-width: 981px) {
   body > nav > ul {
     min-width: 35vw;
   }
 }
 body {
-  width: 100%;
   background-color: #133f3f;
 }
 
-header {
-  z-index: 8;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #1ebe1e;
-  border-bottom: 4px solid #0c680c;
-}
-
-body > nav {
-  z-index: 9;
-  position: fixed;
-  width: 100%;
-}
-
-main > section > article p {
+body > main > section > article p {
   margin: 2vh 2vw;
-  color: #0c680c;
+  color: #0d0d5c;
   font-family: Overpass;
 }
 
-main article p b {
+body > main article p b {
   color: #1ebe1e;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 1px 0 #0d0d5c;
 }
 
-main article p a {
-  color: #ffae17;
-  text-shadow: 1px 1px 0 black;
+body > main article p a {
+  color: #4657f7;
   font-weight: bold;
   font-family: Overpass;
 }
 
-main article p a:hover {
+body > main article p a:hover {
   text-decoration: none;
-  color: #4657f7;
+  color: #ffae17;
+  text-shadow: 1px 1px 0 black;
 }
 
-main > section > article ul {
+body > main > section > article ul {
   padding-left: 40px;
   list-style: circle;
   font-family: Overpass;
 }
 
-main > section > article ul > li {
+body > main > section > article ul > li {
   padding-bottom: 10px;
 }
 
-footer {
-  width: 100%;
-  border-top: 0 solid #67ce6a;
-}
-
-footer > div p,
-footer > div ul,
-footer > div a {
+body > footer > div p,
+body > footer > div ul,
+body > footer > div a {
   color: #f5f5f5;
   text-shadow: 1px 1px 0 black;
   font-family: Kanit;
 }
 
-footer > div a {
+body > footer > div a {
   padding: 2vh 1vw 1vh 1vw;
   text-decoration: none;
 }
 
-footer > div a:hover,
-footer > div a:hover > span {
+body > footer > div a:hover,
+body > footer > div a:hover > span {
   text-decoration: underline;
 }
 
-footer > div ul a:hover {
+body > footer > div ul a:hover {
   color: #ffae17;
   text-decoration: none;
 }
 
-.mini, .medio, .grande {
-  display: none;
-}
-
-@media screen and (max-width: 480px) {
-  .mini {
-    display: inline-block !important;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 980px) {
-  .medio {
-    display: inline-block !important;
-  }
-}
-@media screen and (min-width: 981px) {
-  .grande {
-    display: inline-block !important;
-  }
-}
-@media screen and (max-width: 480px) {
-  footer > div:nth-of-type(3) {
-    font-size: 0.8rem;
-  }
-}
 body {
   height: 100vh;
   width: 100vw;
@@ -536,10 +522,10 @@ body {
 }
 
 main {
+  z-index: 5;
   position: absolute;
   left: 2vw;
   right: 2vw;
-  z-index: 5;
 }
 
 main > section > article {

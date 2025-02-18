@@ -186,6 +186,81 @@ body, html {
   width: 100%;
 }
 
+body > header {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body > nav {
+  z-index: 8;
+  position: fixed;
+  width: 100%;
+}
+
+body > footer {
+  width: 100%;
+}
+
+.mini, .medio, .grande {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .mini {
+    display: inline-block !important;
+  }
+  body > header {
+    height: 45px;
+  }
+  body > header > button {
+    height: 40px;
+    width: 40px;
+  }
+  body > nav {
+    top: 49px;
+  }
+  body > footer > div:nth-of-type(3) {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 980px) {
+  .medio {
+    display: inline-block !important;
+  }
+  body > header {
+    height: 40px;
+  }
+  body > header > button {
+    height: 35px;
+    width: 35px;
+  }
+  body > nav {
+    top: 44px;
+  }
+}
+@media (min-width: 981px) {
+  .grande {
+    display: inline-block !important;
+  }
+  body > header {
+    height: 45px;
+  }
+  body > header > button {
+    height: 40px;
+    width: 40px;
+  }
+  body > nav {
+    top: 49px;
+  }
+}
+body > header {
+  background-color: #1ebe1e;
+  border-bottom: 4px solid #0c680c;
+}
+
 body > header p {
   padding: 2px 0 0 10px;
   font-size: 2rem;
@@ -206,58 +281,20 @@ body > header > button {
   cursor: pointer;
 }
 
-body > header > button.pulsado,
-body > header > button:hover {
-  background-color: #75a075;
+body > header > button.pulsado {
+  background-color: #75a075 !important;
   border-style: inset !important;
 }
 
-body > header > button {
+body > header > button:last-of-type {
   right: 8px;
   background-image: url("../img/botones/btn-mostrar-menu.png");
 }
 
-body > header > button.pulsado,
-body > header > button:hover {
+body > header > button.pulsado {
   background-image: url("../img/botones/btn-mostrar-menu-pulsado.png") !important;
 }
 
-@media screen and (max-width: 480px) {
-  body > header {
-    height: 45px;
-  }
-  body > header > button {
-    height: 40px;
-    width: 40px;
-  }
-  body > nav {
-    top: 49px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 980px) {
-  body > header {
-    height: 40px;
-  }
-  body > header > button {
-    height: 35px;
-    width: 35px;
-  }
-  body > nav {
-    top: 44px;
-  }
-}
-@media screen and (min-width: 981px) {
-  body > header {
-    height: 45px;
-  }
-  body > header > button {
-    height: 40px;
-    width: 40px;
-  }
-  body > nav {
-    top: 49px;
-  }
-}
 body > nav {
   display: none;
 }
@@ -338,22 +375,17 @@ body > nav > ul > li > ul > li > ul {
 }
 
 body > nav > ul > li > ul > li > ul > li {
-  background-color: #c3d4eb;
+  background-color: #4657f7;
 }
 
 body > nav > ul > li > ul > li > ul > li > a {
-  color: #4657f7;
+  color: #f5f5f5;
   text-shadow: 1px 1px 0 #133f3f;
 }
 
 body > nav > ul > li > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li > ul > li.pulsado {
-  background-color: #4657f7 !important;
-}
-
-body > nav > ul > li > ul > li > ul > li:hover > a,
-body > nav > ul > li > ul > li > ul > li.pulsado > a {
-  color: #f5f5f5 !important;
+  background-color: #ffae17 !important;
 }
 
 body > nav > ul li {
@@ -401,7 +433,7 @@ body > nav > ul > li > ul > li > button.pulsado {
   background-color: #ffae17;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   body > nav > ul {
     min-width: 90vw;
   }
@@ -409,138 +441,127 @@ body > nav > ul > li > ul > li > button.pulsado {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 980px) {
+@media (min-width: 481px) and (max-width: 980px) {
   body > nav > ul {
     min-width: 70vw;
   }
 }
-@media screen and (min-width: 981px) {
+@media (min-width: 981px) {
   body > nav > ul {
     min-width: 35vw;
   }
 }
 body {
-  width: 100%;
   background-color: #133f3f;
 }
 
-header {
-  z-index: 8;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #1ebe1e;
-  border-bottom: 4px solid #0c680c;
-}
-
-body > nav {
-  z-index: 9;
-  position: fixed;
-  width: 100%;
-}
-
-main > section > article p {
+body > main > section > article p {
   margin: 2vh 2vw;
-  color: #0c680c;
+  color: #0d0d5c;
   font-family: Overpass;
 }
 
-main article p b {
+body > main article p b {
   color: #1ebe1e;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 1px 0 #0d0d5c;
 }
 
-main article p a {
-  color: #ffae17;
-  text-shadow: 1px 1px 0 black;
+body > main article p a {
+  color: #4657f7;
   font-weight: bold;
   font-family: Overpass;
 }
 
-main article p a:hover {
+body > main article p a:hover {
   text-decoration: none;
-  color: #4657f7;
+  color: #ffae17;
+  text-shadow: 1px 1px 0 black;
 }
 
-main > section > article ul {
+body > main > section > article ul {
   padding-left: 40px;
   list-style: circle;
   font-family: Overpass;
 }
 
-main > section > article ul > li {
+body > main > section > article ul > li {
   padding-bottom: 10px;
 }
 
-footer {
-  width: 100%;
-  border-top: 0 solid #67ce6a;
-}
-
-footer > div p,
-footer > div ul,
-footer > div a {
+body > footer > div p,
+body > footer > div ul,
+body > footer > div a {
   color: #f5f5f5;
   text-shadow: 1px 1px 0 black;
   font-family: Kanit;
 }
 
-footer > div a {
+body > footer > div a {
   padding: 2vh 1vw 1vh 1vw;
   text-decoration: none;
 }
 
-footer > div a:hover,
-footer > div a:hover > span {
+body > footer > div a:hover,
+body > footer > div a:hover > span {
   text-decoration: underline;
 }
 
-footer > div ul a:hover {
+body > footer > div ul a:hover {
   color: #ffae17;
   text-decoration: none;
 }
 
-.mini, .medio, .grande {
-  display: none;
+body > main {
+  position: relative;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 480px) {
-  .mini {
-    display: inline-block !important;
-  }
+body > main > section {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 33.3333333333vh;
+  border-bottom: 8px solid #67ce6a;
 }
-@media screen and (min-width: 481px) and (max-width: 980px) {
-  .medio {
-    display: inline-block !important;
-  }
+
+body > main > section > div:last-of-type {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 0 solid #67ce6a;
+  border-width: 8px 0 8px 0;
 }
-@media screen and (min-width: 981px) {
-  .grande {
-    display: inline-block !important;
-  }
+
+body > main > section > article {
+  position: relative;
+  top: 0;
+  left: 0;
 }
-@media screen and (max-width: 480px) {
-  footer > div:nth-of-type(3) {
-    font-size: 0.8rem;
+
+body > footer {
+  position: relative;
+  top: 100vh;
+  left: 0;
+  height: 93vh;
+}
+
+@media (max-height: 500px) {
+  body > main > section {
+    margin-bottom: 100vh;
   }
 }
 body > figure {
   bottom: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-}
-
-body > figure:first-of-type,
-body > figure:nth-of-type(2),
-body > figure:nth-of-type(3) {
-  position: fixed;
-}
-
-body > figure:last-of-type {
-  position: absolute;
-  top: 5vh;
 }
 
 body > figure > figcaption > p {
@@ -553,14 +574,21 @@ body > figure > figcaption > p {
   font-family: Bebas_Neue;
 }
 
+body > figure:first-of-type,
+body > figure:nth-of-type(2),
+body > figure:nth-of-type(3) {
+  position: fixed;
+}
+
+body > figure:last-of-type {
+  position: absolute;
+  top: 0;
+}
+
 body > figure:last-of-type > figcaption > p {
   background-color: #ffae17;
   border: 0 solid #438f8f;
   border-width: 5px 0 5px 0;
-}
-
-body > figure:last-of-type {
-  height: 100%;
 }
 
 body > figure:last-of-type > div {
@@ -571,91 +599,205 @@ body > figure:last-of-type > div {
   background-image: url("../img/fondos/codigo.png");
   background-size: auto;
   background-position: left;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 4px solid #67ce6a;
+  background-color: #f5f5f5;
+  border-bottom: 8px solid #67ce6a;
 }
 
-footer {
+@media (max-width: 480px) {
+  body > figure > div {
+    height: 25vh;
+  }
+  body > figure:nth-of-type(2) > figcaption > p {
+    top: 10vh;
+    font-size: 5rem;
+  }
+  body > figure:last-of-type > figcaption > p {
+    top: 10vh;
+    font-size: 4rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 980px) {
+  body > figure > div {
+    height: 33.3333333333vh;
+  }
+  body > figure:nth-of-type(2) > figcaption > p {
+    top: 15vh;
+    font-size: 6rem;
+  }
+  body > figure:last-of-type > figcaption > p {
+    top: 10vh;
+    font-size: 4rem;
+  }
+}
+@media (min-width: 981px) {
+  body > figure > div {
+    height: 33.3333333333vh;
+  }
+  body > figure:nth-of-type(2) > figcaption > p {
+    top: 10vh;
+    font-size: 10rem;
+  }
+  body > figure:last-of-type > figcaption > p {
+    top: 12vh;
+    font-size: 4rem;
+  }
+}
+@media (max-height: 500px) {
+  body > figure:last-of-type > figcaption > p {
+    background-color: transparent;
+    border: none;
+  }
+  body > figure:last-of-type > div {
+    display: none;
+  }
+  body > main > section {
+    margin-bottom: 50vh;
+  }
+}
+body > footer > div:not(:last-of-type) {
   position: relative;
-  top: 100vh;
-  border-top-width: 10px;
 }
 
-footer > div:not(:last-of-type) {
-  position: relative;
-}
-
-footer > div:last-of-type {
-  z-index: 4;
+body > footer > div:last-of-type {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border-top-width: 10px;
+  border-top: 10px solid #67ce6a;
   background-color: #2e8b57;
 }
 
-@media screen and (max-width: 480px) {
-  body > figure > div {
-    height: 23.75vh;
-  }
-  body > figure:nth-of-type(2) > figcaption > p,
-  body > figure:last-of-type > figcaption > p {
-    top: 7vh;
-  }
-  body > main {
-    top: 97vh;
-  }
-  body > footer {
-    height: 92vh;
-  }
+body > footer > div:first-of-type > ul {
+  list-style: disc;
 }
-@media screen and (min-width: 481px) {
-  body > figure > div {
-    height: 31.6666666667vh;
-  }
-  body > figure:nth-of-type(2) > figcaption > p,
-  body > figure:last-of-type > figcaption > p {
-    top: 12vh;
-  }
-  body > main {
-    top: 100vh;
-  }
-  body > footer {
-    height: 91vh;
-  }
+
+body > footer > div:first-of-type > ul > li > ul {
+  list-style: square;
 }
-@media screen and (max-width: 480px) {
-  body > figure:nth-of-type(2) > figcaption > p {
-    font-size: 5rem;
-  }
-  body > figure:last-of-type > figcaption > p {
-    font-size: 4rem;
-  }
+
+body > footer > div:nth-of-type(2) > div {
+  text-align: center;
 }
-@media screen and (min-width: 481px) and (max-width: 980px) {
-  body > figure:nth-of-type(2) > figcaption > p {
-    font-size: 6rem;
-  }
-  body > figure:last-of-type > figcaption > p {
-    font-size: 4rem;
-  }
+
+body > footer > div:nth-of-type(2) > figure {
+  background-image: url("../img/anim-footer/ordenador-footer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-@media screen and (min-width: 981px) {
-  body > figure:nth-of-type(2) > figcaption > p {
-    font-size: 12rem;
-  }
-  body > figure:last-of-type > figcaption > p {
-    font-size: 5rem;
-  }
+
+body > footer > div:nth-of-type(2) > div > p:first-of-type {
+  font-family: Lobster;
+  text-shadow: 2px 2px 0 #133f3f;
+  margin-bottom: 1vh;
 }
-footer > div:nth-of-type(2) > figure {
+
+body > footer > div:nth-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  text-align: center;
+}
+
+body > footer > div:nth-of-type(3) > * {
+  display: inline-block;
+  min-width: 30%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  body > footer > div:nth-of-type(2) > figure {
+    height: 25vh;
+  }
+}
+@media (min-width: 481px) {
+  body > footer {
+    overflow: hidden;
+  }
+  body > footer > div:first-of-type > ul {
+    padding: 20px 0 0 30px;
+  }
+  body > footer > div:first-of-type > ul ul {
+    padding: 0 0 10px 20px;
+  }
+  body > footer > div:nth-of-type(2) > figure {
+    height: 35vh;
+  }
+  body > footer > div:nth-of-type(3) {
+    clear: both;
+  }
+}
+@media (max-width: 480px) {
+  body > footer > div:nth-of-type(2) > div > p:first-of-type {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 980px) {
+  body > footer > div:first-of-type {
+    float: left;
+    width: 55%;
+  }
+  body > footer > div:first-of-type > ul ul {
+    display: block;
+  }
+  body > footer > div:first-of-type a {
+    font-size: 1.2rem;
+  }
+  body > footer > div:nth-of-type(2) {
+    float: right;
+    width: 45%;
+  }
+  body > footer > div:nth-of-type(2) > div > p:first-of-type {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 981px) {
+  body > footer div:first-of-type > ul {
+    overflow: hidden;
+  }
+  body > footer div:first-of-type > ul > li {
+    float: left;
+    width: 23.75vw;
+    margin: 0 auto;
+  }
+  body > footer div:first-of-type > ul a {
+    font-size: 1.2rem;
+  }
+  body > footer > div:nth-of-type(2) {
+    overflow: hidden;
+    clear: both;
+    margin-top: 20px;
+  }
+  body > footer > div:nth-of-type(2) > figure {
+    float: right;
+    width: 50%;
+  }
+  body > footer > div:nth-of-type(2) > div {
+    float: left;
+    width: 50%;
+    padding-top: 8.75vh;
+  }
+  body > footer > div:nth-of-type(2) > div > p:first-of-type {
+    font-size: 2.4rem;
+  }
+}
+@media (max-height: 500px) {
+  body > footer > div:first-of-type > ul ul {
+    display: none;
+  }
+  body > footer > div:nth-of-type(2) > div > p br.medio {
+    display: none !important;
+  }
+}
+body > footer > div:nth-of-type(2) > figure {
   margin: 0 auto;
   animation: pc-enciende 2.5s 0s cubic-bezier(1, 0, 0, 1) forwards, pc-escribe-codigo 8s 2.5s infinite ease-in-out;
 }
 
-footer > div:nth-of-type(2) > figure > figcaption {
+body > footer > div:nth-of-type(2) > figure > figcaption {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -713,145 +855,6 @@ footer > div:nth-of-type(2) > figure > figcaption {
   }
   100% {
     background-image: url("../img/anim-footer/ordenador-3.png"), url("../img/anim-footer/codigo-8.png");
-  }
-}
-footer > div:first-of-type ul {
-  width: 100%;
-}
-
-footer > div:first-of-type > ul {
-  list-style: disc;
-}
-
-footer > div:first-of-type > ul > li > ul {
-  list-style: square;
-}
-
-footer > div:nth-of-type(2) {
-  text-align: center;
-}
-
-body > footer > div:nth-of-type(2) > figure {
-  background-image: url("../img/anim-footer/ordenador-footer.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-footer > div:nth-of-type(2) > div > p:first-of-type {
-  font-family: Lobster;
-  text-shadow: 2px 2px 0 #133f3f;
-}
-
-footer > div:nth-of-type(3) {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-footer > div:nth-of-type(3) > * {
-  display: inline-block;
-  min-width: 25%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 480px) {
-  footer div figure {
-    height: 25vh;
-  }
-}
-@media screen and (min-width: 481px) {
-  footer > div:first-of-type > ul {
-    margin: 14px 0 0 30px;
-  }
-  footer > div:first-of-type > ul ul {
-    margin: 0 0 10px 14px;
-  }
-  footer div figure {
-    height: 35vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  footer {
-    font-size: 1.2rem;
-  }
-  footer > div:nth-of-type(2) > div > p:first-of-type {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 980px) {
-  footer {
-    overflow: hidden;
-  }
-  footer > div:first-of-type {
-    float: left;
-    width: 50%;
-  }
-  footer > div:nth-of-type(2) {
-    float: right;
-    width: 45%;
-  }
-  footer > div:nth-of-type(2) > div > p:first-of-type {
-    font-size: 2.4rem;
-  }
-  footer > div:nth-of-type(3) {
-    clear: both;
-  }
-}
-@media screen and (min-width: 981px) {
-  footer {
-    overflow: hidden;
-    font-size: 1.2rem;
-  }
-  footer div:first-of-type > ul {
-    overflow: hidden;
-  }
-  footer div:first-of-type > ul > li {
-    float: left;
-    width: 22.5vw;
-  }
-  footer > div:nth-of-type(2) {
-    overflow: hidden;
-  }
-  footer > div:nth-of-type(2) > figure {
-    float: right;
-    width: 50%;
-  }
-  footer > div:nth-of-type(2) > div {
-    float: left;
-    padding-top: 8.75vh;
-    width: 50%;
-  }
-  footer > div:nth-of-type(2) > div > p:first-of-type {
-    font-size: 3rem;
-  }
-  footer > div:nth-of-type(3) {
-    clear: both;
-  }
-}
-main {
-  position: relative;
-  left: 0;
-  width: 100%;
-}
-
-main > section {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-main > section > article {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 480px) {
-  main > section > article p {
-    margin-top: 2vh;
   }
 }
 body > figure:nth-last-of-type(2) > figcaption {
@@ -1254,64 +1257,34 @@ body > figure:nth-of-type(2) {
 }
 
 body > figure:nth-of-type(3) {
-  z-index: 6;
+  z-index: 4;
   background-image: url("../img/dibujos/programador.png");
   background-repeat: no-repeat;
 }
 
 body > figure:nth-last-of-type(2) {
-  z-index: 6;
+  z-index: 4;
   position: fixed;
 }
 
 body > figure:last-of-type {
-  z-index: 4;
+  z-index: 3;
   background-image: url("../img/fondos/parallax_2.jpg");
-  background-size: cover;
-}
-
-body > main {
-  margin-bottom: 47.5vh;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-body > main > section:not(:last-of-type) {
-  margin-bottom: 47.5vh;
 }
 
 body > main > section > div:last-of-type {
   z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   background-image: url("../img/fondos/codigo.png");
   background-repeat: repeat-y;
-  background-color: #f5f5f5;
-  border: 0 solid #2e8b57;
-  border-width: 8px 0 8px 0;
 }
 
 body > main > section > article {
-  z-index: 6;
-  margin: 0 auto;
+  z-index: 5;
+  min-height: 33.3333333333vh;
   padding-bottom: 2vh;
   background-color: #c3d4eb;
   border: 2px outset #133f3f;
   border-radius: 4px;
-}
-
-body > main > section > article:first-of-type {
-  margin-top: 47.5vh;
-}
-
-body > main > section > article:not(:last-of-type) {
-  margin-bottom: 47.5vh;
-}
-
-body > main > section > article > p {
-  color: #0d0d5c;
 }
 
 h1, h2, h3 {
@@ -1319,7 +1292,7 @@ h1, h2, h3 {
 }
 
 body > main h2 {
-  z-index: 4;
+  z-index: 3;
   position: relative;
   color: #f5f5f5;
   text-shadow: 2px 2px 0 #0d0d5c;
@@ -1337,15 +1310,24 @@ body > main h3 {
   font-family: Teko;
 }
 
-body > main > section > article > button {
-  margin: 2vh 4vw;
+body > main > section > article > button,
+body > main > section > article > a:last-of-type {
+  margin: 2vh 2vw 0 2vw;
   padding: 1vh 4vw;
   font-size: 1.2rem;
+  position: absolute;
+  bottom: 2vh;
+}
+
+body > main > section > article > button {
+  left: 1vw;
+  background-color: #2e8b57;
   font-weight: bold;
   color: #f5f5f5;
-  text-shadow: 1px 1px 0 black;
-  background-color: #2e8b57;
-  border-style: outset;
+  text-shadow: 2px 1px 0 black;
+  border: 2px outset #0c680c;
+  border-radius: 4px;
+  font-family: Overpass;
 }
 
 body > main > section > article > button.pulsado {
@@ -1354,66 +1336,79 @@ body > main > section > article > button.pulsado {
 }
 
 body > main > section > article > div {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
-  padding-bottom: 4vh;
+  padding: 1vh 0;
   background-color: #f5f5f5;
   border: 2px outset #2e8b57;
   border-radius: 4px;
 }
 
+body > main > section > article > a:last-of-type {
+  right: 1vw;
+  text-decoration: none;
+  background-color: #4657f7;
+  font-weight: bold;
+  color: #f5f5f5;
+  text-shadow: 2px 1px 0 black;
+  border: 2px outset #0c680c;
+  border-radius: 4px;
+  font-family: Overpass;
+}
+
+body > main > section > article > a:last-of-type:hover {
+  background-color: #ffae17;
+  border-style: inset;
+}
+
+body > footer > div:last-of-type {
+  z-index: 3;
+}
+
 footer > div:first-of-type,
 footer > div:nth-of-type(3) {
-  z-index: 7;
+  z-index: 4;
 }
 
 footer > div:nth-of-type(2) > figure {
   position: relative;
-  z-index: 5;
+  z-index: 4;
 }
 
 footer > div:nth-of-type(2) > div {
   position: relative;
-  z-index: 8 !important;
+  z-index: 5;
 }
 
-@media screen and (max-width: 980px) {
-  body > main > section {
-    padding: 31.6666666667vh 0;
-  }
-  body main section h2 {
-    padding: 2vh 1vw 2vh 1vw;
-  }
-  main > section > div {
+@media (max-width: 980px) {
+  body > main > section > div {
     background-size: auto;
     background-position: left;
   }
-  main > section > article {
+  body > main > section > article {
     width: 90%;
-  }
-  body article h3 {
-    padding: 1vh 1vw 0 1vw;
+    margin: 33.3333333333vh auto 0 auto;
   }
 }
-@media screen and (min-width: 981px) {
+@media (min-width: 981px) {
   body > main > section {
-    padding: 31.6666666667vh 0;
-  }
-  body main section h2 {
-    padding: 1vh 1vw 0 1vw;
+    overflow: hidden;
   }
   main > section > div {
     background-size: contain;
     background-position: right;
   }
-  main > section > article {
-    width: 80%;
+  body > main > section > article {
+    float: left;
+    width: 45%;
+    margin-left: 4%;
+    margin-top: 33.3333333333vh;
   }
   body article h3 {
     padding: 1vh 1vw 0 1vw;
   }
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   body > figure:first-of-type {
     background-size: cover;
     background-position: center;
@@ -1423,18 +1418,24 @@ footer > div:nth-of-type(2) > div {
     background-position: bottom;
   }
   body > figure:last-of-type {
+    background-size: cover;
     background-position: left;
   }
+  body > main > section {
+    padding: 25vh 0;
+  }
   body section h2 {
+    padding: 2vh 1vw;
     font-size: 3.4rem;
   }
   body section#frontend h2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
   body section#fullstack h2 {
     font-size: 2rem;
   }
   body article h3 {
+    padding: 1vh 1vw 0 1vw;
     font-size: 2.8rem;
   }
   body article#my-paint-board-vanilla h3 {
@@ -1449,7 +1450,7 @@ footer > div:nth-of-type(2) > div {
     font-size: 1.4rem;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 980px) {
+@media (min-width: 481px) and (max-width: 980px) {
   body > figure:first-of-type {
     background-size: cover;
     background-position: center;
@@ -1459,19 +1460,25 @@ footer > div:nth-of-type(2) > div {
     background-position: bottom;
   }
   body > figure:last-of-type {
+    background-size: cover;
     background-position: left top;
   }
+  body > main > section {
+    padding: 33.3333333333vh 0;
+  }
   body section h2 {
+    padding: 2vh 1vw 1vh 1vw;
     font-size: 4rem;
   }
   body article h3 {
+    padding-top: 1vh;
     font-size: 3rem;
   }
   body section#frontend h2 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
   body section#fullstack h2 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
   main > section > article p,
   main > section > article ul,
@@ -1479,7 +1486,7 @@ footer > div:nth-of-type(2) > div {
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 981px) {
+@media (min-width: 981px) {
   body > figure:first-of-type {
     background-size: cover;
     background-position: left;
@@ -1489,17 +1496,27 @@ footer > div:nth-of-type(2) > div {
     background-position: bottom;
   }
   body > figure:last-of-type {
+    background-size: cover;
     background-position: center;
   }
-  body section h2 {
+  body > main > section {
+    padding: 33.3333333333vh 0;
+  }
+  body > main > section h2 {
+    padding: 1vh 1vw 0 1vw;
     font-size: 5rem;
   }
-  body article h3 {
-    font-size: 4rem;
+  body > main > section > article h3 {
+    font-size: 3rem;
   }
   main > section > article p,
   main > section > article ul,
   main > section > article p a {
     font-size: 1.2rem;
+  }
+}
+@media (max-height: 500px) {
+  body > main > section > article {
+    min-height: 50vh;
   }
 }
