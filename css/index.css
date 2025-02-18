@@ -643,10 +643,8 @@ body > figure:last-of-type > div {
   }
 }
 @media (max-height: 500px) {
-  body > figure:nth-of-type(2) > figcaption > p {
-    top: 20vh;
-  }
   body > figure:last-of-type > figcaption > p {
+    top: 20vh !important;
     background-color: transparent;
     border: none;
   }
@@ -955,5 +953,3 @@ footer > div:nth-of-type(2) > div {
     background-position: left;
   }
 }
-
-/*# sourceMappingURL=index.css.map */

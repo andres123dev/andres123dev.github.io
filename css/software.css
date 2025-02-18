@@ -643,10 +643,8 @@ body > figure:last-of-type > div {
   }
 }
 @media (max-height: 500px) {
-  body > figure:nth-of-type(2) > figcaption > p {
-    top: 20vh;
-  }
   body > figure:last-of-type > figcaption > p {
+    top: 20vh !important;
     background-color: transparent;
     border: none;
   }
@@ -1260,13 +1258,13 @@ body > figure:nth-of-type(2) {
 }
 
 body > figure:nth-of-type(3) {
-  z-index: 4;
+  z-index: 5;
   background-image: url("../img/dibujos/programador.png");
   background-repeat: no-repeat;
 }
 
 body > figure:nth-last-of-type(2) {
-  z-index: 4;
+  z-index: 5;
   position: fixed;
 }
 
@@ -1316,7 +1314,7 @@ body > main h3 {
 body > main > section > article > button,
 body > main > section > article > a:last-of-type {
   margin: 2vh 2vw 0 2vw;
-  padding: 1vh 3vw;
+  padding: 1vh 4vw;
   font-size: 1.2rem;
 }
 
@@ -1428,10 +1426,10 @@ footer > div:nth-of-type(2) > div {
     font-size: 3.8rem;
   }
   body section#frontend h2 {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
   }
   body section#fullstack h2 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
   body article h3 {
     padding: 1vh 1vw 0 1vw;
@@ -1447,6 +1445,9 @@ footer > div:nth-of-type(2) > div {
   main > section > article ul,
   main > section > article p a {
     font-size: 1.4rem;
+  }
+  body > main > section > article > a:last-of-type {
+    clear: left;
   }
 }
 @media (min-width: 481px) and (max-width: 980px) {
@@ -1522,5 +1523,3 @@ footer > div:nth-of-type(2) > div {
     min-height: 50vh;
   }
 }
-
-/*# sourceMappingURL=software.css.map */
