@@ -604,6 +604,9 @@ body > figure:last-of-type > div {
 }
 
 @media (max-width: 480px) {
+  .mini {
+    display: block;
+  }
   body > figure > div {
     height: 25vh;
   }
@@ -953,3 +956,5 @@ footer > div:nth-of-type(2) > div {
     background-position: left;
   }
 }
+
+/*# sourceMappingURL=index.css.map */

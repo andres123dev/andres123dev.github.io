@@ -604,6 +604,9 @@ body > figure:last-of-type > div {
 }
 
 @media (max-width: 480px) {
+  .mini {
+    display: block;
+  }
   body > figure > div {
     height: 25vh;
   }
@@ -1313,8 +1316,8 @@ body > main h3 {
 
 body > main > section > article > button,
 body > main > section > article > a:last-of-type {
-  margin: 2vh 2vw 0 2vw;
-  padding: 1vh 4vw;
+  margin: 2vh 2vw;
+  padding: 1vh 5vw;
   font-size: 1.2rem;
 }
 
@@ -1364,7 +1367,7 @@ body > footer > div:last-of-type {
 
 footer > div:first-of-type,
 footer > div:nth-of-type(3) {
-  z-index: 4;
+  z-index: 5;
 }
 
 footer > div:nth-of-type(2) > figure {
@@ -1426,10 +1429,10 @@ footer > div:nth-of-type(2) > div {
     font-size: 3.8rem;
   }
   body section#frontend h2 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
   body section#fullstack h2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
   body article h3 {
     padding: 1vh 1vw 0 1vw;
@@ -1445,9 +1448,6 @@ footer > div:nth-of-type(2) > div {
   main > section > article ul,
   main > section > article p a {
     font-size: 1.4rem;
-  }
-  body > main > section > article > a:last-of-type {
-    clear: left;
   }
 }
 @media (min-width: 481px) and (max-width: 980px) {
@@ -1523,3 +1523,5 @@ footer > div:nth-of-type(2) > div {
     min-height: 50vh;
   }
 }
+
+/*# sourceMappingURL=software.css.map */
