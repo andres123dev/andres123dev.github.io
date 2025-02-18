@@ -481,6 +481,7 @@ body > main article p a:hover {
 body > main > section > article ul {
   padding-left: 40px;
   list-style: circle;
+  color: #0d0d5c;
   font-family: Overpass;
 }
 
