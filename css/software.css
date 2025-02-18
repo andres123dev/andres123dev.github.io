@@ -609,7 +609,7 @@ body > figure:last-of-type > div {
   }
   body > figure:nth-of-type(2) > figcaption > p {
     top: 10vh;
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   body > figure:last-of-type > figcaption > p {
     top: 10vh;
@@ -643,6 +643,9 @@ body > figure:last-of-type > div {
   }
 }
 @media (max-height: 500px) {
+  body > figure:nth-of-type(2) > figcaption > p {
+    top: 20vh;
+  }
   body > figure:last-of-type > figcaption > p {
     background-color: transparent;
     border: none;
@@ -1313,7 +1316,7 @@ body > main h3 {
 body > main > section > article > button,
 body > main > section > article > a:last-of-type {
   margin: 2vh 2vw 0 2vw;
-  padding: 1vh 4vw;
+  padding: 1vh 3vw;
   font-size: 1.2rem;
 }
 
@@ -1422,13 +1425,13 @@ footer > div:nth-of-type(2) > div {
   }
   body section h2 {
     padding: 2vh 1vw;
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   body section#frontend h2 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
   body section#fullstack h2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
   body article h3 {
     padding: 1vh 1vw 0 1vw;
@@ -1519,3 +1522,5 @@ footer > div:nth-of-type(2) > div {
     min-height: 50vh;
   }
 }
+
+/*# sourceMappingURL=software.css.map */
