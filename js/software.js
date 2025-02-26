@@ -11,8 +11,8 @@
  */
 "use strict";
 import { initMenuButtons } from './menu.js';
-import { fixMainForAndroid, fixMainForIos, setCopyright, setLayout } from './functions.js';
-import { isAndroidDevice, isIosDevice, isAppleDevice } from './compatibility.js';
+import { setCopyright, setLayout } from './functions.js';
+import { isAndroidDevice, isIosDevice, isAppleDevice, fixMainForAndroid, fixMainForIos } from './compatibility.js';
 var readMoreButtons;
 var readMorePanels;
 function switchReadMore(btn, panel) {
@@ -63,6 +63,16 @@ document.addEventListener('DOMContentLoaded', function () {
         let back = document.querySelector('body > figure:last-of-type');
         if (back) {
             back.style.backgroundAttachment = 'fixed';
+        }
+        let anim = document.querySelector('body > figure:nth-last-of-type(2)');
+        if (anim) {
+        }
+        let titles = document.querySelectorAll('body > main > section > h2');
+        if (titles) {
+            for (let i = 0; i < titles.length; i++) {
+                titles[i].style.setProperty('position', 'sticky', 'important');
+                titles[i].style.top = '10vh';
+            }
         }
     }
     setCopyright();

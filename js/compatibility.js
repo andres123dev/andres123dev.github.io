@@ -6,7 +6,7 @@
  *
  *  Aplicación web: Mi sitio web
  *
- *  Fichero con las funciones JS para gestionar la compatibilidad de mi sitio web con MAC e IOS.
+ *  Fichero con las funciones JS para gestionar la compatibilidad de mi sitio web con diferentes dispositivos.
  *
  */
 "use strict";
@@ -18,9 +18,6 @@ export function isAndroidDevice() {
 }
 export function isIosDevice() {
     if (/(iPhone|iPod|iPad)/.test(navigator.userAgent)) {
-        console.log('HUA: ' + navigator.userAgent);
-        console.log('HUA: ' + navigator.userAgent.toLowerCase());
-        console.log('HUA: ' + navigator.userAgent.toLowerCase().indexOf('android'));
         return true;
     }
     return false;
@@ -36,4 +33,22 @@ export function isMobileDevice() {
         return true;
     }
     return false;
+}
+export function fixMain(mainStart) {
+    let figures = document.querySelectorAll('body > figure');
+    if (figures) {
+        for (let i = 0; i < figures.length; i++) {
+            figures[i].style.height = mainStart;
+        }
+    }
+    let main = document.querySelector('body > main');
+    if (main) {
+        main.style.top = mainStart;
+    }
+}
+export function fixMainForAndroid() {
+    fixMain('97vh');
+}
+export function fixMainForIos() {
+    fixMain('95vh');
 }

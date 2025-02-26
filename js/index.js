@@ -11,8 +11,8 @@
  */
 "use strict";
 import { initMenuButtons } from './menu.js';
-import { fixMainForAndroid, fixMainForIos, setCopyright, setLayout } from './functions.js';
-import { isAndroidDevice, isIosDevice, isAppleDevice } from './compatibility.js';
+import { setCopyright, setLayout } from './functions.js';
+import { isAndroidDevice, isIosDevice, isAppleDevice, fixMainForAndroid, fixMainForIos } from './compatibility.js';
 document.addEventListener('DOMContentLoaded', function () {
     initMenuButtons();
     if (isAppleDevice()) {

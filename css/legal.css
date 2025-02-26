@@ -282,7 +282,7 @@ body > header > button {
 }
 
 body > header > button.pulsado {
-  background-color: #75a075 !important;
+  background-color: #2e8b57 !important;
   border-style: inset !important;
 }
 
@@ -309,7 +309,6 @@ body > nav ul ul {
   margin-left: 20px;
 }
 
-body > nav > ul li:hover > ul,
 body > nav > ul li.pulsado > ul {
   display: inherit;
 }
@@ -343,7 +342,6 @@ body > nav > ul > li > a {
   text-shadow: 1px 1px 0 #133f3f;
 }
 
-body > nav > ul > li:hover,
 body > nav > ul > li.pulsado {
   background-color: #2e8b57 !important;
 }
@@ -363,7 +361,6 @@ body > nav > ul > li > ul > li > a {
   text-shadow: 1px 1px 0 black;
 }
 
-body > nav > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li.pulsado {
   background-color: #1ebe1e !important;
 }
@@ -383,7 +380,6 @@ body > nav > ul > li > ul > li > ul > li > a {
   text-shadow: 1px 1px 0 #133f3f;
 }
 
-body > nav > ul > li > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li > ul > li.pulsado {
   background-color: #ffae17 !important;
 }
@@ -392,14 +388,14 @@ body > nav > ul li {
   position: relative;
 }
 
-body > nav > ul > li button.boton-mostrar-submenu {
+body > nav > ul > li button {
   position: absolute;
   top: 0;
   right: 0;
   font-family: Kanit_Bold;
 }
 
-body > nav > ul > li button.boton-mostrar-submenu {
+body > nav > ul > li button {
   padding: 4px 14px;
   border-width: 0 2px 2px 2px;
   border-color: #0c680c;
@@ -407,8 +403,7 @@ body > nav > ul > li button.boton-mostrar-submenu {
   font-family: Kanit_Bold;
 }
 
-body > nav > ul > li:hover button.boton-mostrar-submenu,
-button.boton-mostrar-submenu.pulsado {
+body > nav > ul > li button.pulsado {
   border-style: inset;
 }
 
@@ -417,7 +412,6 @@ body > nav > ul > li > button {
   background-color: #0c680c;
 }
 
-body > nav > ul > li:hover > button,
 body > nav > ul > li > button.pulsado {
   background-color: #1ebe1e;
 }
@@ -427,7 +421,6 @@ body > nav > ul > li > ul > li > button {
   background-color: #f5f5f5;
 }
 
-body > nav > ul > li > ul > li:hover > button,
 body > nav > ul > li > ul > li > button.pulsado {
   color: #f5f5f5;
   background-color: #ffae17;
@@ -461,18 +454,18 @@ body > main > section > article p {
   font-family: Overpass;
 }
 
-body > main article p b {
+body > main article b {
   color: #1ebe1e;
   text-shadow: 1px 1px 0 #0d0d5c;
 }
 
-body > main article p a {
+body > main article a {
   color: #4657f7;
   font-weight: bold;
   font-family: Overpass;
 }
 
-body > main article p a:hover {
+body > main article a:hover {
   text-decoration: none;
   color: #ffae17;
   text-shadow: 1px 1px 0 black;
@@ -480,13 +473,20 @@ body > main article p a:hover {
 
 body > main > section > article ul {
   padding-left: 40px;
-  list-style: circle;
+  width: 90%;
+  margin: 0 auto;
   color: #0d0d5c;
   font-family: Overpass;
 }
 
 body > main > section > article ul > li {
   padding-bottom: 10px;
+}
+
+body label {
+  padding-bottom: 10px 4px;
+  color: #0c680c;
+  font-family: Overpass;
 }
 
 body > footer > div p,

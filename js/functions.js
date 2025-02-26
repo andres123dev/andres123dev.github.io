@@ -32,21 +32,3 @@ export function setLayout() {
     document.oncontextmenu = function () { return false; };
     window.onload = function () { document.onmousedown = function () { return false; }; };
 }
-export function fixMain(mainStart) {
-    let figures = document.querySelectorAll('body > figure');
-    if (figures) {
-        for (let i = 0; i < figures.length; i++) {
-            figures[i].style.height = mainStart;
-        }
-    }
-    let main = document.querySelector('body > main');
-    if (main) {
-        main.style.top = mainStart;
-    }
-}
-export function fixMainForAndroid() {
-    fixMain('97vh');
-}
-export function fixMainForIos() {
-    fixMain('95vh');
-}

@@ -282,7 +282,7 @@ body > header > button {
 }
 
 body > header > button.pulsado {
-  background-color: #75a075 !important;
+  background-color: #2e8b57 !important;
   border-style: inset !important;
 }
 
@@ -309,7 +309,6 @@ body > nav ul ul {
   margin-left: 20px;
 }
 
-body > nav > ul li:hover > ul,
 body > nav > ul li.pulsado > ul {
   display: inherit;
 }
@@ -343,7 +342,6 @@ body > nav > ul > li > a {
   text-shadow: 1px 1px 0 #133f3f;
 }
 
-body > nav > ul > li:hover,
 body > nav > ul > li.pulsado {
   background-color: #2e8b57 !important;
 }
@@ -363,7 +361,6 @@ body > nav > ul > li > ul > li > a {
   text-shadow: 1px 1px 0 black;
 }
 
-body > nav > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li.pulsado {
   background-color: #1ebe1e !important;
 }
@@ -383,7 +380,6 @@ body > nav > ul > li > ul > li > ul > li > a {
   text-shadow: 1px 1px 0 #133f3f;
 }
 
-body > nav > ul > li > ul > li > ul > li:hover,
 body > nav > ul > li > ul > li > ul > li.pulsado {
   background-color: #ffae17 !important;
 }
@@ -392,14 +388,14 @@ body > nav > ul li {
   position: relative;
 }
 
-body > nav > ul > li button.boton-mostrar-submenu {
+body > nav > ul > li button {
   position: absolute;
   top: 0;
   right: 0;
   font-family: Kanit_Bold;
 }
 
-body > nav > ul > li button.boton-mostrar-submenu {
+body > nav > ul > li button {
   padding: 4px 14px;
   border-width: 0 2px 2px 2px;
   border-color: #0c680c;
@@ -407,8 +403,7 @@ body > nav > ul > li button.boton-mostrar-submenu {
   font-family: Kanit_Bold;
 }
 
-body > nav > ul > li:hover button.boton-mostrar-submenu,
-button.boton-mostrar-submenu.pulsado {
+body > nav > ul > li button.pulsado {
   border-style: inset;
 }
 
@@ -417,7 +412,6 @@ body > nav > ul > li > button {
   background-color: #0c680c;
 }
 
-body > nav > ul > li:hover > button,
 body > nav > ul > li > button.pulsado {
   background-color: #1ebe1e;
 }
@@ -427,7 +421,6 @@ body > nav > ul > li > ul > li > button {
   background-color: #f5f5f5;
 }
 
-body > nav > ul > li > ul > li:hover > button,
 body > nav > ul > li > ul > li > button.pulsado {
   color: #f5f5f5;
   background-color: #ffae17;
@@ -461,18 +454,18 @@ body > main > section > article p {
   font-family: Overpass;
 }
 
-body > main article p b {
+body > main article b {
   color: #1ebe1e;
   text-shadow: 1px 1px 0 #0d0d5c;
 }
 
-body > main article p a {
+body > main article a {
   color: #4657f7;
   font-weight: bold;
   font-family: Overpass;
 }
 
-body > main article p a:hover {
+body > main article a:hover {
   text-decoration: none;
   color: #ffae17;
   text-shadow: 1px 1px 0 black;
@@ -480,13 +473,20 @@ body > main article p a:hover {
 
 body > main > section > article ul {
   padding-left: 40px;
-  list-style: circle;
+  width: 90%;
+  margin: 0 auto;
   color: #0d0d5c;
   font-family: Overpass;
 }
 
 body > main > section > article ul > li {
   padding-bottom: 10px;
+}
+
+body label {
+  padding-bottom: 10px 4px;
+  color: #0c680c;
+  font-family: Overpass;
 }
 
 body > footer > div p,
@@ -524,8 +524,6 @@ body > main > section {
   position: relative;
   top: 0;
   left: 0;
-  margin-bottom: 33.3333333333vh;
-  border-bottom: 8px solid #67ce6a;
 }
 
 body > main > section > div:last-of-type {
@@ -535,7 +533,7 @@ body > main > section > div:last-of-type {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #e0dfdf;
   border: 0 solid #67ce6a;
   border-width: 8px 0 8px 0;
 }
@@ -600,7 +598,7 @@ body > figure:last-of-type > div {
   background-image: url("../img/fondos/codigo.png");
   background-size: auto;
   background-position: left;
-  background-color: #f5f5f5;
+  background-color: #e0dfdf;
   border-bottom: 8px solid #67ce6a;
 }
 
@@ -612,7 +610,7 @@ body > figure:last-of-type > div {
     height: 25vh;
   }
   body > figure:nth-of-type(2) > figcaption > p {
-    top: 10vh;
+    top: 14vh;
     font-size: 4.5rem;
   }
   body > figure:last-of-type > figcaption > p {
@@ -622,10 +620,10 @@ body > figure:last-of-type > div {
 }
 @media (min-width: 481px) and (max-width: 980px) {
   body > figure > div {
-    height: 33.3333333333vh;
+    height: 33vh;
   }
   body > figure:nth-of-type(2) > figcaption > p {
-    top: 15vh;
+    top: 20vh;
     font-size: 6rem;
   }
   body > figure:last-of-type > figcaption > p {
@@ -635,10 +633,10 @@ body > figure:last-of-type > div {
 }
 @media (min-width: 981px) {
   body > figure > div {
-    height: 33.3333333333vh;
+    height: 33vh;
   }
   body > figure:nth-of-type(2) > figcaption > p {
-    top: 10vh;
+    top: 15vh;
     font-size: 10rem;
   }
   body > figure:last-of-type > figcaption > p {
@@ -737,7 +735,7 @@ body > footer > div:nth-of-type(3) > * {
 }
 @media (max-width: 480px) {
   body > footer > div:nth-of-type(2) > div > p:first-of-type {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 @media (min-width: 481px) and (max-width: 980px) {
@@ -889,6 +887,10 @@ body > figure:last-of-type {
   background-position: top;
 }
 
+body > main > section {
+  margin-bottom: 33vh;
+}
+
 body > main > section > div:last-of-type {
   z-index: 2;
 }
@@ -904,6 +906,32 @@ main > section > article p,
 main > section > article ul,
 main > section > article p a {
   font-size: 1.4rem;
+}
+
+main > section > article > code > pre {
+  overflow-x: auto;
+  margin: 0 auto;
+  color: #438f8f;
+  text-shadow: 1px 1px 0 black;
+  border: 3px solid #0c680c;
+  border-radius: 8px;
+  font-family: Kanit;
+}
+
+main > section > article > code > pre > span.kw {
+  color: #0c680c;
+}
+
+main > section > article > code > pre > span.sym {
+  color: #4657f7;
+}
+
+main > section > article > code > pre > span.str {
+  color: #1ebe1e;
+}
+
+main > section > article > code > pre span.var {
+  color: #ffae17 !important;
 }
 
 body > footer > div:last-of-type {
@@ -934,6 +962,10 @@ footer > div:nth-of-type(2) > div {
     background-size: contain;
     background-position: bottom;
   }
+  main > section > article > code > pre {
+    width: 99%;
+    padding: 4px 2px;
+  }
   body > footer > div:nth-of-type(2) > div > p:first-of-type {
     font-size: 3.2rem !important;
   }
@@ -950,6 +982,11 @@ footer > div:nth-of-type(2) > div {
     background-size: contain;
     background-position: left bottom;
   }
+  main > section > article > code > pre {
+    width: 90%;
+    padding: 10px 4px;
+    font-size: 1.2rem;
+  }
 }
 @media (min-width: 981px) {
   body > figure:first-of-type {
@@ -959,6 +996,12 @@ footer > div:nth-of-type(2) > div {
   body > figure:nth-of-type(3) {
     background-size: contain;
     background-position: left;
+  }
+  main > section > article > code > pre {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 }
 

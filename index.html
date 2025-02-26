@@ -6,7 +6,7 @@
     <title>Andrés Fernández Burón - Mi website frontend</title>
     <meta name="description" content="El sitio web frontend escrito por Andres Fernandez Buron.">
     <meta name="abstract" content="La sección de inicio del sitio web frontend de Andres Fernandez Buron">
-    <meta name="keywords" content="programador desarrollador web full-stack fullstack 'Andres Fernandez Buron' andres123dev">
+    <meta name="keywords" content="programador desarrollador web front-en frontend 'Andres Fernandez Buron' andres123dev">
     <meta name="author" content="Andres Fernandez Buron">
     <meta name="copyright" content="Copyright 2020 all rights reserved">
     <meta name="distribution" content="global">
@@ -97,6 +97,27 @@
                     </li>
                 </ul>    
             </li>
+            <li><a href="informacion.html">Más Información</a>
+                <button class="boton-mostrar-submenu">v</button>
+                <ul>
+                    <li><a href="sobre-el sitio.html">Sobre el sitio</a>
+                        <button class="boton-mostrar-subsubmenu">v</button>
+                        <ul>
+                            <li><a href="#que">Qué es este sitio</a></li>
+                            <li><a href="#origen">Cuál es su origen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre-mi.html">Sobre mí</a>
+                        <button class="boton-mostrar-subsubmenu">v</button>
+                        <ul>
+                            <li><a href="#quien">Quién soy</a></li>
+                            <li><a href="#como">Cómo empecé</a></li>
+                            <li><a href="#multiplataforma">Desarrollo multiplataforma</a></li>
+                            <li><a href="#web">Desarrollo web</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <figure></figure>
@@ -122,7 +143,25 @@
                 <noscript>
                     <p>Para poder utilizar los botones y las aplicaciones, tienes que tener habilitado JavaScript en tu navegador web.</p>
                 </noscript>
-                <p>Recientemente<b> he publicado algunos proyectos propios</b> en mi cuenta de GitHub (<a href="https://github.com/andres123dev/" target="_blank">andres123dev</a>), que están disponibles cómo repositorio público.</p>
+                <p><b>Para saber más sobre este sitio</b> web, puedes visitar la página de <a href="informacion.html">Información</a>.</p>
+                <p>También <b>puedes conocer más información sobre mí</b>, en el apartado <a href="sobre-mi.html">Sobre mí</a>.</p>
+                <code>
+                    <pre>
+<span class="kw">&lt;?php</span>
+<span class="var">$matriz</span> <span class="sym">=</span> [];
+<span class="kw">for</span>(<span class="var">$i</span><span class="sym">=</span>0 ; <span class="var">$i</span><span class="sym">&lt;</span>10 ; <span class="var">$i</span><span class="sym">++</span>) {
+    <span class="kw">for</span>(<span class="var">$j</span><span class="sym">=</span>0 ; <span class="var">$j</span><span class="sym">&lt;</span>10 ; <span class="var">$j</span><span class="sym">++</span>) {
+        <span class="kw">for</span>(<span class="var">$k</span><span class="sym">=</span>0 ; <span class="var">$k</span><span class="sym">&lt;</span>10 ; <span class="var">$k</span><span class="sym">++</span>) {
+            <span class="kw">for</span>(<span class="var">$l</span><span class="sym">=</span>0 ; <span class="var">$l</span><span class="sym">&lt;</span>10 ; <span class="var">$l</span><span class="sym">++</span>) {
+                <span class="kw">for</span>(<span class="var">$m</span><span class="sym">=</span>0 ; <span class="var">$m</span><span class="sym">&lt;</span>10 ; <span class="var">$m</span><span class="sym">++</span>) {
+                    <span class="var">$matriz</span>[<span class="var">$i</span>][<span class="var">$j</span>][<span class="var">$k</span>][<span class="var">$l</span>][<span class="var">$m</span>] <span class="sym">=</span> <span class="str">"{<span class="var">$i</span>}-{<span class="var">$j</span>}-{<span class="var">$k</span>}-{<span class="var">$l</span>}-{<span class="var">$m</span>}\n"</span>; 
+                    <span class="kw">print</span>(<span class="str">"&lt;p&gt;{<span class="var">$matriz</span>[<span class="var">$i</span>][<span class="var">$j</span>][<span class="var">$k</span>][<span class="var">$l</span>][<span class="var">$m</span>]}&lt;/p&gt;\n"</span>);
+                }
+            }
+        }
+    }
+}</pre>
+                </code>
             </article>
             <div></div>
         </section>
@@ -135,9 +174,9 @@
                     <br> Una escrita con <b>vanilla JavaScript</b> y otra utilizando <b>jQuery</b>.
                     <br> Además de este sitio web.</p>
                 <p>También hay una pequeña aplicación web full-stack, que consiste en <a href="software.html#fullstack">un CRUD</a> conectado a una base de datos de <b>MariaDB</b>.
-                    <br> En el frontend utilizo <b>HTML 5</b> y <b>CSS 3</b> con <b>Bootstrap 5</b>.
-                    <br> Obtengo las vistas y realizo las peticiones de forma asíncrona con <b>jQuery</b> y <b>AJAX</b>.
-                    <br> El back-end lo he escrito con <b>PHP</b> y se encarga de validar los formularios y devolver las vistas.</p>
+                    <br> Para el frontend he utilizado <b>HTML 5</b> y <b>CSS 3</b> con <b>Bootstrap 5</b>.
+                    <br> En cliente, obtengo las vistas y realizo las peticiones de forma asíncrona con <b>jQuery</b> y <b>AJAX</b>.
+                    <br> El back-end lo he escrito con <b>PHP</b> y se encarga de devolver las vistas al cliente, validar los formularios y operar con el servidor de Bases datos.</p>
             </article>
             <div></div>
         </section>
@@ -147,6 +186,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="software.html">Software</a></li>
+                <li><a href="informacion.html">Información</a></li>
             </ul>
             <ul>
                 <li><a href="software.html#python3">Python 3</a>

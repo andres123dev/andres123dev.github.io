@@ -864,398 +864,9 @@ body > footer > div:nth-of-type(2) > figure > figcaption {
     background-image: url("../img/anim-footer/ordenador-3.png"), url("../img/anim-footer/codigo-8.png");
   }
 }
-body > figure:nth-last-of-type(2) > figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div {
-  z-index: 5;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(1),
-body > figure:nth-last-of-type(2) > figcaption > div:last-of-type {
-  bottom: 0;
-  z-index: 6;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(1) {
-  left: -10vw;
-  left: 0;
-  background-image: url("../img/anim-aplicaciones/comebolas-derecha-abierto.png");
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:last-of-type {
-  right: 0;
-  background-image: url("../img/anim-aplicaciones/fantasma-0.png");
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(2),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(3),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(4),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(5),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(6),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(7),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(8),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(9),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(10),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(11),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(12),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(13),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(14),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(15),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(16),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(17),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(18),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(19),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(20),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(21) {
-  background-image: url("../img/anim-aplicaciones/bola.png");
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(2),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(3),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(4),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(5),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(6),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(7),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(8),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(9),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(10),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(11) {
-  top: 10vh;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(12),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(13),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(14),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(15),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(16),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(17),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(18),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(19),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(20),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(21) {
-  bottom: 0;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(2),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(12) {
-  left: 0;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(3),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(13) {
-  left: 10vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(4),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(14) {
-  left: 20vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(5),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(15) {
-  left: 30vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(6),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(16) {
-  left: 40vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(7),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(17) {
-  left: 50vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(8),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(18) {
-  left: 60vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(9),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(19) {
-  left: 70vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(10),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(20) {
-  left: 80vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(11),
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(21) {
-  left: 90vw;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:first-of-type:hover {
-  background-image: url("../img/anim-aplicaciones/comebolas-2.png");
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:last-of-type:hover {
-  background-image: url("../img/anim-aplicaciones/fantasma-1.png");
-}
-
-@media screen and (max-width: 480px) {
-  body > figure:nth-last-of-type(2) > figcaption > div:first-of-type,
-  body > figure:nth-last-of-type(2) > figcaption > div:last-of-type {
-    height: 10vh;
-    width: 15vw;
-    background-size: 100%;
-  }
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(2),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(3),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(4),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(5),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(6),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(7),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(8),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(9),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(10),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(11),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(12),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(13),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(14),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(15),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(16),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(17),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(18),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(19),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(20),
-  body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(21) {
-    height: 10vh;
-    width: 10vw;
-    background-size: 120%;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 980px) {
-  body > figure:nth-last-of-type(2) > figcaption > div {
-    height: 10vh;
-    width: 10vw;
-    background-size: contain;
-  }
-}
-@media screen and (min-width: 981px) {
-  body > figure:nth-last-of-type(2) > figcaption > div {
-    height: 20vh;
-    width: 10vw;
-    background-size: contain;
-  }
-  body > figure:nth-last-of-type(2) > figcaption > div:first-of-type,
-  body > figure:nth-last-of-type(2) > figcaption > div:last-of-type {
-    background-size: contain;
-  }
-}
-body > figure:nth-last-of-type(2) > figcaption > div:first-of-type {
-  left: -20vw;
-  animation: comebolas-come-derecha 0.65s 0s infinite cubic-bezier(1, 0, 0, 1), comebolas-va 7s 0s ease-out, comebolas-da-la-vuelta 5s 7s ease-out, comebolas-come-derecha 0.6s 12s infinite cubic-bezier(1, 0, 0, 1), comebolas-vuelve 10s 12s ease-out, comebolas-come-izquierda 0.6s 22s infinite cubic-bezier(1, 0, 0, 1), comebolas-vuelve-a-volver 9s 22s ease-out, comebolas-come-derecha 0.7s 31s infinite cubic-bezier(1, 0, 0, 1), comebolas-continua 8.5s 31s infinite ease-in-out forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:last-of-type {
-  right: -20vw;
-  animation: fantasma-desaparece 1s forwards, fantasma-va 9.5s 4s infinite forwards ease-out, fantasma-flota 0.5s 7s infinite cubic-bezier(1, 0, 0, 1);
-}
-
-@keyframes comebolas-come-derecha {
-  from {
-    background-image: url("../img/anim-aplicaciones/comebolas-derecha-abierto.png");
-  }
-  to {
-    background-image: url("../img/anim-aplicaciones/comebolas-derecha-cerrado.png");
-  }
-}
-@keyframes comebolas-come-izquierda {
-  from {
-    background-image: url("../img/anim-aplicaciones/comebolas-izquierda-abierto.png");
-  }
-  to {
-    background-image: url("../img/anim-aplicaciones/comebolas-izquierda-cerrado.png");
-  }
-}
-@keyframes comebolas-va {
-  0% {
-    bottom: 0;
-    left: -20vw;
-  }
-  100% {
-    bottom: 0;
-    left: 65vw;
-  }
-}
-@keyframes comebolas-da-la-vuelta {
-  from {
-    bottom: 0;
-    left: 65vw;
-    background-image: url("../img/anim-aplicaciones/comebolas-gota.png"), url("../img/anim-aplicaciones/comebolas-izquierda-cerrado.png");
-  }
-  to {
-    bottom: 0;
-    left: -20vw;
-    background-image: url("../img/anim-aplicaciones/comebolas-izquierda-cerrado.png");
-  }
-}
-@keyframes comebolas-vuelve {
-  0% {
-    top: 10vh;
-    left: -20vw;
-  }
-  100% {
-    top: 10vh;
-    left: 120vw;
-  }
-}
-@keyframes comebolas-vuelve-a-volver {
-  0% {
-    bottom: 0;
-    left: 120vw;
-  }
-  100% {
-    bottom: 0;
-    left: -20vw;
-  }
-}
-@keyframes comebolas-continua {
-  0% {
-    top: 10vh;
-    left: -20vw;
-  }
-  100% {
-    top: 10vh;
-    left: 120vw;
-  }
-}
-@keyframes fantasma-desaparece {
-  0% {
-    display: none;
-  }
-  100% {
-    display: inherit;
-  }
-}
-@keyframes fantasma-flota {
-  from {
-    background-image: url("../img/anim-aplicaciones/fantasma-1.png");
-  }
-  to {
-    background-image: url("../img/anim-aplicaciones/fantasma-2.png");
-  }
-}
-@keyframes fantasma-va {
-  0% {
-    bottom: 0;
-    right: -20vw;
-    background-image: url("../img/anim-aplicaciones/fantasma-0.png");
-  }
-  35% {
-    bottom: 0;
-    right: 0;
-  }
-  100% {
-    bottom: 0;
-    right: 100vw;
-  }
-}
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(2) {
-  animation: bola-desaparece 0.1s 12.9s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(3) {
-  animation: bola-desaparece 0.1s 13.3s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(4) {
-  animation: bola-desaparece 0.1s 13.8s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(5) {
-  animation: bola-desaparece 0.1s 14.3s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(6) {
-  animation: bola-desaparece 0.1s 14.9s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(7) {
-  animation: bola-desaparece 0.1s 15.4s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(8) {
-  animation: bola-desaparece 0.1s 16s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(9) {
-  animation: bola-desaparece 0.1s 16.6s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(10) {
-  animation: bola-desaparece 0.1s 17.3s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(11) {
-  animation: bola-desaparece 0.1s 18s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(12) {
-  animation: bola-desaparece 0.1s 1s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(13) {
-  animation: bola-desaparece 0.1s 1.6s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(14) {
-  animation: bola-desaparece 0.1s 2.2s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(15) {
-  animation: bola-desaparece 0.1s 2.9s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(16) {
-  animation: bola-desaparece 0.1s 3.6s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(17) {
-  animation: bola-desaparece 0.1s 4.5s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(18) {
-  animation: bola-desaparece 0.1s 5.7s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(21) {
-  animation: bola-desaparece 0.2s 23.2s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(20) {
-  animation: bola-desaparece 0.2s 23.6s forwards;
-}
-
-body > figure:nth-last-of-type(2) > figcaption > div:nth-of-type(19) {
-  animation: bola-desaparece 0.2s 24s forwards;
-}
-
-@keyframes bola-desaparece {
-  from {
-    background-size: cover;
-    background-image: url("../img/anim-aplicaciones/bola.png");
-  }
-  to {
-    background-size: 0;
-    background-image: none;
-    display: none;
-  }
-}
 body > figure:first-of-type {
-  z-index: 3;
-  background-image: url("../img/fondos/agujero.png");
+  z-index: 1;
+  background-image: url("../img/fondos/codigo.png");
   background-repeat: no-repeat;
 }
 
@@ -1264,247 +875,165 @@ body > figure:nth-of-type(2) {
 }
 
 body > figure:nth-of-type(3) {
-  z-index: 5;
-  background-image: url("../img/dibujos/programador.png");
+  z-index: 4;
+  background-image: url("../img/siluetas/frente.png");
   background-repeat: no-repeat;
 }
 
-body > figure:nth-last-of-type(2) {
-  z-index: 5;
-  position: fixed;
-}
-
 body > figure:last-of-type {
-  z-index: 3;
-  background-image: url("../img/fondos/parallax_2.jpg");
-}
-
-body > main > section {
-  margin-bottom: 33vh;
-}
-
-body > main > section > div:last-of-type {
   z-index: 2;
-  background-image: url("../img/fondos/codigo.png");
-  background-repeat: repeat-y;
+  background-image: url("../img/fondos/parallax_3.jpg");
+  background-repeat: no-repeat;
+}
+
+body > figure:last-of-type > figcaption {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/dibujos/hoja-datos.png");
+  background-repeat: no-repeat;
+}
+
+body > main > figure {
+  z-index: 4;
+  position: relative;
+  height: 95vh;
+}
+
+body > main > figure > figcaption {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #ffae17;
+}
+
+body > main > figure > figcaption:first-of-type {
+  bottom: 10%;
+}
+
+body > main > figure > figcaption:last-of-type {
+  top: 15%;
+  text-align: right;
+}
+
+body > main > figure > figcaption > p {
+  padding: 4px 20px;
+  font-family: Teko;
+  font-weight: bold;
+  text-shadow: 3px 2px 0 #133f3f;
 }
 
 body > main > section > article {
-  z-index: 5;
-  min-height: 33vh;
-  padding-bottom: 2vh;
-  background-color: #c3d4eb;
-  border: 2px outset #133f3f;
-  border-radius: 4px;
+  z-index: 4;
+  min-height: 95vh;
+  padding: 4vh 1vw;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-h1, h2, h3 {
-  text-align: center;
+main > section > article p,
+main > section > article ul,
+main > section > article a {
+  font-size: 1.4rem;
 }
 
-body > main h2 {
-  z-index: 3;
-  position: relative;
-  color: #f5f5f5;
-  text-shadow: 2px 2px 0 #0d0d5c;
-  background-color: #438f8f;
-  border: 0 solid #133f3f;
-  border-width: 8px 0 8px 0;
-  font-family: Goldman_Bold;
-}
-
-body > main h3 {
-  color: #f5f5f5;
-  text-shadow: 2px 1px 0 black;
-  background-color: #4657f7;
-  border-bottom: 3px solid #133f3f;
-  font-family: Teko;
-}
-
-body > main > section > article > button,
-body > main > section > article > a:last-of-type {
-  margin: 2vh 2vw;
-  padding: 1vh 4vw;
-  font-size: 1.2rem;
-}
-
-body > main > section > article > button {
-  background-color: #2e8b57;
-  font-weight: bold;
-  color: #f5f5f5;
-  text-shadow: 2px 1px 0 black;
-  border: 2px outset #0c680c;
-  border-radius: 4px;
-  font-family: Overpass;
-}
-
-body > main > section > article > button:hover {
-  background-color: #67ce6a;
-  border-style: inset;
-}
-
-body > main > section > article > div {
-  width: 95%;
-  margin: 0 auto;
-  background-color: #e0dfdf;
-  border: 2px outset #2e8b57;
-  border-radius: 4px;
-}
-
-body > main > section > article > a:last-of-type {
+main > section > article ul > li > a {
   text-decoration: none;
-  background-color: #4657f7;
-  font-weight: bold;
-  color: #f5f5f5;
-  text-shadow: 2px 1px 0 black;
-  border: 2px outset #0c680c;
-  border-radius: 4px;
-  font-family: Overpass;
 }
 
-body > main > section > article > a:last-of-type:hover {
-  background-color: #ffae17;
-  border-style: inset;
+main > section > article form {
+  width: 50%;
+  margin: 2vh auto;
+  font-size: 1.4rem;
+}
+
+footer {
+  margin-top: 33vh;
 }
 
 body > footer > div:last-of-type {
-  z-index: 3;
+  z-index: 2;
 }
 
 footer > div:first-of-type,
 footer > div:nth-of-type(3) {
-  z-index: 5;
+  z-index: 4;
 }
 
 footer > div:nth-of-type(2) > figure {
   position: relative;
-  z-index: 4;
+  z-index: 3;
 }
 
 footer > div:nth-of-type(2) > div {
   position: relative;
-  z-index: 5;
+  z-index: 5 !important;
 }
 
-@media (max-width: 980px) {
-  body > main > section > div {
-    background-size: auto;
-    background-position: left;
-  }
-  body > main > section > article {
-    width: 90%;
-    margin: 33vh auto 0 auto;
-  }
-}
-@media (min-width: 981px) {
-  body > main > section {
-    overflow: hidden;
-  }
-  main > section > div {
-    background-size: contain;
-    background-position: right;
-  }
-  body > main > section > article {
-    float: left;
-    width: 45%;
-    margin-top: 33vh;
-  }
-  body > main > section > article:nth-child(even) {
-    margin-left: 2%;
-  }
-  body > main > section > article:nth-child(odd) {
-    margin-left: 4%;
-  }
-  body article h3 {
-    padding: 1vh 1vw 0 1vw;
-  }
-  body > main > section > article > button,
-  body > main > section > article > a:last-of-type {
-    margin: 1vh 0 1vh 2vw;
-  }
-}
 @media (max-width: 480px) {
   body > figure:first-of-type {
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
   }
   body > figure:nth-of-type(3) {
-    background-size: cover;
-    background-position: bottom;
+    background-size: 250%;
+    background-position: right bottom;
   }
   body > figure:last-of-type {
     background-size: cover;
-    background-position: left;
+    background-position: center;
   }
-  body > main > section {
-    padding: 25vh 0;
+  body > figure:last-of-type > figcaption {
+    background-size: contain;
+    background-position: left bottom;
   }
-  body section h2 {
-    padding: 2vh 1vw;
-    font-size: 3.8rem;
+  body > main > figure > figcaption > p {
+    font-size: 3rem;
   }
-  body section#frontend h2 {
-    font-size: 2.5rem;
+  body > main > figure#que > figcaption:first-of-type > p,
+  body > main > figure#origen > figcaption:first-of-type > p,
+  body > main > figure#multiplataforma > figcaption > p,
+  body > main > figure#web > figcaption:last-of-type > p {
+    font-size: 2.2rem;
   }
-  body section#fullstack h2 {
-    font-size: 2rem;
+  body > footer > div:nth-of-type(2) > div {
+    margin-top: 10vh;
   }
-  body article h3 {
-    padding: 1vh 1vw 0 1vw;
-    font-size: 2.8rem;
+  body > footer > div:nth-of-type(2) > div > p:first-of-type {
+    font-size: 3.2rem !important;
   }
-  body article#my-paint-board-vanilla h3 {
-    font-size: 2rem;
-  }
-  body article#gestion-de-concesionarios h3 {
-    font-size: 1.8rem;
-  }
-  main > section > article p,
-  main > section > article ul,
-  main > section > article p a {
-    font-size: 1.4rem;
+  body > footer > div:nth-of-type(2) > div > p > br.medio {
+    display: block;
   }
 }
 @media (min-width: 481px) and (max-width: 980px) {
   body > figure:first-of-type {
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+    background-position: bottom;
   }
   body > figure:nth-of-type(3) {
-    background-size: cover;
-    background-position: bottom;
+    background-size: 110%;
+    background-position: right bottom;
   }
   body > figure:last-of-type {
     background-size: cover;
-    background-position: left top;
+    background-position: center;
   }
-  body > main > section {
-    padding: 33vh 0;
+  body > figure:last-of-type > figcaption {
+    background-size: contain;
+    background-position: bottom;
   }
-  body section h2 {
-    padding: 2vh 1vw 1vh 1vw;
-    font-size: 5rem;
+  body > main > figure > figcaption > p {
+    font-size: 4rem;
   }
-  body section#frontend h2 {
+  body > main > figure#que > figcaption:first-of-type > p,
+  body > main > figure#multiplataforma > figcaption > p,
+  body > main > figure#web > figcaption:last-of-type > p {
     font-size: 3rem;
-  }
-  body section#fullstack h2 {
-    font-size: 2.6rem;
-  }
-  body article h3 {
-    padding-top: 1vh;
-    font-size: 3rem;
-  }
-  main > section > article p,
-  main > section > article ul,
-  main > section > article p a {
-    font-size: 1.2rem;
   }
 }
 @media (min-width: 981px) {
   body > figure:first-of-type {
     background-size: cover;
-    background-position: left;
+    background-position: top right;
   }
   body > figure:nth-of-type(3) {
     background-size: contain;
@@ -1512,31 +1041,20 @@ footer > div:nth-of-type(2) > div {
   }
   body > figure:last-of-type {
     background-size: cover;
-    background-position: center;
+    background-position: right;
   }
-  body > main > section {
-    padding: 33vh 0;
+  body > figure:last-of-type > figcaption {
+    background-size: 40%;
+    background-position: left bottom;
   }
-  body > main > section h2 {
-    padding: 2vh 1vw 0 1vw;
-    font-size: 4.5rem;
+  body > main > figure > figcaption > p {
+    font-size: 6rem;
   }
-  body > main > section > article {
-    min-height: 33vh;
-  }
-  body > main > section > article h3 {
-    font-size: 3rem;
-  }
-  body > main > section > article p,
-  body > main > section > article ul,
-  body > main > section > article p a {
-    font-size: 1.2rem;
-  }
-}
-@media (max-height: 500px) {
-  body > main > section > article {
-    min-height: 50vh;
+  body > main > figure#que > figcaption:first-of-type > p,
+  body > main > figure#multiplataforma > figcaption > p,
+  body > main > figure#web > figcaption:last-of-type > p {
+    font-size: 5rem;
   }
 }
 
-/*# sourceMappingURL=software.css.map */
+/*# sourceMappingURL=info.css.map */
