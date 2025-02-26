@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     parallaxBoxes[i].style.paddingTop = '10px';
                 }
                 else {
-                    parallaxBoxes[i].style.setProperty('top', '5%', 'important');
+                    parallaxBoxes[i].style.setProperty('top', '9%', 'important');
                 }
             }
         }
