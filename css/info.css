@@ -428,10 +428,7 @@ body > nav > ul > li > ul > li > button.pulsado {
 
 @media (max-width: 480px) {
   body > nav > ul {
-    min-width: 90vw;
-  }
-  body > nav > ul > li:nth-of-type(2) > ul > li:last-of-type > ul > li:last-of-type > a {
-    font-size: 1.1rem;
+    width: 100%;
   }
 }
 @media (min-width: 481px) and (max-width: 980px) {
@@ -442,6 +439,14 @@ body > nav > ul > li > ul > li > button.pulsado {
 @media (min-width: 981px) {
   body > nav > ul {
     min-width: 35vw;
+  }
+}
+@media (max-height: 500px) {
+  body > nav > ul > li > ul > li > ul {
+    display: none !important;
+  }
+  .boton-mostrar-subsubmenu {
+    display: none !important;
   }
 }
 body {
@@ -979,7 +984,7 @@ footer > div:nth-of-type(2) > div {
     background-position: bottom;
   }
   body > figure:nth-of-type(3) {
-    background-size: 250%;
+    background-size: 260%;
     background-position: right bottom;
   }
   body > figure:last-of-type {
@@ -1064,6 +1069,11 @@ footer > div:nth-of-type(2) > div {
   body > main > figure#multiplataforma > figcaption > p,
   body > main > figure#web > figcaption:last-of-type > p {
     font-size: 5rem;
+  }
+}
+@media (max-height: 500px) {
+  body > figure:nth-of-type(3) {
+    background-size: contain !important;
   }
 }
 
