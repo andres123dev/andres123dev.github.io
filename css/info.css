@@ -430,6 +430,12 @@ body > nav > ul > li > ul > li > button.pulsado {
   body > nav > ul {
     width: 100%;
   }
+  body > nav > ul > li:nth-of-type(2) > ul > li:last-of-type > ul > li:last-of-type > a {
+    font-size: 1.1rem;
+  }
+  body > nav > ul > li:nth-of-type(3) > ul > li:nth-of-type(2) > ul > li:nth-of-type(3) > a {
+    font-size: 1.1rem;
+  }
 }
 @media (min-width: 481px) and (max-width: 980px) {
   body > nav > ul {
@@ -869,6 +875,11 @@ body > footer > div:nth-of-type(2) > figure > figcaption {
     background-image: url("../img/anim-footer/ordenador-3.png"), url("../img/anim-footer/codigo-8.png");
   }
 }
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body > figure:first-of-type {
   z-index: 1;
   background-image: url("../img/fondos/codigo.png");
@@ -950,7 +961,7 @@ main > section > article form {
   font-size: 1.4rem;
 }
 
-main > section > article:first-of-type > p:first-of-type {
+main > section:first-of-type > article:first-of-type > p:first-of-type {
   text-align: center;
   font-weight: bold;
 }
@@ -1002,11 +1013,12 @@ footer > div:nth-of-type(2) > div {
   body > main > figure#quien > figcaption:first-of-type > p {
     font-size: 2.2rem;
   }
-  body > main > figure#multiplataforma > figcaption > p,
-  body > main > figure#web > figcaption:last-of-type > p {
+  body > main > figure#que > figcaption:last-of-type > p {
     font-size: 2rem;
   }
-  body > main > figure#que > figcaption:first-of-type > p {
+  body > main > figure#que > figcaption:first-of-type > p,
+  body > main > figure#multiplataforma > figcaption > p,
+  body > main > figure#web > figcaption:last-of-type > p {
     font-size: 1.8rem;
   }
   body > footer > div:nth-of-type(2) > div {

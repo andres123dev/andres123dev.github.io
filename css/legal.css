@@ -430,6 +430,12 @@ body > nav > ul > li > ul > li > button.pulsado {
   body > nav > ul {
     width: 100%;
   }
+  body > nav > ul > li:nth-of-type(2) > ul > li:last-of-type > ul > li:last-of-type > a {
+    font-size: 1.1rem;
+  }
+  body > nav > ul > li:nth-of-type(3) > ul > li:nth-of-type(2) > ul > li:nth-of-type(3) > a {
+    font-size: 1.1rem;
+  }
 }
 @media (min-width: 481px) and (max-width: 980px) {
   body > nav > ul {
