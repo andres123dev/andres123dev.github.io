@@ -945,6 +945,11 @@ main > section > article form {
   font-size: 1.4rem;
 }
 
+main > section > article:first-of-type > p:first-of-type {
+  text-align: center;
+  font-weight: bold;
+}
+
 footer {
   margin-top: 33vh;
 }
@@ -988,11 +993,16 @@ footer > div:nth-of-type(2) > div {
   body > main > figure > figcaption > p {
     font-size: 3rem;
   }
-  body > main > figure#que > figcaption:first-of-type > p,
-  body > main > figure#origen > figcaption:first-of-type > p,
+  body > main > figure#origen > figcaption > p,
+  body > main > figure#quien > figcaption:first-of-type > p {
+    font-size: 2.2rem;
+  }
   body > main > figure#multiplataforma > figcaption > p,
   body > main > figure#web > figcaption:last-of-type > p {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  body > main > figure#que > figcaption:first-of-type > p {
+    font-size: 1.8rem;
   }
   body > footer > div:nth-of-type(2) > div {
     margin-top: 10vh;
