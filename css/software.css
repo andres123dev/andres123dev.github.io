@@ -431,10 +431,10 @@ body > nav > ul > li > ul > li > button.pulsado {
     width: 100%;
   }
   body > nav > ul > li:nth-of-type(2) > ul > li:last-of-type > ul > li:last-of-type > a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   body > nav > ul > li:nth-of-type(3) > ul > li:nth-of-type(2) > ul > li:nth-of-type(3) > a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 481px) and (max-width: 980px) {
@@ -521,6 +521,11 @@ body > footer > div a:hover > span {
 body > footer > div ul a:hover {
   color: #ffae17;
   text-decoration: none;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body > main {
