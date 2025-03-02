@@ -40,7 +40,6 @@ function switchMode(radioBtn) {
     else {
         for (let i = 0; i < assertivePars.length; i++) {
             assertivePars[i].style.display = 'block';
-            console.log(typeof assertivePars[i]);
         }
     }
     return radioBtn;
@@ -56,6 +55,18 @@ document.addEventListener('DOMContentLoaded', function () {
         if (parallaxBoxes) {
             for (let i = 0; i < parallaxBoxes.length; i++) {
                 parallaxBoxes[i].style.height = '50vh';
+            }
+        }
+        let parallaxBoxP1 = document.querySelectorAll('body > main > figure > figcaption:first-of-type');
+        if (parallaxBoxP1) {
+            for (let i = 0; i < parallaxBoxP1.length; i++) {
+                parallaxBoxP1[i].style.bottom = '10%';
+            }
+        }
+        let parallaxBoxP2 = document.querySelectorAll('body > main > figure > figcaption:last-of-type');
+        if (parallaxBoxP2) {
+            for (let i = 0; i < parallaxBoxP2.length; i++) {
+                parallaxBoxP2[i].style.top = '15%';
             }
         }
     }

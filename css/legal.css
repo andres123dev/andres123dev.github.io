@@ -448,9 +448,7 @@ body > nav > ul > li > ul > li > button.pulsado {
   }
 }
 @media (max-height: 500px) {
-  body > nav > ul > li > ul > li > ul {
-    display: none !important;
-  }
+  .boton-mostrar-submenu,
   .boton-mostrar-subsubmenu {
     display: none !important;
   }
@@ -607,10 +605,10 @@ h2, h3 {
 }
 
 @media screen and (max-width: 480px) {
-  h2 {
+  body > main h2 {
     font-size: 1.8rem;
   }
-  h3 {
+  body > main h3 {
     font-size: 1.2rem;
   }
   main > section {
@@ -624,10 +622,10 @@ h2, h3 {
   }
 }
 @media screen and (min-width: 481px) {
-  h2 {
+  body > main h2 {
     font-size: 3rem;
   }
-  h3 {
+  body > main h3 {
     font-size: 2rem;
   }
   main > section > article {
@@ -635,6 +633,12 @@ h2, h3 {
   }
   main > section > article:last-of-type {
     padding-bottom: 20vh;
+  }
+}
+@media (max-height: 500px) {
+  body > main h2,
+  body > main h3 {
+    font-size: 1rem !important;
   }
 }
 

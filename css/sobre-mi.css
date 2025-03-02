@@ -448,9 +448,7 @@ body > nav > ul > li > ul > li > button.pulsado {
   }
 }
 @media (max-height: 500px) {
-  body > nav > ul > li > ul > li > ul {
-    display: none !important;
-  }
+  .boton-mostrar-submenu,
   .boton-mostrar-subsubmenu {
     display: none !important;
   }
@@ -569,7 +567,7 @@ body > footer {
 
 @media (max-height: 500px) {
   body > main > section {
-    margin-bottom: 100vh;
+    margin-bottom: 100vh !important;
   }
 }
 body > figure {
@@ -921,12 +919,7 @@ body > main > figure > figcaption {
   width: 100%;
 }
 
-body > main > figure > figcaption:first-of-type {
-  bottom: 10%;
-}
-
 body > main > figure > figcaption:last-of-type {
-  top: 15%;
   text-align: right;
 }
 
@@ -959,6 +952,7 @@ main > section > article form {
   width: 50%;
   margin: 2vh auto;
   font-size: 1.4rem;
+  color: #0d0d5c;
 }
 
 main > section:first-of-type > article:first-of-type > p:first-of-type {
@@ -1012,11 +1006,11 @@ footer > div:nth-of-type(2) > div {
   body > main > figure > figcaption > p {
     font-size: 3rem;
   }
-  body > main > figure#quien > figcaption:first-of-type > p {
+  body > main > figure#quien-soy > figcaption:first-of-type > p {
     font-size: 2.4rem;
   }
-  body > main > figure#multiplataforma > figcaption > p,
-  body > main > figure#web > figcaption:last-of-type > p {
+  body > main > figure#desarrollo-multiplataforma > figcaption > p,
+  body > main > figure#desarrollo-web > figcaption:last-of-type > p {
     font-size: 1.8rem;
   }
   body > footer > div:nth-of-type(2) > div {
@@ -1052,9 +1046,8 @@ footer > div:nth-of-type(2) > div {
   body > main > figure > figcaption > p {
     font-size: 4rem;
   }
-  body > main > figure#que > figcaption:first-of-type > p,
-  body > main > figure#multiplataforma > figcaption > p,
-  body > main > figure#web > figcaption:last-of-type > p {
+  body > main > figure#desarrollo-multiplataforma > figcaption > p,
+  body > main > figure#desarrollo-web > figcaption:last-of-type > p {
     font-size: 3rem;
   }
   footer > div:nth-of-type(2) > figure {
@@ -1081,9 +1074,8 @@ footer > div:nth-of-type(2) > div {
   body > main > figure > figcaption > p {
     font-size: 6rem;
   }
-  body > main > figure#que > figcaption:first-of-type > p,
-  body > main > figure#multiplataforma > figcaption > p,
-  body > main > figure#web > figcaption:last-of-type > p {
+  body > main > figure#desarrollo-multiplataforma > figcaption > p,
+  body > main > figure#desarrollo-web > figcaption:last-of-type > p {
     font-size: 5rem;
   }
   footer > div:nth-of-type(2) > figure {
@@ -1092,7 +1084,10 @@ footer > div:nth-of-type(2) > div {
 }
 @media (max-height: 500px) {
   body > figure:nth-of-type(3) {
-    background-size: contain !important;
+    background-size: 90% !important;
+  }
+  body > figure:last-of-type > figcaption {
+    background-size: 60%;
   }
 }
 

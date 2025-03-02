@@ -448,9 +448,7 @@ body > nav > ul > li > ul > li > button.pulsado {
   }
 }
 @media (max-height: 500px) {
-  body > nav > ul > li > ul > li > ul {
-    display: none !important;
-  }
+  .boton-mostrar-submenu,
   .boton-mostrar-subsubmenu {
     display: none !important;
   }
@@ -569,7 +567,7 @@ body > footer {
 
 @media (max-height: 500px) {
   body > main > section {
-    margin-bottom: 100vh;
+    margin-bottom: 100vh !important;
   }
 }
 body > figure {
@@ -969,6 +967,7 @@ footer > div:nth-of-type(2) > div {
     background-position: bottom;
   }
   body > figure:nth-of-type(2) > figcaption > p {
+    top: 80% !important;
     font-size: 4.2rem !important;
   }
   body > figure:nth-of-type(3) {
@@ -977,7 +976,7 @@ footer > div:nth-of-type(2) > div {
   }
   body > figure:last-of-type {
     background-size: cover;
-    background-position: center;
+    background-position: left;
   }
   body > figure:last-of-type > figcaption {
     background-size: 80%;
@@ -987,13 +986,7 @@ footer > div:nth-of-type(2) > div {
     font-size: 3rem;
   }
   body > footer > div:nth-of-type(2) > div {
-    margin-top: 10vh;
-  }
-  body > footer > div:nth-of-type(2) > div > p:first-of-type {
-    font-size: 3.2rem !important;
-  }
-  body > footer > div:nth-of-type(2) > div > p > br.medio {
-    display: block;
+    margin-top: 40vh;
   }
 }
 @media (min-width: 481px) and (max-width: 980px) {
@@ -1042,6 +1035,14 @@ footer > div:nth-of-type(2) > div {
   }
   body > main > section > article > h2 {
     font-size: 6rem;
+  }
+}
+@media (max-height: 500px) {
+  body > figure:nth-of-type(2) > figcaption > p {
+    top: 70% !important;
+  }
+  body > figure:last-of-type > figcaption {
+    background-size: 30%;
   }
 }
 

@@ -448,9 +448,7 @@ body > nav > ul > li > ul > li > button.pulsado {
   }
 }
 @media (max-height: 500px) {
-  body > nav > ul > li > ul > li > ul {
-    display: none !important;
-  }
+  .boton-mostrar-submenu,
   .boton-mostrar-subsubmenu {
     display: none !important;
   }
@@ -569,7 +567,7 @@ body > footer {
 
 @media (max-height: 500px) {
   body > main > section {
-    margin-bottom: 100vh;
+    margin-bottom: 100vh !important;
   }
 }
 body > figure {
@@ -1416,7 +1414,7 @@ footer > div:nth-of-type(2) > div {
   body > main > section {
     overflow: hidden;
   }
-  main > section > div {
+  body > main > section > div {
     background-size: contain;
     background-position: right;
   }
@@ -1455,29 +1453,29 @@ footer > div:nth-of-type(2) > div {
   body > main > section {
     padding: 25vh 0;
   }
-  body section h2 {
+  body > main > section h2 {
     padding: 2vh 1vw;
     font-size: 3.8rem;
   }
-  body section#frontend h2 {
+  body > main > section#frontend h2 {
     font-size: 2.5rem;
   }
-  body section#fullstack h2 {
-    font-size: 2rem;
+  body > main > section#fullstack h2 {
+    font-size: 1.9rem;
   }
-  body article h3 {
+  body > main > section > article h3 {
     padding: 1vh 1vw 0 1vw;
     font-size: 2.8rem;
   }
-  body article#my-paint-board-vanilla h3 {
+  body > main > section > article#my-paint-board-vanilla h3 {
     font-size: 2rem;
   }
-  body article#gestion-de-concesionarios h3 {
+  body > main > section > article#gestion-de-concesionarios h3 {
     font-size: 1.8rem;
   }
-  main > section > article p,
-  main > section > article ul,
-  main > section > article p a {
+  body > main > section > article p,
+  body > main > section > article ul,
+  body > main > section > article p a {
     font-size: 1.4rem;
   }
 }
@@ -1556,6 +1554,18 @@ footer > div:nth-of-type(2) > div {
   body > figure > figcaption > p,
   body > main > section > h2 {
     text-align: left;
+  }
+  body > main > section#python3 h2 {
+    font-size: 3rem;
+  }
+  body > main > section#frontend h2 {
+    font-size: 1.5rem;
+  }
+  body > main > section#fullstack h2 {
+    font-size: 1.5rem;
+  }
+  body > main > section#java h2 {
+    font-size: 3rem;
   }
 }
 

@@ -448,9 +448,7 @@ body > nav > ul > li > ul > li > button.pulsado {
   }
 }
 @media (max-height: 500px) {
-  body > nav > ul > li > ul > li > ul {
-    display: none !important;
-  }
+  .boton-mostrar-submenu,
   .boton-mostrar-subsubmenu {
     display: none !important;
   }
@@ -569,7 +567,7 @@ body > footer {
 
 @media (max-height: 500px) {
   body > main > section {
-    margin-bottom: 100vh;
+    margin-bottom: 100vh !important;
   }
 }
 body > figure {
@@ -982,7 +980,7 @@ footer > div:nth-of-type(2) > div {
     background-position: bottom;
   }
   main > section > article > code {
-    width: 95%;
+    width: 92%;
   }
   main > section > article > code > pre {
     padding: 4px 2px;
