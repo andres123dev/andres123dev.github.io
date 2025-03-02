@@ -583,8 +583,15 @@ body > figure > figcaption > p {
   text-align: center;
   font-weight: bold;
   color: #f5f5f5;
-  text-shadow: 3px 2px 0 #133f3f;
   font-family: Bebas_Neue;
+}
+
+body > figure:nth-of-type(2) > figcaption > p {
+  text-shadow: 3px 2px 0 #ffae17;
+}
+
+body > figure:last-of-type > figcaption > p {
+  text-shadow: 3px 2px 0 #133f3f;
 }
 
 body > figure:first-of-type,
@@ -922,12 +929,9 @@ main > section > article p a {
   font-size: 1.4rem;
 }
 
-main > section > article > code {
-  margin: 0 auto;
-}
-
 main > section > article > code > pre {
   overflow-x: auto;
+  margin: 0 auto;
   color: #438f8f;
   text-shadow: 1px 1px 0 black;
   border: 3px solid #0c680c;
@@ -979,10 +983,8 @@ footer > div:nth-of-type(2) > div {
     background-size: contain;
     background-position: bottom;
   }
-  main > section > article > code {
-    width: 85%;
-  }
   main > section > article > code > pre {
+    width: 95%;
     padding: 4px 2px;
   }
   body > footer > div:nth-of-type(2) > div > p:first-of-type {
@@ -1001,10 +1003,8 @@ footer > div:nth-of-type(2) > div {
     background-size: contain;
     background-position: left bottom;
   }
-  main > section > article > code {
-    width: 90%;
-  }
   main > section > article > code > pre {
+    width: 90%;
     padding: 10px 4px;
     font-size: 1.2rem;
   }
@@ -1018,10 +1018,8 @@ footer > div:nth-of-type(2) > div {
     background-size: contain;
     background-position: left;
   }
-  main > section > article > code {
-    width: 60%;
-  }
   main > section > article > code > pre {
+    width: 60%;
     padding: 10px;
     font-size: 1.2rem;
     font-weight: bold;

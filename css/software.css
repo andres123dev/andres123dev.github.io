@@ -583,8 +583,15 @@ body > figure > figcaption > p {
   text-align: center;
   font-weight: bold;
   color: #f5f5f5;
-  text-shadow: 3px 2px 0 #133f3f;
   font-family: Bebas_Neue;
+}
+
+body > figure:nth-of-type(2) > figcaption > p {
+  text-shadow: 3px 2px 0 #ffae17;
+}
+
+body > figure:last-of-type > figcaption > p {
+  text-shadow: 3px 2px 0 #133f3f;
 }
 
 body > figure:first-of-type,
@@ -1548,24 +1555,27 @@ footer > div:nth-of-type(2) > div {
   }
 }
 @media (max-height: 500px) {
+  body > figure:nth-of-type(2) {
+    font-size: 5.8rem !important;
+  }
   body > main > section > article {
-    min-height: 50vh;
+    min-height: 50vh !important;
   }
   body > figure > figcaption > p,
   body > main > section > h2 {
-    text-align: left;
+    text-align: left !important;
   }
   body > main > section#python3 h2 {
-    font-size: 3rem;
+    font-size: 3.2rem !important;
   }
   body > main > section#frontend h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem !important;
   }
   body > main > section#fullstack h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem !important;
   }
   body > main > section#java h2 {
-    font-size: 3rem;
+    font-size: 3.2rem !important;
   }
 }
 

@@ -583,8 +583,15 @@ body > figure > figcaption > p {
   text-align: center;
   font-weight: bold;
   color: #f5f5f5;
-  text-shadow: 3px 2px 0 #133f3f;
   font-family: Bebas_Neue;
+}
+
+body > figure:nth-of-type(2) > figcaption > p {
+  text-shadow: 3px 2px 0 #ffae17;
+}
+
+body > figure:last-of-type > figcaption > p {
+  text-shadow: 3px 2px 0 #133f3f;
 }
 
 body > figure:first-of-type,
@@ -923,7 +930,7 @@ main > section > article > h2 {
   font-family: Teko;
   font-weight: bold;
   color: #ffae17;
-  text-shadow: 3px 2px 0 #133f3f;
+  text-shadow: 2px 1px 0 #133f3f;
 }
 
 main > section > article p,
