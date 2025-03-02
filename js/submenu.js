@@ -23,8 +23,6 @@ export function closeAll(level) {
         case 1:
             panelArray = Array.from(subsubmenuPanels);
             break;
-        default:
-            alert('INVALID LEVEL NUMBER !!!!');
     }
     for (let i = 0; i < panelArray.length; i++) {
         if (panelArray[i].style.display != 'none') {
@@ -67,7 +65,6 @@ export function addListenerBtnSubmenu() {
     menuSubPanelSwitchButtons = document.querySelectorAll('.boton-mostrar-submenu');
     if (menuSubPanelSwitchButtons) {
         for (let i = 0; i < menuSubPanelSwitchButtons.length; i++) {
-            console.log(i);
             submenuPanels[i] = menuSubPanelSwitchButtons[i].nextElementSibling;
             if (menuSubPanelSwitchButtons[i]) {
                 submenuPanels[i].style.display = 'none';

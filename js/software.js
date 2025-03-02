@@ -64,9 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (back) {
             back.style.backgroundAttachment = 'fixed';
         }
-        let anim = document.querySelector('body > figure:nth-last-of-type(2)');
-        if (anim) {
-        }
         let titles = document.querySelectorAll('body > main > section > h2');
         if (titles) {
             for (let i = 0; i < titles.length; i++) {

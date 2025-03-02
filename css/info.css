@@ -891,51 +891,26 @@ body > figure:nth-of-type(2) {
 }
 
 body > figure:nth-of-type(3) {
-  z-index: 4;
-  background-image: url("../img/siluetas/frente.png");
+  z-index: 3;
+  background-image: url("../img/siluetas/mapa.png");
   background-repeat: no-repeat;
 }
 
 body > figure:last-of-type {
-  z-index: 2;
-  background-image: url("../img/fondos/parallax_3.jpg");
+  z-index: 4;
+  background-image: url("../img/fondos/parallax_4.jpg");
   background-repeat: no-repeat;
 }
 
 body > figure:last-of-type > figcaption {
   height: 100%;
   width: 100%;
-  background-image: url("../img/dibujos/hoja-datos.png");
+  background-image: url("../img/fotos/mundo.png");
   background-repeat: no-repeat;
 }
 
-body > main > figure {
-  z-index: 4;
-  position: relative;
-  height: 95vh;
-}
-
-body > main > figure > figcaption {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  color: #ffae17;
-}
-
-body > main > figure > figcaption:first-of-type {
-  bottom: 10%;
-}
-
-body > main > figure > figcaption:last-of-type {
-  top: 15%;
-  text-align: right;
-}
-
-body > main > figure > figcaption > p {
-  padding: 4px 20px;
-  font-family: Teko;
-  font-weight: bold;
-  text-shadow: 3px 2px 0 #133f3f;
+body > main > section {
+  margin-bottom: 33vh;
 }
 
 body > main > section > article {
@@ -943,6 +918,14 @@ body > main > section > article {
   min-height: 95vh;
   padding: 4vh 1vw;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+main > section > article > h2 {
+  padding: 4px 20px;
+  font-family: Teko;
+  font-weight: bold;
+  color: #ffae17;
+  text-shadow: 3px 2px 0 #133f3f;
 }
 
 main > section > article p,
@@ -959,16 +942,6 @@ main > section > article form {
   width: 50%;
   margin: 2vh auto;
   font-size: 1.4rem;
-}
-
-main > section:first-of-type > article:first-of-type > p:first-of-type {
-  text-align: center;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-footer {
-  margin-top: 33vh;
 }
 
 body > footer > div:last-of-type {
@@ -999,32 +972,19 @@ footer > div:nth-of-type(2) > div {
     font-size: 4.2rem !important;
   }
   body > figure:nth-of-type(3) {
-    background-size: 260%;
-    background-position: right bottom;
+    background-size: 120%;
+    background-position: center;
   }
   body > figure:last-of-type {
     background-size: cover;
     background-position: center;
   }
   body > figure:last-of-type > figcaption {
-    background-size: contain;
-    background-position: left bottom;
+    background-size: 80%;
+    background-position: bottom;
   }
-  body > main > figure > figcaption > p {
+  body > main > section > article > h2 {
     font-size: 3rem;
-  }
-  body > main > figure#origen > figcaption:last-of-type > p,
-  body > main > figure#quien > figcaption:first-of-type > p {
-    font-size: 2.4rem;
-  }
-  body > main > figure#que > figcaption:last-of-type > p,
-  body > main > figure#origen > figcaption:first-of-type > p {
-    font-size: 2.2rem;
-  }
-  body > main > figure#que > figcaption:first-of-type > p,
-  body > main > figure#multiplataforma > figcaption > p,
-  body > main > figure#web > figcaption:last-of-type > p {
-    font-size: 1.8rem;
   }
   body > footer > div:nth-of-type(2) > div {
     margin-top: 10vh;
@@ -1041,25 +1001,23 @@ footer > div:nth-of-type(2) > div {
     background-size: auto;
     background-position: bottom;
   }
+  body > figure:nth-of-type(2) > figcaption > p {
+    top: 80% !important;
+  }
   body > figure:nth-of-type(3) {
-    background-size: 110%;
-    background-position: right bottom;
+    background-size: contain;
+    background-position: center;
   }
   body > figure:last-of-type {
     background-size: cover;
-    background-position: center;
+    background-position: left;
   }
   body > figure:last-of-type > figcaption {
-    background-size: contain;
-    background-position: bottom;
+    background-size: 40%;
+    background-position: left bottom;
   }
-  body > main > figure > figcaption > p {
+  body > main > section > article > h2 {
     font-size: 4rem;
-  }
-  body > main > figure#que > figcaption:first-of-type > p,
-  body > main > figure#multiplataforma > figcaption > p,
-  body > main > figure#web > figcaption:last-of-type > p {
-    font-size: 3rem;
   }
 }
 @media (min-width: 981px) {
@@ -1067,30 +1025,23 @@ footer > div:nth-of-type(2) > div {
     background-size: cover;
     background-position: top right;
   }
+  body > figure:nth-of-type(2) > figcaption > p {
+    top: 70% !important;
+  }
   body > figure:nth-of-type(3) {
-    background-size: contain;
-    background-position: bottom;
+    background-size: 90%;
+    background-position: center bottom;
   }
   body > figure:last-of-type {
     background-size: cover;
-    background-position: right;
+    background-position: left;
   }
   body > figure:last-of-type > figcaption {
-    background-size: 40%;
+    background-size: 25%;
     background-position: left bottom;
   }
-  body > main > figure > figcaption > p {
+  body > main > section > article > h2 {
     font-size: 6rem;
-  }
-  body > main > figure#que > figcaption:first-of-type > p,
-  body > main > figure#multiplataforma > figcaption > p,
-  body > main > figure#web > figcaption:last-of-type > p {
-    font-size: 5rem;
-  }
-}
-@media (max-height: 500px) {
-  body > figure:nth-of-type(3) {
-    background-size: contain !important;
   }
 }
 

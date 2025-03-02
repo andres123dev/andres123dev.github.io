@@ -1553,6 +1553,10 @@ footer > div:nth-of-type(2) > div {
   body > main > section > article {
     min-height: 50vh;
   }
+  body > figure > figcaption > p,
+  body > main > section > h2 {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=software.css.map */
