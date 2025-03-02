@@ -637,7 +637,7 @@ h2, h3 {
 }
 @media (max-height: 500px) {
   body > figure:first-of-type {
-    background-position: center bottom !important;
+    background-position: left bottom !important;
   }
   body > main h2,
   body > main h3 {

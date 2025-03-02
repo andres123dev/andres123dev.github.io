@@ -51,12 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isIosDevice()) {
             fixMainForIos();
         }
-        let parallaxBoxes = document.querySelectorAll('body > main > figure');
-        if (parallaxBoxes) {
-            for (let i = 0; i < parallaxBoxes.length; i++) {
-                parallaxBoxes[i].style.height = '50vh';
-            }
-        }
         let parallaxBoxP1 = document.querySelectorAll('body > main > figure > figcaption:first-of-type');
         if (parallaxBoxP1) {
             for (let i = 0; i < parallaxBoxP1.length; i++) {

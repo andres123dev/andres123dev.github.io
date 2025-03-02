@@ -565,11 +565,6 @@ body > footer {
   height: 93vh;
 }
 
-@media (max-height: 500px) {
-  body > main > section {
-    margin-bottom: 100vh !important;
-  }
-}
 body > figure {
   bottom: 0;
   left: 0;
@@ -674,9 +669,6 @@ body > figure:last-of-type > div {
   }
   body > figure:last-of-type > div {
     display: none !important;
-  }
-  body > main > section {
-    margin-bottom: 50vh;
   }
 }
 body > footer > div:not(:last-of-type) {
@@ -1556,9 +1548,6 @@ footer > div:nth-of-type(2) > div {
   }
 }
 @media (max-height: 500px) {
-  body > figure:first-of-type {
-    background-position: center bottom !important;
-  }
   body > figure:nth-of-type(2) {
     font-size: 5.5rem !important;
   }

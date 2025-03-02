@@ -565,11 +565,6 @@ body > footer {
   height: 93vh;
 }
 
-@media (max-height: 500px) {
-  body > main > section {
-    margin-bottom: 100vh !important;
-  }
-}
 body > figure {
   bottom: 0;
   left: 0;
@@ -674,9 +669,6 @@ body > figure:last-of-type > div {
   }
   body > figure:last-of-type > div {
     display: none !important;
-  }
-  body > main > section {
-    margin-bottom: 50vh;
   }
 }
 body > footer > div:not(:last-of-type) {
@@ -1091,7 +1083,7 @@ footer > div:nth-of-type(2) > div {
 }
 @media (max-height: 500px) {
   body > figure:first-of-type {
-    background-position: center bottom !important;
+    background-position: left bottom !important;
   }
   body > figure:nth-of-type(3) {
     background-size: 60% !important;
@@ -1099,9 +1091,6 @@ footer > div:nth-of-type(2) > div {
   body > figure:last-of-type > figcaption {
     background-size: 60% !important;
     background-position: left !important;
-  }
-  body > main > figure {
-    height: 50vh !important;
   }
   body > main > figure > figcaption > p {
     font-size: 3.8rem !important;
