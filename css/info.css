@@ -971,19 +971,19 @@ footer > div:nth-of-type(2) > div {
     font-size: 4.2rem !important;
   }
   body > figure:nth-of-type(3) {
-    background-size: 120%;
+    background-size: 110%;
     background-position: center;
   }
   body > figure:last-of-type {
     background-size: cover;
-    background-position: left;
+    background-position: center;
   }
   body > figure:last-of-type > figcaption {
     background-size: 80%;
     background-position: bottom;
   }
   body > main > section > article > h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   body > footer > div:nth-of-type(2) > div {
     margin-top: 40vh;
