@@ -587,7 +587,7 @@ body > figure > figcaption > p {
 }
 
 body > figure:nth-of-type(2) > figcaption > p {
-  text-shadow: 3px 2px 0 #ffae17;
+  text-shadow: 2px 1px 0 #ffae17;
 }
 
 body > figure:last-of-type > figcaption > p {
@@ -668,11 +668,12 @@ body > figure:last-of-type > div {
 @media (max-height: 500px) {
   body > figure:last-of-type > figcaption > p {
     top: 20vh !important;
-    background-color: transparent;
-    border: none;
+    background-color: transparent !important;
+    border: none !important;
+    text-shadow: 2px 1px 0 #2e8b57;
   }
   body > figure:last-of-type > div {
-    display: none;
+    display: none !important;
   }
   body > main > section {
     margin-bottom: 50vh;
@@ -1089,12 +1090,18 @@ footer > div:nth-of-type(2) > div {
   }
 }
 @media (max-height: 500px) {
+  body > figure:first-of-type {
+    background-position: center bottom !important;
+  }
   body > figure:nth-of-type(3) {
     background-size: 60% !important;
   }
   body > figure:last-of-type > figcaption {
     background-size: 60% !important;
     background-position: left !important;
+  }
+  body > main > figure {
+    height: 50vh !important;
   }
   body > main > figure > figcaption > p {
     font-size: 3.8rem !important;

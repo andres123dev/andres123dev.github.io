@@ -587,7 +587,7 @@ body > figure > figcaption > p {
 }
 
 body > figure:nth-of-type(2) > figcaption > p {
-  text-shadow: 3px 2px 0 #ffae17;
+  text-shadow: 2px 1px 0 #ffae17;
 }
 
 body > figure:last-of-type > figcaption > p {
@@ -668,11 +668,12 @@ body > figure:last-of-type > div {
 @media (max-height: 500px) {
   body > figure:last-of-type > figcaption > p {
     top: 20vh !important;
-    background-color: transparent;
-    border: none;
+    background-color: transparent !important;
+    border: none !important;
+    text-shadow: 2px 1px 0 #2e8b57;
   }
   body > figure:last-of-type > div {
-    display: none;
+    display: none !important;
   }
   body > main > section {
     margin-bottom: 50vh;
@@ -930,7 +931,7 @@ main > section > article > h2 {
   font-family: Teko;
   font-weight: bold;
   color: #ffae17;
-  text-shadow: 2px 1px 0 #133f3f;
+  text-shadow: 2px 2px 0 #133f3f;
 }
 
 main > section > article p,
@@ -993,7 +994,7 @@ footer > div:nth-of-type(2) > div {
     font-size: 2.4rem;
   }
   body > main > section:nth-of-type(2) > article > h2 {
-    font-size: 2rem !important;
+    font-size: 1.9rem !important;
   }
   body > footer > div:nth-of-type(2) > div {
     margin-top: 40vh;
@@ -1048,6 +1049,9 @@ footer > div:nth-of-type(2) > div {
   }
 }
 @media (max-height: 500px) {
+  body > figure:first-of-type {
+    background-position: center bottom !important;
+  }
   body > figure:nth-of-type(2) > figcaption > p {
     top: 70% !important;
   }

@@ -587,7 +587,7 @@ body > figure > figcaption > p {
 }
 
 body > figure:nth-of-type(2) > figcaption > p {
-  text-shadow: 3px 2px 0 #ffae17;
+  text-shadow: 2px 1px 0 #ffae17;
 }
 
 body > figure:last-of-type > figcaption > p {
@@ -668,11 +668,12 @@ body > figure:last-of-type > div {
 @media (max-height: 500px) {
   body > figure:last-of-type > figcaption > p {
     top: 20vh !important;
-    background-color: transparent;
-    border: none;
+    background-color: transparent !important;
+    border: none !important;
+    text-shadow: 2px 1px 0 #2e8b57;
   }
   body > figure:last-of-type > div {
-    display: none;
+    display: none !important;
   }
   body > main > section {
     margin-bottom: 50vh;
@@ -1018,11 +1019,16 @@ footer > div:nth-of-type(2) > div {
     background-size: contain;
     background-position: left;
   }
-  main > section > article > code > pre {
+  body > main > section > article > code > pre {
     width: 60%;
     padding: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+  }
+}
+@media (max-height: 500px) {
+  body > figure:first-of-type {
+    background-position: center bottom !important;
   }
 }
 
