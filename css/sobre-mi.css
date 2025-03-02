@@ -494,7 +494,7 @@ body > main > section > article ul > li {
 
 body label {
   padding-bottom: 10px 4px;
-  color: #0c680c;
+  color: #0d0d5c;
   font-family: Overpass;
 }
 
@@ -952,7 +952,6 @@ main > section > article form {
   width: 50%;
   margin: 2vh auto;
   font-size: 1.4rem;
-  color: #0d0d5c;
 }
 
 main > section:first-of-type > article:first-of-type > p:first-of-type {
@@ -1084,11 +1083,22 @@ footer > div:nth-of-type(2) > div {
 }
 @media (max-height: 500px) {
   body > figure:nth-of-type(3) {
-    background-size: 90% !important;
+    background-size: 70% !important;
   }
   body > figure:last-of-type > figcaption {
-    background-size: 60%;
+    background-size: 60% !important;
+    background-position: left !important;
   }
+  body > main > figure > figcaption {
+    position: fixed !important;
+  }
+  /*body > main > figure > figcaption > p {
+      font-size: 3.8rem !important;
+  }
+  body > main > figure#desarrollo-multiplataforma > figcaption > p,
+  body > main > figure#desarrollo-web > figcaption:last-of-type > p {
+      font-size: 2.8rem !important;
+  }*/
 }
 
 /*# sourceMappingURL=sobre-mi.css.map */

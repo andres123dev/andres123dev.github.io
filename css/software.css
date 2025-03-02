@@ -494,7 +494,7 @@ body > main > section > article ul > li {
 
 body label {
   padding-bottom: 10px 4px;
-  color: #0c680c;
+  color: #0d0d5c;
   font-family: Overpass;
 }
 
@@ -1559,10 +1559,10 @@ footer > div:nth-of-type(2) > div {
     font-size: 3rem;
   }
   body > main > section#frontend h2 {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
   }
   body > main > section#fullstack h2 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
   }
   body > main > section#java h2 {
     font-size: 3rem;

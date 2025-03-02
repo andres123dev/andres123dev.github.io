@@ -494,7 +494,7 @@ body > main > section > article ul > li {
 
 body label {
   padding-bottom: 10px 4px;
-  color: #0c680c;
+  color: #0d0d5c;
   font-family: Overpass;
 }
 
@@ -980,7 +980,7 @@ footer > div:nth-of-type(2) > div {
     background-position: bottom;
   }
   main > section > article > code {
-    width: 92%;
+    width: 85%;
   }
   main > section > article > code > pre {
     padding: 4px 2px;
